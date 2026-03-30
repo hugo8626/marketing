@@ -139,26 +139,16 @@ body {
 
 .btn-primary {
   background-color: var(--primary);
-  @apply inline-flex w-fit items-center justify-center rounded px-5 py-2 text-white transition-colors duration-300;
+  @apply inline-block w-fit rounded px-5 py-2 text-white transition-colors duration-300;
 }
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
 }
 
-.btn-primary-mobile {
-  background-color: var(--primary);
-  @apply inline-flex items-center justify-center rounded px-3 py-2 text-sm text-white transition-colors duration-300;
-  min-height: 40px;
-}
-
-.btn-primary-mobile:hover {
-  background-color: var(--primary-hover);
-}
-
 .btn-black {
   background-color: #000000;
-  @apply inline-flex w-fit items-center justify-center rounded px-5 py-2 text-white transition-colors duration-300;
+  @apply inline-block w-fit rounded px-5 py-2 text-white transition-colors duration-300;
 }
 
 .btn-black:hover {
@@ -167,7 +157,7 @@ body {
 
 .btn-secondary {
   border: 1px solid var(--border);
-  @apply inline-flex items-center justify-center rounded px-5 py-2 transition-colors duration-300;
+  @apply rounded px-5 py-2 transition-colors duration-300;
 }
 
 .btn-secondary:hover {

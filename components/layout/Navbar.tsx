@@ -91,7 +91,7 @@ export default function Navbar() {
             width={150}
             height={40}
             priority
-            className="h-auto w-[120px] sm:w-[135px] md:w-[150px]"
+            className="h-auto w-[110px] sm:w-[130px] md:w-[150px]"
           />
         </Link>
 
@@ -186,18 +186,18 @@ export default function Navbar() {
           >
             <span className="relative block h-4 w-4">
               <span
-                className={`absolute left-1/2 top-0 h-[2px] w-4 -translate-x-1/2 bg-black transition-all duration-300 ${
-                  mobileMenuOpen ? "top-[7px] rotate-45" : ""
+                className={`absolute left-1/2 top-1/2 h-[2px] w-4 -translate-x-1/2 -translate-y-1/2 bg-black transition-all duration-300 ${
+                  mobileMenuOpen ? "rotate-45" : "-translate-y-[6px]"
                 }`}
               />
               <span
-                className={`absolute left-1/2 top-[7px] h-[2px] w-4 -translate-x-1/2 bg-black transition-all duration-300 ${
-                  mobileMenuOpen ? "opacity-0" : "opacity-100"
+                className={`absolute left-1/2 top-1/2 h-[2px] w-4 -translate-x-1/2 -translate-y-1/2 bg-black transition-all duration-300 ${
+                  mobileMenuOpen ? "opacity-0" : ""
                 }`}
               />
               <span
-                className={`absolute left-1/2 top-[14px] h-[2px] w-4 -translate-x-1/2 bg-black transition-all duration-300 ${
-                  mobileMenuOpen ? "top-[7px] -rotate-45" : ""
+                className={`absolute left-1/2 top-1/2 h-[2px] w-4 -translate-x-1/2 -translate-y-1/2 bg-black transition-all duration-300 ${
+                  mobileMenuOpen ? "-rotate-45" : "translate-y-[6px]"
                 }`}
               />
             </span>
@@ -206,17 +206,10 @@ export default function Navbar() {
 
         <div className="flex justify-end">
           <Link
-            className="btn-primary hidden lg:inline-flex"
+            className="btn-primary hidden px-3 py-2 text-sm lg:inline-flex lg:px-5 lg:py-2"
             href="/contacto"
           >
             Empezar proyecto
-          </Link>
-
-          <Link
-            className="btn-primary-mobile inline-flex lg:hidden"
-            href="/contacto"
-          >
-            Empezar
           </Link>
         </div>
       </div>
@@ -226,7 +219,7 @@ export default function Navbar() {
           mobileMenuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl flex-col px-4 py-4 sm:px-6 md:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col px-6 py-4 md:px-8">
           <button
             type="button"
             onClick={toggleMobileBusiness}
@@ -250,11 +243,11 @@ export default function Navbar() {
             }`}
           >
             <div className="overflow-hidden">
-              <div className="mb-2 ml-2 flex flex-col rounded-2xl bg-[#f8f8f8] p-2">
+              <div className="mb-2 ml-2 flex flex-col rounded-[28px] bg-[#f3f3f3] p-5">
                 <Link
                   href="/negocio/turismo"
                   onClick={closeMobileMenu}
-                  className="rounded-xl px-4 py-3 text-sm transition-colors hover:bg-white"
+                  className="rounded-xl px-4 py-4 text-sm transition-colors hover:bg-white"
                 >
                   Hostelería y turismo
                 </Link>
@@ -262,7 +255,7 @@ export default function Navbar() {
                 <Link
                   href="/negocio/salud"
                   onClick={closeMobileMenu}
-                  className="rounded-xl px-4 py-3 text-sm transition-colors hover:bg-white"
+                  className="rounded-xl px-4 py-4 text-sm transition-colors hover:bg-white"
                 >
                   Salud y bienestar
                 </Link>
@@ -270,7 +263,7 @@ export default function Navbar() {
                 <Link
                   href="/negocio/marca"
                   onClick={closeMobileMenu}
-                  className="rounded-xl px-4 py-3 text-sm transition-colors hover:bg-white"
+                  className="rounded-xl px-4 py-4 text-sm transition-colors hover:bg-white"
                 >
                   Marca personal
                 </Link>
