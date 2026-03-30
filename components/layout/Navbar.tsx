@@ -83,7 +83,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 md:px-8">
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_1fr_auto] items-center px-6 py-4 md:px-8">
         <Link href="/" className="shrink-0" onClick={closeMobileMenu}>
           <Image
             src="/logo.svg"
@@ -180,12 +180,11 @@ export default function Navbar() {
             Empezar proyecto
           </Link>
 
+          <div className="flex justify-center lg:hidden">
           <button
             type="button"
             onClick={toggleMobileMenu}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 transition-colors hover:bg-[#f5f5f5] lg:hidden"
-            aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
-            aria-expanded={mobileMenuOpen}
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 transition-colors hover:bg-[#f5f5f5]"
           >
             <span className="relative block h-4 w-5">
               <span
@@ -205,6 +204,7 @@ export default function Navbar() {
               />
             </span>
           </button>
+        </div>
         </div>
       </div>
 
