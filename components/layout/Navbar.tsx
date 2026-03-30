@@ -83,7 +83,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
-      <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_1fr_auto] items-center px-6 py-4 md:px-8">
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-3 px-4 py-3 sm:px-6 md:px-8">
         <Link href="/" className="shrink-0" onClick={closeMobileMenu}>
           <Image
             src="/logo.svg"
@@ -91,6 +91,7 @@ export default function Navbar() {
             width={150}
             height={40}
             priority
+            className="h-auto w-[120px] sm:w-[135px] md:w-[150px]"
           />
         </Link>
 
@@ -179,23 +180,23 @@ export default function Navbar() {
           <button
             type="button"
             onClick={toggleMobileMenu}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 transition-colors hover:bg-[#f5f5f5] lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 transition-colors hover:bg-[#f5f5f5] lg:hidden"
             aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={mobileMenuOpen}
           >
-            <span className="relative block h-4 w-5">
+            <span className="relative block h-4 w-4">
               <span
-                className={`absolute left-0 top-0 h-[2px] w-5 bg-black transition-all duration-300 ${
+                className={`absolute left-1/2 top-0 h-[2px] w-4 -translate-x-1/2 bg-black transition-all duration-300 ${
                   mobileMenuOpen ? "top-[7px] rotate-45" : ""
                 }`}
               />
               <span
-                className={`absolute left-0 top-[7px] h-[2px] w-5 bg-black transition-all duration-300 ${
+                className={`absolute left-1/2 top-[7px] h-[2px] w-4 -translate-x-1/2 bg-black transition-all duration-300 ${
                   mobileMenuOpen ? "opacity-0" : "opacity-100"
                 }`}
               />
               <span
-                className={`absolute left-0 top-[14px] h-[2px] w-5 bg-black transition-all duration-300 ${
+                className={`absolute left-1/2 top-[14px] h-[2px] w-4 -translate-x-1/2 bg-black transition-all duration-300 ${
                   mobileMenuOpen ? "top-[7px] -rotate-45" : ""
                 }`}
               />
@@ -204,8 +205,18 @@ export default function Navbar() {
         </div>
 
         <div className="flex justify-end">
-          <Link className="btn-primary hidden lg:inline-flex" href="/contacto">
+          <Link
+            className="btn-primary hidden lg:inline-flex"
+            href="/contacto"
+          >
             Empezar proyecto
+          </Link>
+
+          <Link
+            className="btn-primary-mobile inline-flex lg:hidden"
+            href="/contacto"
+          >
+            Empezar
           </Link>
         </div>
       </div>
@@ -215,7 +226,7 @@ export default function Navbar() {
           mobileMenuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl flex-col px-6 py-4 md:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col px-4 py-4 sm:px-6 md:px-8">
           <button
             type="button"
             onClick={toggleMobileBusiness}
