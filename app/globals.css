@@ -1,26 +1,175 @@
 @import "tailwindcss";
 
+/* =========================
+   FONTS
+========================= */
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/ClashDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/ClashDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #c6a24c;
+  --primary-hover: #b8933f;
+  --text-muted: #767676;
+  --border: #e5e7eb;
+  --radius: 8px;
 }
+
+/* =========================
+   THEME
+========================= */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* =========================
+   BASE
+========================= */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+.hero-title {
+  @apply text-4xl leading-[1.05] font-bold sm:text-5xl lg:text-7xl;
+  font-family: "ClashDisplay", sans-serif;
+  text-wrap: balance;
+}
+
+.section-title {
+  @apply text-3xl leading-tight font-bold sm:text-4xl lg:text-5xl;
+  font-family: "ClashDisplay", sans-serif;
+  text-wrap: balance;
+}
+
+.card-title {
+  @apply text-base leading-snug;
+  font-family: "ClashDisplay", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  @apply text-xs uppercase tracking-[0.2em];
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.text-body {
+  @apply text-base leading-7 md:text-lg;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.text-small {
+  @apply text-sm leading-6;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section-grey {
+  background-color: #e1e1e1;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  justify-content: center;
+}
+
+.section-black {
+  background-color: #000000;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+  background-color: var(--primary);
+  @apply inline-block w-fit rounded px-5 py-2 text-white transition-colors duration-300;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-black {
+  background-color: #000000;
+  @apply inline-block w-fit rounded px-5 py-2 text-white transition-colors duration-300;
+}
+
+.btn-black:hover {
+  background-color: #111111;
+}
+
+.btn-secondary {
+  border: 1px solid var(--border);
+  @apply rounded px-5 py-2 transition-colors duration-300;
+}
+
+.btn-secondary:hover {
+  background-color: #f9fafb;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  @apply bg-white p-6;
 }
