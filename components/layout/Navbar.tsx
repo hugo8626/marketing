@@ -1,12 +1,19 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileBusinessOpen, setMobileBusinessOpen] = useState(false);
+
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  /* ========================================
+     DESKTOP DROPDOWN
+  ======================================== */
 
   function handleOpen(): void {
     if (timeoutRef.current) {
@@ -22,10 +29,62 @@ export default function Navbar() {
     }, 180);
   }
 
+  /* ========================================
+     MOBILE MENU
+  ======================================== */
+
+  function toggleMobileMenu(): void {
+    setMobileMenuOpen((prev) => {
+      const nextValue = !prev;
+
+      if (!nextValue) {
+        setMobileBusinessOpen(false);
+      }
+
+      return nextValue;
+    });
+  }
+
+  function closeMobileMenu(): void {
+    setMobileMenuOpen(false);
+    setMobileBusinessOpen(false);
+  }
+
+  function toggleMobileBusiness(): void {
+    setMobileBusinessOpen((prev) => !prev);
+  }
+
+  /* ========================================
+     BODY LOCK
+  ======================================== */
+
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+      return;
+    }
+
+    document.body.style.overflow = "";
+  }, [mobileMenuOpen]);
+
+  /* ========================================
+     CLEANUP
+  ======================================== */
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-6 py-4 md:px-8">
-        <Link href="/" className="shrink-0">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 md:px-8">
+        <Link href="/" className="shrink-0" onClick={closeMobileMenu}>
           <Image
             src="/logo.svg"
             alt="FITIX DIGITAL"
@@ -116,9 +175,140 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <Link className="btn-primary hidden lg:inline-flex" href="/contacto">
-          Empezar proyecto
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link className="btn-primary hidden lg:inline-flex" href="/contacto">
+            Empezar proyecto
+          </Link>
+
+          <button
+            type="button"
+            onClick={toggleMobileMenu}
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 transition-colors hover:bg-[#f5f5f5] lg:hidden"
+            aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={mobileMenuOpen}
+          >
+            <span className="relative block h-4 w-5">
+              <span
+                className={`absolute left-0 top-0 h-[2px] w-5 bg-black transition-all duration-300 ${
+                  mobileMenuOpen ? "top-[7px] rotate-45" : ""
+                }`}
+              />
+              <span
+                className={`absolute left-0 top-[7px] h-[2px] w-5 bg-black transition-all duration-300 ${
+                  mobileMenuOpen ? "opacity-0" : "opacity-100"
+                }`}
+              />
+              <span
+                className={`absolute left-0 top-[14px] h-[2px] w-5 bg-black transition-all duration-300 ${
+                  mobileMenuOpen ? "top-[7px] -rotate-45" : ""
+                }`}
+              />
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div
+        className={`overflow-hidden border-t border-black/5 bg-white transition-all duration-300 lg:hidden ${
+          mobileMenuOpen
+            ? "max-h-[600px] opacity-100"
+            : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="mx-auto flex max-w-7xl flex-col px-6 py-4 md:px-8">
+          <button
+            type="button"
+            onClick={toggleMobileBusiness}
+            className="flex items-center justify-between rounded-xl px-1 py-4 text-left text-base font-medium"
+          >
+            <span>Tipo de negocio</span>
+            <span
+              className={`text-sm transition-transform duration-300 ${
+                mobileBusinessOpen ? "rotate-180" : ""
+              }`}
+            >
+              ▾
+            </span>
+          </button>
+
+          <div
+            className={`grid transition-all duration-300 ${
+              mobileBusinessOpen
+                ? "grid-rows-[1fr] pb-3 opacity-100"
+                : "grid-rows-[0fr] opacity-0"
+            }`}
+          >
+            <div className="overflow-hidden">
+              <div className="mb-2 ml-2 flex flex-col rounded-2xl bg-[#f8f8f8] p-2">
+                <Link
+                  href="/negocio/turismo"
+                  onClick={closeMobileMenu}
+                  className="rounded-xl px-4 py-3 text-sm transition-colors hover:bg-white"
+                >
+                  Hostelería y turismo
+                </Link>
+
+                <Link
+                  href="/negocio/salud"
+                  onClick={closeMobileMenu}
+                  className="rounded-xl px-4 py-3 text-sm transition-colors hover:bg-white"
+                >
+                  Salud y bienestar
+                </Link>
+
+                <Link
+                  href="/negocio/marca"
+                  onClick={closeMobileMenu}
+                  className="rounded-xl px-4 py-3 text-sm transition-colors hover:bg-white"
+                >
+                  Marca personal
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <Link
+            href="/servicios"
+            onClick={closeMobileMenu}
+            className="rounded-xl px-1 py-4 text-base font-medium transition-opacity hover:opacity-70"
+          >
+            Servicios
+          </Link>
+
+          <Link
+            href="/portfolio"
+            onClick={closeMobileMenu}
+            className="rounded-xl px-1 py-4 text-base font-medium transition-opacity hover:opacity-70"
+          >
+            Portfolio
+          </Link>
+
+          <Link
+            href="/nosotros"
+            onClick={closeMobileMenu}
+            className="rounded-xl px-1 py-4 text-base font-medium transition-opacity hover:opacity-70"
+          >
+            Sobre nosotros
+          </Link>
+
+          <Link
+            href="/contacto"
+            onClick={closeMobileMenu}
+            className="rounded-xl px-1 py-4 text-base font-medium transition-opacity hover:opacity-70"
+          >
+            Contacto
+          </Link>
+
+          <div className="pt-4">
+            <Link
+              href="/contacto"
+              onClick={closeMobileMenu}
+              className="btn-primary inline-flex w-full justify-center"
+            >
+              Empezar proyecto
+            </Link>
+          </div>
+        </div>
       </div>
     </nav>
   );
