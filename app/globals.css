@@ -57,12 +57,25 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
 /* =========================
@@ -119,18 +132,22 @@ body {
 
 .section-grey {
   background-color: #e1e1e1;
+  position: relative;
+  left: 50%;
+  right: 50%;
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  display: flex;
-  justify-content: center;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .section-black {
   background-color: #000000;
+  position: relative;
+  left: 50%;
+  right: 50%;
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  display: flex;
-  justify-content: center;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 /* =========================

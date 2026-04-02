@@ -14,7 +14,7 @@ export default function Home() {
     <main>
       {/* HERO */}
       <section className="px-6 py-16 md:px-10 md:py-20 lg:px-14 lg:py-24">
-        <div className="mx-auto grid gap-10 lg:grid-cols-[70%_30%] lg:items-start xl:gap-14">
+        <div className="mx-auto grid max-w-[1200px] gap-10 lg:grid-cols-[minmax(0,650px)_minmax(0,420px)] lg:items-start lg:justify-between xl:gap-14">
           {/* HERO LEFT */}
           <div className="flex flex-col gap-7">
             {/* HERO HEADER */}
@@ -516,7 +516,7 @@ export default function Home() {
       </section>
 
       {/* COMPARISON */}
-      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+      <section className="section-grey px-4 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col items-center gap-4 text-center">
             <p className="eyebrow">Comparativa</p>
@@ -531,7 +531,82 @@ export default function Home() {
             </p>
           </header>
 
-          <div className="overflow-x-auto py-4">
+          {/* MOBILE */}
+          <div className="grid gap-4 md:hidden">
+            <article className="rounded-[8px] border border-[var(--border)] bg-white p-5">
+              <p className="eyebrow mb-4">Plantillas</p>
+              <ul className="flex flex-col gap-4 text-sm">
+                <li className="border-b border-gray-200 pb-4">
+                  <span className="block font-medium text-black">Diseño</span>
+                  <span className="text-muted">✕ Diseños poco personalizados</span>
+                </li>
+                <li className="border-b border-gray-200 pb-4">
+                  <span className="block font-medium text-black">Integración</span>
+                  <span className="text-muted">
+                    ✕ Depende de múltiples herramientas
+                  </span>
+                </li>
+                <li className="border-b border-gray-200 pb-4">
+                  <span className="block font-medium text-black">Velocidad</span>
+                  <span className="text-muted">
+                    ✕ Puede volverse lenta con el tiempo
+                  </span>
+                </li>
+                <li className="border-b border-gray-200 pb-4">
+                  <span className="block font-medium text-black">Escalabilidad</span>
+                  <span className="text-muted">✕ Limitada para crecer</span>
+                </li>
+                <li>
+                  <span className="block font-medium text-black">SEO</span>
+                  <span className="text-muted">✕ SEO básico</span>
+                </li>
+              </ul>
+            </article>
+
+            <article className="rounded-[8px] border border-[var(--border)] bg-white p-5">
+              <p className="eyebrow mb-4 text-black">A medida</p>
+              <ul className="flex flex-col gap-4 text-sm">
+                <li className="border-b border-gray-200 pb-4">
+                  <span className="block font-medium text-black">Diseño</span>
+                  <span>
+                    <span className="mr-2 text-[var(--primary)]">✓</span>
+                    Diseño adaptado a tu negocio
+                  </span>
+                </li>
+                <li className="border-b border-gray-200 pb-4">
+                  <span className="block font-medium text-black">Integración</span>
+                  <span>
+                    <span className="mr-2 text-[var(--primary)]">✓</span>
+                    Todo funciona de forma integrada
+                  </span>
+                </li>
+                <li className="border-b border-gray-200 pb-4">
+                  <span className="block font-medium text-black">Velocidad</span>
+                  <span>
+                    <span className="mr-2 text-[var(--primary)]">✓</span>
+                    Rápida desde el inicio
+                  </span>
+                </li>
+                <li className="border-b border-gray-200 pb-4">
+                  <span className="block font-medium text-black">Escalabilidad</span>
+                  <span>
+                    <span className="mr-2 text-[var(--primary)]">✓</span>
+                    Preparada para crecer contigo
+                  </span>
+                </li>
+                <li>
+                  <span className="block font-medium text-black">SEO</span>
+                  <span>
+                    <span className="mr-2 text-[var(--primary)]">✓</span>
+                    Optimizada para posicionar
+                  </span>
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          {/* DESKTOP/TABLET */}
+          <div className="hidden overflow-x-auto py-4 md:block">
             <div className="mx-auto min-w-[720px] max-w-5xl">
               <div className="grid grid-cols-3 border-b border-gray-200 pb-4">
                 <div />
@@ -593,7 +668,7 @@ export default function Home() {
       </section>
 
       {/* PROJECTS */}
-      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+      <section className="px-4 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col items-center gap-4 text-center">
             <p className="eyebrow">Proyectos</p>
@@ -619,7 +694,7 @@ export default function Home() {
                   alt="Taverna de la Sal"
                   width={700}
                   height={420}
-                  className="h-[280px] w-full rounded-[12px] object-cover sm:h-[340px]"
+                  className="h-[220px] w-full rounded-[12px] object-cover sm:h-[280px] md:h-[340px]"
                 />
                 <div className="flex flex-col gap-1">
                   <p className="eyebrow">HOTEL BOUTIQUE & RESTAURANTE</p>
@@ -641,7 +716,7 @@ export default function Home() {
                   alt="Bon Toc"
                   width={700}
                   height={420}
-                  className="h-[280px] w-full rounded-[12px] object-cover sm:h-[340px]"
+                  className="h-[220px] w-full rounded-[12px] object-cover sm:h-[280px] md:h-[340px]"
                 />
                 <div className="flex flex-col gap-1">
                   <p className="eyebrow">E-COMMERCE</p>
@@ -806,4 +881,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  )}
+  );
+}
