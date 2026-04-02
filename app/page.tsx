@@ -2,7 +2,8 @@
 //
 // PAGE: HOME
 //
-// Home principal responsive con jerarquía correcta de headings.
+// Home principal del sitio.
+// Versión limpia y responsive manteniendo el hero actual en desktop.
 
 import Link from "next/link";
 import Image from "next/image";
@@ -12,255 +13,343 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
-      <section className="grid gap-12 lg:grid-cols-2 lg:items-center">
-        <div className="flex flex-col gap-4">
-          <div className="mb-5 flex flex-col gap-8">
-            <h1 className="hero-title">
-              Tu web debería ayudarte a conseguir clientes,{" "}
-              <span className="text-[var(--primary)]">
-                no solo verse bonita
-              </span>
-            </h1>
+      <section className="px-6 py-16 md:px-10 md:py-20 lg:px-14 lg:py-24">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[70%_30%] lg:items-start xl:gap-14">
+          {/* HERO LEFT */}
+          <div className="flex flex-col gap-7">
+            {/* HERO HEADER */}
+            <header className="flex flex-col gap-6">
+              <h1 className="hero-title max-w-[23ch]">
+                Tu web debería ayudarte a conseguir clientes,{" "}
+                <span className="text-[var(--primary)]">
+                  no solo verse bonita
+                </span>
+              </h1>
 
-            <p className="max-w-lg text-body">
-              Ayudamos a negocios de turismo, salud y marca personal en Girona
-              a conseguir resultados reales con un diseño web estratégico.
-            </p>
-          </div>
+              <p className="text-body max-w-[35ch]">
+                Ayudamos a negocios de turismo, salud y marca personal en Girona
+                a conseguir resultados reales con un diseño web estratégico.
+              </p>
+            </header>
 
-          <ul className="mb-6 flex  gap-1 text-sm sm:flex-row sm:flex-wrap">
-            <li className="flex items-center gap-2 bg-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-5 w-5 shrink-0 text-[var(--primary)]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5"
-                />
-              </svg>
-              Más reservas directas
-            </li>
+            {/* HERO BENEFITS DESKTOP */}
+            <ul className="hidden items-center gap-4 text-[13px] leading-none xl:flex">
+              <li className="flex items-center gap-2 whitespace-nowrap">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="h-4 w-4 shrink-0 text-[var(--primary)]"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5"
+                  />
+                </svg>
+                <span>Más reservas directas</span>
+              </li>
 
-            <li className="flex items-center gap-2 bg-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-5 w-5 shrink-0 text-[var(--primary)]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
-                />
-              </svg>
-              Más citas y confianza
-            </li>
+              <li className="flex items-center gap-2 whitespace-nowrap">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="h-4 w-4 shrink-0 text-[var(--primary)]"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                  />
+                </svg>
+                <span>Más citas y confianza</span>
+              </li>
 
-            <li className="flex items-center gap-2 bg-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-5 w-5 shrink-0 text-[var(--primary)]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
-                />
-              </svg>
-              Más oportunidades de negocio
-            </li>
-          </ul>
+              <li className="flex items-center gap-2 whitespace-nowrap">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="h-4 w-4 shrink-0 text-[var(--primary)]"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+                  />
+                </svg>
+                <span>Más oportunidades de negocio</span>
+              </li>
+            </ul>
 
-          <div>
-            <Link className="btn-black mb-2 text-sm" href="/contacto">
-              QUIERO EMPEZAR MI PROYECTO →
-            </Link>
-            <p className="mb-1 mt-1 text-xs">Respuesta en menos de 24 horas</p>
-          </div>
+            {/* HERO BENEFITS MOBILE/TABLET */}
+            <ul className="flex flex-wrap gap-x-5 gap-y-2 text-[13px] leading-none xl:hidden">
+              <li className="flex items-center gap-2">
+                <span className="text-[var(--primary)]">✦</span>
+                <span>Más reservas directas</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-[var(--primary)]">✦</span>
+                <span>Más citas y confianza</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-[var(--primary)]">✦</span>
+                <span>Más oportunidades de negocio</span>
+              </li>
+            </ul>
 
-          <section>
-            <h2 className="sr-only">Tipos de negocio</h2>
-            <p className="text-body mb-3">¿Qué tipo de negocio tienes?</p>
-
-            <div className="mb-4 grid gap-3 md:grid-cols-3">
-              <article className="card">
-                <h3 className="card-title">Tengo un negocio turístico</h3>
-                <p className="text-xs text-[var(--text-muted)]">
-                  Quiero más reservas directas (sin pagar comisiones)
-                </p>
-              </article>
-
-              <article className="card">
-                <h3 className="card-title">
-                  Tengo un negocio de salud o bienestar
-                </h3>
-                <p className="text-xs text-[var(--text-muted)]">
-                  Quiero más pacientes y transmitir confianza
-                </p>
-              </article>
-
-              <article className="card">
-                <h3 className="card-title">Tengo una marca personal</h3>
-                <p className="text-small">
-                  Quiero más oportunidades de negocio
-                </p>
-              </article>
+            {/* HERO CTA */}
+            <div className="flex flex-col items-start gap-2">
+              <Link className="btn-black text-sm" href="/contacto">
+                QUIERO EMPEZAR MI PROYECTO →
+              </Link>
+              <p className="text-xs">Respuesta en menos de 24 horas</p>
             </div>
 
-            <p className="text-body">
-              Cada sector necesita una estrategia diferente
-            </p>
-          </section>
-        </div>
+            {/* BUSINESS TYPES */}
+            <section
+              className="flex flex-col gap-4"
+              aria-labelledby="business-types-title"
+            >
+              <h2
+                id="business-types-title"
+                className="eyebrow text-left text-[11px] text-[var(--text-muted)]"
+              >
+                ¿QUÉ TIPO DE NEGOCIO TIENES?
+              </h2>
 
-        <div className="relative flex flex-col items-center gap-4 pt-4 text-center lg:mt-20">
-          <video
-            className="w-full max-w-xl rounded shadow-lg"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src="/video.mp4" type="video/mp4" />
-            
-          </video>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                <Link href="/restauracion" className="group block h-full">
+                  <article className="h-full min-h-[170px] rounded-[8px] border border-[var(--border)] bg-white px-6 py-6 transition-colors duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#faf7ef]">
+                    <h3 className="mb-3 font-['ClashDisplay'] text-[17px] leading-[1.35] font-semibold text-black">
+                      Tengo un negocio turístico
+                    </h3>
 
-          <Image
-            src="/hero.jpeg"
-            alt="Preview web"
-            width={450}
-            height={300}
-            className="relative w-full max-w-[280px] rounded border-3 border-black shadow-lg sm:max-w-[340px] lg:absolute lg:right-16 lg:top-66 lg:max-w-[450px]"
-          />
+                    <p className="font-['Inter'] text-[15px] leading-7 text-[var(--text-muted)]">
+                      Quiero más reservas directas (sin pagar comisiones)
+                    </p>
+                  </article>
+                </Link>
 
-          <p className="text-muted relative max-w-md text-sm lg:mt-36">
-            Ayudamos a negocios de hospitalidad y salud en Girona a conseguir
-            resultados reales con un diseño web estratégico.
-          </p>
+                <Link href="/salud" className="group block h-full">
+                  <article className="h-full min-h-[170px] rounded-[8px] border border-[var(--border)] bg-white px-6 py-6 transition-colors duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#faf7ef]">
+                    <h3 className="mb-3 font-['ClashDisplay'] text-[17px] leading-[1.35] font-semibold text-black">
+                      Tengo un negocio de salud o bienestar
+                    </h3>
+
+                    <p className="font-['Inter'] text-[15px] leading-7 text-[var(--text-muted)]">
+                      Quiero más pacientes y transmitir confianza
+                    </p>
+                  </article>
+                </Link>
+
+                <Link href="/marca-personal" className="group block h-full">
+                  <article className="h-full min-h-[170px] rounded-[8px] border border-[var(--border)] bg-white px-6 py-6 transition-colors duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#faf7ef]">
+                    <h3 className="mb-3 font-['ClashDisplay'] text-[17px] leading-[1.35] font-semibold text-black">
+                      Tengo una marca personal
+                    </h3>
+
+                    <p className="font-['Inter'] text-[15px] leading-7 text-[var(--text-muted)]">
+                      Quiero más oportunidades de negocio
+                    </p>
+                  </article>
+                </Link>
+              </div>
+
+              <p className="text-body">
+                Cada sector necesita una estrategia diferente.
+              </p>
+            </section>
+          </div>
+
+          {/* HERO RIGHT */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="w-full max-w-[500px]">
+              <div className="relative h-[320px] sm:h-[380px] lg:h-[520px]">
+                {/* TOP IMAGE */}
+                <div className="absolute top-0 left-0 z-10 w-[78%] overflow-hidden rounded-[12px] bg-white shadow-lg sm:w-[82%] lg:w-[440px]">
+                  <video
+                    className="block aspect-[16/9] w-full object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src="/video.mp4" type="video/mp4" />
+                  </video>
+                </div>
+
+                {/* BOTTOM IMAGE */}
+                <div className="absolute top-[44%] left-[8%] z-20 w-[68%] overflow-hidden rounded-[12px] border border-[#ececec] bg-white shadow-lg sm:left-[10%] sm:w-[72%] lg:top-[238px] lg:left-[36px] lg:w-[370px]">
+                  <Image
+                    src="/hero.jpeg"
+                    alt="Preview web"
+                    width={470}
+                    height={310}
+                    className="block h-auto w-full object-cover"
+                    priority
+                  />
+                </div>
+
+                {/* DECORATIVE BOX */}
+                <div
+                  aria-hidden="true"
+                  className="absolute left-[-10px] top-[76%] z-0 h-[56px] w-[56px] border border-[var(--primary)]/40 sm:h-[68px] sm:w-[68px] lg:left-[-18px] lg:top-[400px] lg:h-[84px] lg:w-[84px]"
+                />
+              </div>
+
+              {/* MESSAGE BELOW MEDIA */}
+              <p className="text-small mt-3 max-w-[300px] italic">
+                Ayudamos a negocios de hospitalidad y salud en Girona a conseguir
+                resultados reales con un diseño web estratégico.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* BLOQUE MENSAJE */}
-      <section className="flex min-h-[260px] items-center justify-center py-20 text-center md:min-h-[380px] md:py-32">
-        <h2 className="section-title">
-          Tener una web no significa
-          <span className="block text-[var(--primary)]">
-            que esté funcionando
-          </span>
-        </h2>
+      {/* MESSAGE BLOCK */}
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
+          <h2 className="section-title">
+            Tener una web no significa
+            <span className="block text-[var(--primary)]">
+              que esté funcionando
+            </span>
+          </h2>
+        </div>
       </section>
 
-      {/* PROBLEMA */}
-      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-30">
-        <div className="mx-auto grid max-w-7xl gap-9 lg:grid-cols-2">
-          <div>
-            <p className="eyebrow mb-4">Lo que pasa en la mayoría de webs:</p>
+      {/* PROBLEM */}
+      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-start">
+          <header className="flex flex-col gap-4">
+            <p className="eyebrow">Lo que pasa en la mayoría de webs</p>
 
-            <h2 className="section-title">
+            <h2 className="section-title max-w-2xl">
               Muchos negocios tienen web…
-              <span className="mb-3 block">pero no les genera clientes.</span>
+              <span className="block">pero no les genera clientes.</span>
             </h2>
 
-            <p className="text-small">
+            <p className="text-small max-w-xl">
               El problema no es tener web, es cómo está pensada para tu negocio
               y su capacidad de generar resultados.
             </p>
-          </div>
+          </header>
 
-          <div>
-            <ul className="flex flex-col gap-3 py-3 md:py-7">
-              <li className="bg-white p-3">
-                <span className="mr-2">✔</span>
-                No transmite claramente lo que haces
-              </li>
-              <li className="bg-white p-3">
-                <span className="mr-2">✔</span>
-                No genera confianza en segundos
-              </li>
-              <li className="bg-white p-3">
-                <span className="mr-2">✔</span>
-                No está pensada para convertir visitas en clientes
-              </li>
-              <li className="bg-white p-3">
-                <span className="mr-2">✔</span>
-                No facilita que el cliente te contacte
-              </li>
-            </ul>
-          </div>
+          <ul className="flex flex-col gap-3">
+            <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+                X
+              </span>
+              <span>No transmite claramente lo que haces</span>
+            </li>
+
+            <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+                X
+              </span>
+              <span>No genera confianza en segundos</span>
+            </li>
+
+            <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+                X
+              </span>
+              <span>No está pensada para convertir visitas en clientes</span>
+            </li>
+
+            <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+                X
+              </span>
+              <span>No facilita que el cliente te contacte</span>
+            </li>
+          </ul>
         </div>
       </section>
 
-      {/* SOLUCIÓN */}
-      <section className="py-16 md:py-24 lg:py-30">
-        <div className="grid grid-row gap-10 lg:grid-cols-2 lg:items-center">
-          <ul className="py-2 md:py-6">
-            <li className="p-3">
-              <span className="mr-2 inline-block h-8 w-8 rounded-full bg-[#f9f5ed] p-1 text-center text-[var(--primary)]">
-                ✔
-              </span>
-              Estructura clara y pensada para guiar al usuario
-            </li>
-            <li className="p-3">
-              <span className="mr-2 inline-block h-8 w-8 rounded-full bg-[#f9f5ed] p-1 text-center text-[var(--primary)]">
-                ✔
-              </span>
-              Mensaje directo que transmite lo que haces
-            </li>
-            <li className="p-3">
-              <span className="mr-2 inline-block h-8 w-8 rounded-full bg-[#f9f5ed] p-1 text-center text-[var(--primary)]">
-                ✔
-              </span>
-              Diseño profesional que genera confianza
-            </li>
-            <li className="p-3">
-              <span className="mr-2 inline-block h-8 w-8 rounded-full bg-[#f9f5ed] p-1 text-center text-[var(--primary)]">
-                ✔
-              </span>
-              Enfoque en facilitar el contacto
-            </li>
-          </ul>
+      {/* SOLUTION */}
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
+          <header className="order-2 flex flex-col gap-4 lg:order-2">
+            <p className="eyebrow">La solución</p>
 
-          <div className="max-w-lg">
-            <p className="eyebrow mb-3">La solución</p>
-
-            <h2 className="section-title mb-5">
+            <h2 className="section-title max-w-xl">
               Creamos webs pensadas para convertir
             </h2>
 
-            <p className="text-small">
+            <p className="text-small max-w-lg">
               Cada decisión está enfocada en una cosa: que tu web comunique
               mejor, genere confianza y facilite oportunidades reales de
               negocio.
             </p>
-          </div>
+          </header>
+
+          <ul className="order-1 flex flex-col gap-3 lg:order-1">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
+              <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
+                ✔
+              </span>
+              <span className="text-small text-black">
+                Estructura clara y pensada para guiar al usuario
+              </span>
+            </li>
+
+            <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
+              <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
+                ✔
+              </span>
+              <span className="text-small text-black">
+                Mensaje directo que transmite lo que haces
+              </span>
+            </li>
+
+            <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
+              <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
+                ✔
+              </span>
+              <span className="text-small text-black">
+                Diseño profesional que genera confianza
+              </span>
+            </li>
+
+            <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
+              <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
+                ✔
+              </span>
+              <span className="text-small text-black">
+                Enfoque en facilitar el contacto
+              </span>
+            </li>
+          </ul>
         </div>
       </section>
 
-      {/* PROCESO */}
-      <section className="py-16 md:py-24 lg:py-30">
-        <div className="flex flex-col gap-3">
-          <p className="eyebrow">Cómo trabajamos</p>
+      {/* PROCESS */}
+      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          <header className="mb-10 flex flex-col gap-4">
+            <p className="eyebrow">Cómo trabajamos</p>
 
-          <h2 className="section-title mb-8 max-w-4xl">
-            Un proceso simple, claro y pensado para que tu web funcione desde el
-            primer día.
-          </h2>
+            <h2 className="section-title max-w-4xl">
+              Un proceso simple, claro y pensado para que tu web funcione desde
+              el primer día.
+            </h2>
+          </header>
 
           <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
-            <article>
+            <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">01</p>
               <h3 className="card-title">Entendemos tu negocio</h3>
               <p className="text-small">
@@ -269,7 +358,7 @@ export default function Home() {
               </p>
             </article>
 
-            <article>
+            <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">02</p>
               <h3 className="card-title">Definimos la estructura</h3>
               <p className="text-small">
@@ -278,7 +367,7 @@ export default function Home() {
               </p>
             </article>
 
-            <article>
+            <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">03</p>
               <h3 className="card-title">Diseñamos y desarrollamos</h3>
               <p className="text-small">
@@ -286,7 +375,7 @@ export default function Home() {
               </p>
             </article>
 
-            <article>
+            <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">04</p>
               <h3 className="card-title">Lanzamos y optimizamos</h3>
               <p className="text-small">
@@ -297,25 +386,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SERVICIOS */}
-      <section className="section-grey py-16 md:py-24 lg:py-30">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-8 md:mb-12">
+      {/* SERVICES */}
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          <header className="mb-10 flex flex-col gap-4">
             <p className="eyebrow">Servicios</p>
-            <h2 className="section-title mb-2">
+            <h2 className="section-title max-w-4xl">
               Servicios diseñados para generar resultados
             </h2>
             <p className="text-body max-w-3xl">
               No todos los negocios están en el mismo punto. Por eso cada
               servicio responde a una necesidad diferente.
             </p>
-          </div>
+          </header>
 
           <div className="mb-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <Link href="/servicios#onePage" className="group card block">
-              <article className="h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
+            <Link href="/servicios#onePage" className="group block h-full">
+              <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
                 <h3 className="card-title">Empieza con una web que funcione</h3>
-                <p className="text-small mb-3 italic">
+                <p className="mb-3 text-small italic">
                   Ideal si estás empezando o quieres validar tu negocio online
                 </p>
                 <p className="text-body">
@@ -328,10 +417,10 @@ export default function Home() {
               </article>
             </Link>
 
-            <Link href="/servicios#webFull" className="group card block">
-              <article className="h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
+            <Link href="/servicios#webFull" className="group block h-full">
+              <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
                 <h3 className="card-title">Escala tu negocio online</h3>
-                <p className="text-small mb-3 italic">
+                <p className="mb-3 text-small italic">
                   Ideal si quieres crecer y convertir tu web en tu principal
                   canal de captación
                 </p>
@@ -345,10 +434,10 @@ export default function Home() {
               </article>
             </Link>
 
-            <Link href="/servicios#landing" className="group card block">
-              <article className="h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
+            <Link href="/servicios#landing" className="group block h-full">
+              <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
                 <h3 className="card-title">Convierte visitas en clientes</h3>
-                <p className="text-small mb-3 italic">
+                <p className="mb-3 text-small italic">
                   Ideal si estás invirtiendo en publicidad o campañas
                 </p>
                 <p className="text-body">
@@ -360,12 +449,12 @@ export default function Home() {
               </article>
             </Link>
 
-            <Link href="/servicios#socials" className="group card block">
-              <article className="h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
+            <Link href="/servicios#socials" className="group block h-full">
+              <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
                 <h3 className="card-title">
                   Gana visibilidad en redes de forma constante
                 </h3>
-                <p className="text-small mb-3 italic">
+                <p className="mb-3 text-small italic">
                   Ideal si quieres atraer clientes y mantener presencia activa
                 </p>
                 <p className="text-body">
@@ -378,12 +467,12 @@ export default function Home() {
               </article>
             </Link>
 
-            <Link href="/servicios#fotografia" className="group card block">
-              <article className="h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
+            <Link href="/servicios#fotografia" className="group block h-full">
+              <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
                 <h3 className="card-title">
                   Haz que tu negocio transmita confianza
                 </h3>
-                <p className="text-small mb-3 italic">
+                <p className="mb-3 text-small italic">
                   Ideal si necesitas mejorar tu imagen profesional
                 </p>
                 <p className="text-body">
@@ -396,10 +485,10 @@ export default function Home() {
               </article>
             </Link>
 
-            <Link href="/servicios#optimizacion" className="group card block">
-              <article className="h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
+            <Link href="/servicios#optimizacion" className="group block h-full">
+              <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
                 <h3 className="card-title">Mejora lo que ya tienes</h3>
-                <p className="text-small mb-3 italic">
+                <p className="mb-3 text-small italic">
                   Ideal si tu web no está dando resultados
                 </p>
                 <p className="text-body">
@@ -426,26 +515,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* COMPARATIVA */}
-      <section className="py-16 md:py-24 lg:py-30">
-        <div className="mb-10 flex flex-col items-center gap-4 text-center">
-          <p className="eyebrow">Comparativa</p>
-          <h2 className="section-title">
-            No todas las webs se construyen de la misma
-            <span className="block text-center">manera.</span>
-          </h2>
-          <p className="text-body max-w-5xl">
-            Existen diferentes formas de crear una web. Nosotros trabajamos con
-            desarrollo a medida porque nos permite adaptar cada detalle a tu
-            negocio, y no al revés.
-          </p>
-        </div>
+      {/* COMPARISON */}
+      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          <header className="mb-10 flex flex-col items-center gap-4 text-center">
+            <p className="eyebrow">Comparativa</p>
+            <h2 className="section-title max-w-4xl">
+              No todas las webs se construyen de la misma
+              <span className="block">manera.</span>
+            </h2>
+            <p className="text-body max-w-5xl">
+              Existen diferentes formas de crear una web. Nosotros trabajamos
+              con desarrollo a medida porque nos permite adaptar cada detalle a
+              tu negocio, y no al revés.
+            </p>
+          </header>
 
-        <div className="py-10 md:py-20">
-          <div className="mx-auto max-w-5xl overflow-x-auto">
-            <div className="min-w-[720px]">
+          <div className="overflow-x-auto py-4">
+            <div className="mx-auto min-w-[720px] max-w-5xl">
               <div className="grid grid-cols-3 border-b border-gray-200 pb-4">
-                <div></div>
+                <div />
                 <div className="text-center eyebrow">PLANTILLAS</div>
                 <div className="text-center eyebrow text-black">A MEDIDA</div>
               </div>
@@ -461,7 +550,9 @@ export default function Home() {
 
               <div className="grid grid-cols-3 items-center border-b border-gray-200 py-6">
                 <p>Integración</p>
-                <p className="text-muted">✕ Depende de múltiples herramientas</p>
+                <p className="text-muted">
+                  ✕ Depende de múltiples herramientas
+                </p>
                 <p>
                   <span className="mr-2 text-[var(--primary)]">✓</span>
                   Todo funciona de forma integrada
@@ -470,7 +561,9 @@ export default function Home() {
 
               <div className="grid grid-cols-3 items-center border-b border-gray-200 py-6">
                 <p>Velocidad</p>
-                <p className="text-muted">✕ Puede volverse lenta con el tiempo</p>
+                <p className="text-muted">
+                  ✕ Puede volverse lenta con el tiempo
+                </p>
                 <p>
                   <span className="mr-2 text-[var(--primary)]">✓</span>
                   Rápida desde el inicio
@@ -499,20 +592,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROYECTOS */}
-      <section>
-        <div className="mb-10 flex flex-col items-center gap-3 text-center">
-          <p className="eyebrow">Proyectos</p>
-          <h2 className="section-title">
-            Proyectos reales. Resultados que se notan.
-          </h2>
-          <p className="text-body max-w-4xl">
-            Cada proyecto está pensado para que tu negocio se vea mejor online y
-            convierta visitas en oportunidades de negocio.
-          </p>
-        </div>
+      {/* PROJECTS */}
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          <header className="mb-10 flex flex-col items-center gap-4 text-center">
+            <p className="eyebrow">Proyectos</p>
+            <h2 className="section-title">
+              Proyectos reales. Resultados que se notan.
+            </h2>
+            <p className="text-body max-w-4xl">
+              Cada proyecto está pensado para que tu negocio se vea mejor online
+              y convierta visitas en oportunidades de negocio.
+            </p>
+          </header>
 
-        <div className="py-12 md:py-20">
           <div className="grid gap-8 md:grid-cols-2">
             <Link
               href="https://tavernadelasal.com"
@@ -520,17 +613,19 @@ export default function Home() {
               rel="noopener noreferrer"
               className="group block"
             >
-              <article>
+              <article className="flex h-full flex-col gap-4">
                 <Image
                   src="/sal.png"
                   alt="Taverna de la Sal"
                   width={700}
                   height={420}
-                  className="w-full rounded object-cover"
+                  className="h-[280px] w-full rounded-[12px] object-cover sm:h-[340px]"
                 />
-                <p className="eyebrow mt-4">HOTEL BOUTIQUE & RESTAURANTE</p>
-                <h3 className="card-title">Taverna de la Sal</h3>
-                <p className="text-small">Más reservas directas</p>
+                <div className="flex flex-col gap-1">
+                  <p className="eyebrow">HOTEL BOUTIQUE & RESTAURANTE</p>
+                  <h3 className="card-title">Taverna de la Sal</h3>
+                  <p className="text-small">Más reservas directas</p>
+                </div>
               </article>
             </Link>
 
@@ -540,30 +635,32 @@ export default function Home() {
               rel="noopener noreferrer"
               className="group block"
             >
-              <article>
+              <article className="flex h-full flex-col gap-4">
                 <Image
                   src="/bon.png"
                   alt="Bon Toc"
                   width={700}
                   height={420}
-                  className="h-72 w-full rounded object-cover md:h-90"
+                  className="h-[280px] w-full rounded-[12px] object-cover sm:h-[340px]"
                 />
-                <p className="eyebrow mt-4">E-COMMERCE</p>
-                <h3 className="card-title">Bon Toc</h3>
-                <p className="text-small">Mejor conversión online</p>
+                <div className="flex flex-col gap-1">
+                  <p className="eyebrow">E-COMMERCE</p>
+                  <h3 className="card-title">Bon Toc</h3>
+                  <p className="text-small">Mejor conversión online</p>
+                </div>
               </article>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 md:py-24 lg:py-30">
-        <div className="flex flex-col items-center justify-center gap-6 px-4 text-center">
+      {/* CTA MESSAGE */}
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6 text-center">
           <h2 className="section-title max-w-4xl">
             La diferencia no está en tener web,
-            <span className="block text-center">sino en cómo está planteada.</span>
-            <span className="block text-center text-[var(--primary)]">
+            <span className="block">sino en cómo está planteada.</span>
+            <span className="block text-[var(--primary)]">
               Creamos webs que ayudan a tu negocio a crecer.
             </span>
           </h2>
@@ -573,43 +670,50 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRECIO */}
-      <section className="flex flex-col items-center justify-center gap-6 px-4 py-16 text-center md:py-24 lg:py-30">
-        <h2 className="section-title max-w-lg">
-          Empieza con una One Page desde{" "}
-          <strong className="text-[var(--primary)]">400€</strong>
-        </h2>
-        <p className="text-body">
-          Una web clara, rápida y pensada para empezar a generar clientes.
-        </p>
-        <Link href="/contacto" className="btn-black">
-          QUIERO MI WEB →
-        </Link>
+      {/* PRICE */}
+      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-6 text-center">
+          <h2 className="section-title max-w-lg">
+            Empieza con una One Page desde{" "}
+            <strong className="text-[var(--primary)]">400€</strong>
+          </h2>
+          <p className="text-body">
+            Una web clara, rápida y pensada para empezar a generar clientes.
+          </p>
+          <Link href="/contacto" className="btn-black">
+            QUIERO MI WEB →
+          </Link>
+        </div>
       </section>
 
-      {/* SOBRE NOSOTROS */}
-      <section className="py-18 md:py-24 lg:py-20">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
-          <div>
-            <p className="eyebrow mb-4">SOBRE NOSOTROS</p>
+      {/* ABOUT US */}
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
+          <header className="flex flex-col gap-5">
+            <p className="eyebrow">SOBRE NOSOTROS</p>
 
-            <h2 className="section-title mb-6">
+            <h2 className="section-title max-w-2xl">
               No hacemos solo webs bonitas.
               <span className="block">Hacemos webs que funcionan.</span>
             </h2>
 
-            <p className="text-small mb-6 max-w-lg">
+            <p className="text-small max-w-lg">
               Entendemos cómo funciona un negocio y creamos webs pensadas para
               conseguir resultados y atraer clientes.
             </p>
 
-            <Link href="/sobre-nosotros" className="inline-block border-b border-black pb-1">
-              Conocer más →
-            </Link>
-          </div>
+            <div>
+              <Link
+                href="/sobre-nosotros"
+                className="inline-block border-b border-black pb-1"
+              >
+                Conocer más →
+              </Link>
+            </div>
+          </header>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="bg-[#f9f5ed] p-6">
+            <article className="rounded-[8px] bg-[#f9f5ed] p-6">
               <h3 className="mb-4 font-semibold">Somos</h3>
 
               <ul className="flex flex-col gap-3 text-sm">
@@ -630,9 +734,9 @@ export default function Home() {
                   Especializados en turismo, salud y marca personal
                 </li>
               </ul>
-            </div>
+            </article>
 
-            <div className="bg-black p-6 text-white">
+            <article className="rounded-[8px] bg-black p-6 text-white">
               <h3 className="mb-4 font-semibold">No somos</h3>
 
               <ul className="flex flex-col gap-3 text-sm">
@@ -649,16 +753,17 @@ export default function Home() {
                   Proyectos sin seguimiento
                 </li>
               </ul>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
+      {/* FAQ */}
       <FaqSection />
 
       {/* DISCLAIMER */}
-      <section>
-        <div className="flex flex-col items-center px-4 py-16 text-center md:py-24 lg:py-30">
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
           <h2 className="section-title mb-4">
             Una web es una herramienta, no un milagro
           </h2>
@@ -674,8 +779,8 @@ export default function Home() {
       </section>
 
       {/* BLACK CTA */}
-      <section className="section-black px-6 py-16 md:py-24 lg:py-30">
-        <div className="text-center">
+      <section className="section-black px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto max-w-5xl text-center">
           <h2 className="section-title mb-2 text-white">
             Tu web no es solo una web.
             <span className="block text-[var(--primary)]">
@@ -689,15 +794,16 @@ export default function Home() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-16 md:py-24 lg:py-30">
-        <div className="flex flex-col items-center gap-3 text-center">
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto flex max-w-4xl flex-col items-center gap-3 text-center">
           <h2 className="section-title">¿Listo para empezar?</h2>
-          <p className="text-body">Tu próximo cliente está a un clic de distancia.</p>
+          <p className="text-body">
+            Tu próximo cliente está a un clic de distancia.
+          </p>
           <Link className="btn-primary" href="/contacto">
             Empezar proyecto
           </Link>
         </div>
       </section>
     </main>
-  );
-}
+  )}
