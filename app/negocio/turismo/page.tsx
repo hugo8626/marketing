@@ -4,7 +4,7 @@
  * PAGE: NEGOCIO TURISMO
  *
  * Página de captación para negocios turísticos.
- * Mantiene el texto original del usuario y mejora
+ * Mantiene el enfoque del contenido original y mejora
  * estructura, semántica y responsive.
  */
 
@@ -13,9 +13,10 @@ import Link from "next/link";
 
 export default function NegocioTurismoPage() {
   return (
-    <>
+    <main>
+      {/* HERO */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,460px)] lg:items-center lg:gap-16">
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-6">
               <p className="eyebrow">
@@ -39,31 +40,31 @@ export default function NegocioTurismoPage() {
             </header>
 
             <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
-              <li className="rounded-[8px] bg-white p-4 text-sm">
-                <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
+              <li className="flex items-center gap-3 rounded-[8px] bg-white p-4 text-sm">
+                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
                   ✔
                 </span>
-                Aumenta tus reservas directas (sin intermediarios)
+                <span>Aumenta tus reservas directas (sin intermediarios)</span>
               </li>
 
-              <li className="rounded-[8px] bg-white p-4 text-sm">
-                <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
+              <li className="flex items-center gap-3 rounded-[8px] bg-white p-4 text-sm">
+                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
                   ✔
                 </span>
-                Reduce la dependencia de Booking y Airbnb
+                <span>Reduce la dependencia de Booking y Airbnb</span>
               </li>
 
-              <li className="rounded-[8px] bg-white p-4 text-sm">
-                <span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
+              <li className="flex items-center gap-3 rounded-[8px] bg-white p-4 text-sm">
+                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
                   ✔
                 </span>
-                Mejora la experiencia de tus clientes
+                <span>Mejora la experiencia de tus clientes</span>
               </li>
             </ul>
 
             <div className="flex flex-col items-start gap-2">
               <Link className="btn-black text-sm" href="/contacto">
-                QUIERO MAS RESERVAS DIRECTAS →
+                QUIERO MÁS RESERVAS DIRECTAS →
               </Link>
               <p className="text-xs">Respuesta en menos de 24 horas</p>
             </div>
@@ -72,7 +73,7 @@ export default function NegocioTurismoPage() {
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-xl">
               <video
-                className="w-full rounded-[12px] shadow-lg"
+                className="w-full rounded-[12px] object-cover shadow-lg"
                 autoPlay
                 muted
                 loop
@@ -83,18 +84,20 @@ export default function NegocioTurismoPage() {
 
               <Image
                 src="/hero.jpeg"
-                alt="Preview web"
+                alt="Página web para negocio turístico"
                 width={450}
                 height={300}
-                className="mt-4 w-full max-w-[240px] rounded-[12px] border-2 border-black shadow-lg sm:max-w-[300px] lg:absolute lg:-bottom-14 lg:right-8 lg:mt-0 lg:max-w-[360px]"
+                className="mt-4 w-full max-w-[240px] rounded-[12px] border-2 border-black object-cover shadow-lg sm:max-w-[300px] lg:absolute lg:-bottom-14 lg:right-8 lg:mt-0 lg:max-w-[360px]"
+                priority
               />
             </div>
           </div>
         </div>
       </section>
 
+      {/* PROBLEMA */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-start">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-start lg:gap-14">
           <header className="flex flex-col gap-4">
             <p className="eyebrow">El problema</p>
 
@@ -110,53 +113,53 @@ export default function NegocioTurismoPage() {
           </header>
 
           <ul className="flex flex-col gap-3">
-            <li className="rounded-[8px] bg-white p-4">
-              <span className="mr-3 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+            <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              Dependencia de plataformas como Booking y Airbnb
+              <span>Dependencia de plataformas como Booking y Airbnb</span>
             </li>
 
-            <li className="rounded-[8px] bg-white p-4">
-              <span className="mr-3 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+            <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              Pierdes dinero en comisiones en cada reserva
+              <span>Pierdes dinero en comisiones en cada reserva</span>
             </li>
 
-            <li className="rounded-[8px] bg-white p-4">
-              <span className="mr-3 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+            <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              Tu web no convierte visitas en reservas
+              <span>Tu web no convierte visitas en reservas</span>
             </li>
 
-            <li className="rounded-[8px] bg-white p-4">
-              <span className="mr-3 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+            <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              No transmite la experiencia real de tu negocio
+              <span>No transmite la experiencia real de tu negocio</span>
             </li>
 
-            <li className="rounded-[8px] bg-white p-4">
-              <span className="mr-3 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+            <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              Reservar es complicado y el cliente se va
+              <span>Reservar es complicado y el cliente se va</span>
             </li>
           </ul>
         </div>
       </section>
 
+      {/* SOLUCIÓN */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
           <div className="order-2 flex flex-col gap-4 lg:order-2">
             <p className="eyebrow">La solución</p>
 
             <h2 className="section-title max-w-xl">
               Una web pensada
-              <br />
-              para generar reservas reales
+              <span className="block">para generar reservas reales</span>
             </h2>
 
             <p className="text-body max-w-lg">
@@ -214,8 +217,9 @@ export default function NegocioTurismoPage() {
         </div>
       </section>
 
+      {/* DIFERENCIA */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
           <div className="flex flex-col gap-5">
             <p className="eyebrow">Por qué somos diferentes</p>
 
@@ -238,14 +242,15 @@ export default function NegocioTurismoPage() {
             </blockquote>
           </div>
 
-          <div />
+          <div className="hidden lg:block" />
         </div>
       </section>
 
+      {/* COMPARATIVA */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col items-center text-center">
-            <p className="eyebrow">comparativa</p>
+            <p className="eyebrow">Comparativa</p>
             <h2 className="section-title max-w-4xl">
               La diferencia entre tener una web y tener un canal de reservas
             </h2>
@@ -256,32 +261,32 @@ export default function NegocioTurismoPage() {
               <h3 className="mb-5 font-bold">Web genérica</h3>
 
               <ul className="flex flex-col gap-4">
-                <li className="rounded-[8px] bg-[#F5F5F5] p-4">
-                  <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
                     X
                   </span>
-                  Web genérica
+                  <span>Web genérica</span>
                 </li>
 
-                <li className="rounded-[8px] bg-[#F5F5F5] p-4">
-                  <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
                     X
                   </span>
-                  Plantillas
+                  <span>Plantillas</span>
                 </li>
 
-                <li className="rounded-[8px] bg-[#F5F5F5] p-4">
-                  <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
                     X
                   </span>
-                  Dependencia de plataformas
+                  <span>Dependencia de plataformas</span>
                 </li>
 
-                <li className="rounded-[8px] bg-[#F5F5F5] p-4">
-                  <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
                     X
                   </span>
-                  Baja conversión
+                  <span>Baja conversión</span>
                 </li>
               </ul>
             </article>
@@ -290,32 +295,32 @@ export default function NegocioTurismoPage() {
               <h3 className="mb-5 font-bold">FITYX DIGITAL</h3>
 
               <ul className="flex flex-col gap-4">
-                <li className="rounded-[8px] bg-[#F5F5F5] p-4">
-                  <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  Web estratégica FITYX DIGITAL
+                  <span>Web estratégica FITYX DIGITAL</span>
                 </li>
 
-                <li className="rounded-[8px] bg-[#F5F5F5] p-4">
-                  <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  Diseño a medida
+                  <span>Diseño a medida</span>
                 </li>
 
-                <li className="rounded-[8px] bg-[#F5F5F5] p-4">
-                  <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  Reservas directas
+                  <span>Reservas directas</span>
                 </li>
 
-                <li className="rounded-[8px] bg-[#F5F5F5] p-4">
-                  <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  Optimizada para negocio real
+                  <span>Optimizada para negocio real</span>
                 </li>
               </ul>
             </article>
@@ -323,6 +328,7 @@ export default function NegocioTurismoPage() {
         </div>
       </section>
 
+      {/* RESULTADOS */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col items-center text-center">
@@ -331,43 +337,45 @@ export default function NegocioTurismoPage() {
           </header>
 
           <ul className="mx-auto grid max-w-5xl gap-4 md:grid-cols-2">
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Más reservas directas sin comisiones
+              <span>Más reservas directas sin comisiones</span>
             </li>
 
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Más margen por cliente
+              <span>Más margen por cliente</span>
             </li>
 
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Mejor percepción de calidad
+              <span>Mejor percepción de calidad</span>
             </li>
 
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Diferenciación frente a competencia
+              <span>Diferenciación frente a la competencia</span>
             </li>
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4 md:col-span-2">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Mejor percepción de calidad
+              <span>Más visibilidad y mejor conversión desde tu web</span>
             </li>
           </ul>
         </div>
       </section>
 
+      {/* QUÉ INCLUYE */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col items-center gap-4 text-center">
@@ -376,51 +384,52 @@ export default function NegocioTurismoPage() {
           </header>
 
           <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Web adaptada a tu negocio turístico
+              <span>Web adaptada a tu negocio turístico</span>
             </li>
 
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Diseño enfocado en convertir visitas en clientes
+              <span>Diseño enfocado en convertir visitas en clientes</span>
             </li>
 
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Integración con sistema de reservas
+              <span>Integración con sistema de reservas</span>
             </li>
 
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Diseño enfocado en convertir visitas en clientes
+              <span>Diseño alineado con la experiencia de tu negocio</span>
             </li>
 
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Web rápida y optimizada para todos los dispositivos
+              <span>Web rápida y optimizada para todos los dispositivos</span>
             </li>
 
-            <li className="rounded-[8px] bg-[var(--background)] p-4">
-              <span className="mr-3 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
+              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              Base SEO para atraer clientes en tu zona
+              <span>Base SEO para atraer clientes en tu zona</span>
             </li>
           </ul>
         </div>
       </section>
 
+      {/* PROCESO */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col gap-4">
@@ -470,6 +479,7 @@ export default function NegocioTurismoPage() {
         </div>
       </section>
 
+      {/* MENSAJE */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
           <h2 className="section-title max-w-4xl">
@@ -483,6 +493,7 @@ export default function NegocioTurismoPage() {
         </div>
       </section>
 
+      {/* CTA FINAL */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-6">
@@ -500,13 +511,13 @@ export default function NegocioTurismoPage() {
 
             <div className="flex flex-col items-start gap-2 pt-2">
               <Link className="btn-primary text-sm" href="/contacto">
-                QUIERO MAS RESERVAS DIRECTAS →
+                QUIERO MÁS RESERVAS DIRECTAS →
               </Link>
               <p className="text-xs">Respuesta en menos de 24 horas</p>
             </div>
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }

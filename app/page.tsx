@@ -14,9 +14,9 @@ export default function Home() {
     <main>
       {/* HERO */}
       <section className="px-6 py-16 md:px-10 md:py-20 lg:px-14 lg:py-24">
-        <div className="mx-auto grid max-w-[1200px] gap-10 lg:grid-cols-[minmax(0,650px)_minmax(0,420px)] lg:items-start lg:justify-between xl:gap-14">
+        <div className="mx-auto grid max-w-[1100px] gap-1 lg:grid-cols-[minmax(0,650px)_minmax(0,430px)] lg:items-start lg:justify-between xl:gap-14">
           {/* HERO LEFT */}
-          <div className="flex flex-col gap-7">
+          <div className="flex flex-col  gap-7">
             {/* HERO HEADER */}
             <header className="flex flex-col gap-6">
               <h1 className="hero-title max-w-[23ch]">
@@ -174,7 +174,7 @@ export default function Home() {
 
           {/* HERO RIGHT */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-[500px]">
+            <div className="w-full  max-w-[500px]">
               <div className="relative h-[320px] sm:h-[380px] lg:h-[520px]">
                 {/* TOP IMAGE */}
                 <div className="absolute top-0 left-0 z-10 w-[78%] overflow-hidden rounded-[12px] bg-white shadow-lg sm:w-[82%] lg:w-[440px]">

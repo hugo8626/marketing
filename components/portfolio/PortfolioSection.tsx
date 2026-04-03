@@ -14,9 +14,8 @@ export default function PortfolioSection() {
   return (
     <>
       {/* HERO */}
-
-      <section className="px-6 py-16 md:px-8 md:py-24 lg:px-10 lg:py-30">
-        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[60%_40%] lg:items-center">
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,420px)] lg:items-center lg:gap-16">
           <div className="flex flex-col gap-4">
             <p className="eyebrow">Proyectos</p>
 
@@ -44,7 +43,7 @@ export default function PortfolioSection() {
               alt="Vista previa de un proyecto web desarrollado para negocio real"
               width={520}
               height={360}
-              className="h-auto w-full max-w-md rounded bg-black p-3 object-cover"
+              className="h-auto w-full max-w-md rounded-[8px] bg-black p-3 object-cover"
               priority
             />
           </div>
@@ -52,8 +51,7 @@ export default function PortfolioSection() {
       </section>
 
       {/* CÓMO TRABAJAMOS */}
-
-      <section className="px-6 py-16 md:px-8 md:py-24 lg:px-10 lg:py-30">
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-7xl flex-col gap-6">
           <p className="eyebrow">Cómo trabajamos</p>
 
@@ -65,7 +63,7 @@ export default function PortfolioSection() {
             conseguir resultados.
           </p>
 
-          <blockquote className="max-w-3xl border-l-4 border-[var(--primary)] p-4 text-xl font-extrabold leading-snug">
+          <blockquote className="max-w-3xl border-l-4 border-[var(--primary)] pl-4 text-xl font-extrabold leading-snug">
             Cada proyecto empieza con una pregunta: ¿Qué está impidiendo que
             este negocio funcione mejor online?
           </blockquote>
@@ -73,9 +71,8 @@ export default function PortfolioSection() {
       </section>
 
       {/* EL PROBLEMA */}
-
-      <section className="px-6 py-16 md:px-8 md:py-24 lg:px-10 lg:py-30">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[45%_55%] lg:items-center">
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:items-start lg:gap-14">
           <div className="flex flex-col gap-3">
             <p className="eyebrow">El problema</p>
 
@@ -125,10 +122,9 @@ export default function PortfolioSection() {
       </section>
 
       {/* LA SOLUCIÓN */}
-
-      <section className="section-grey px-6 py-16 md:px-8 md:py-24 lg:px-10 lg:py-30">
-        <div className="mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
-          <ul className="flex flex-col gap-3">
+      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
+          <ul className="order-2 flex flex-col gap-3 lg:order-1">
             <li className="card flex items-start gap-3">
               <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] leading-none">
                 ✔
@@ -166,7 +162,7 @@ export default function PortfolioSection() {
             </li>
           </ul>
 
-          <div className="flex flex-col gap-3">
+          <div className="order-1 flex flex-col gap-3 lg:order-2">
             <p className="eyebrow">La solución</p>
 
             <h2 className="section-title max-w-xl">
@@ -183,9 +179,8 @@ export default function PortfolioSection() {
       </section>
 
       {/* RESULTADOS */}
-
-      <section className="px-6 py-16 md:px-8 md:py-24 lg:px-10 lg:py-30">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[45%_55%] lg:items-center">
+      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:items-start lg:gap-14">
           <div className="flex flex-col gap-3">
             <p className="eyebrow">Resultados</p>
 
@@ -242,11 +237,10 @@ export default function PortfolioSection() {
       </section>
 
       {/* PROYECTOS */}
-
-      <section className="section-grey px-6 py-16 md:px-8 md:py-24 lg:px-10 lg:py-30">
+      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto w-full max-w-7xl">
-          <div className="mb-10">
-            <h2 className="section-title mb-3">Proyectos seleccionados</h2>
+          <div className="mb-10 flex flex-col gap-3">
+            <h2 className="section-title">Proyectos seleccionados</h2>
 
             <p className="text-body max-w-3xl">
               Cada uno con un enfoque diferente, pero con el mismo objetivo:
@@ -259,8 +253,7 @@ export default function PortfolioSection() {
       </section>
 
       {/* CTA FINAL */}
-
-      <section className="px-6 py-16 text-center md:px-8 md:py-24 lg:px-10 lg:py-30">
+      <section className="px-6 py-16 text-center md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-7">
           <h2 className="section-title max-w-4xl">
             Tu negocio puede ser el siguiente caso bien hecho.
