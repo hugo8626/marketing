@@ -1,7 +1,19 @@
+// FILE: app/layout.tsx
+//
+// LAYOUT GLOBAL
+//
+// - Navbar + Footer globales
+// - Contenido centrado solo en <main>
+// - Preparado para escalar
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
+/* FONTS */
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,10 +25,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+/* METADATA */
+
 export const metadata: Metadata = {
   title: "Fityx Digital",
   description: "Web estratégica para negocios",
 };
+
+/* LAYOUT */
 
 export default function RootLayout({
   children,
@@ -28,16 +44,20 @@ export default function RootLayout({
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen flex flex-col">
 
-        {/* CONTENEDOR GLOBAL */}
-        <div className="max-w-7xl mx-auto px-6 w-full">
+        {/* NAVBAR GLOBAL */}
+        <Navbar />
 
-          <Navbar />
+        {/* CONTENIDO */}
+        <main className="flex-1">
+          <div className="mx-auto w-full max-w-7xl px-6">
+            {children}
+          </div>
+        </main>
 
-          <main>{children}</main>
-
-        </div>
+        {/* FOOTER GLOBAL */}
+        <Footer />
 
       </body>
     </html>

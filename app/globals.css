@@ -190,3 +190,15 @@ svg {
   border-radius: var(--radius);
   @apply bg-white p-6;
 }
+
+
+/* FOOTER LINKS */
+.footer-link {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--foreground);
+}

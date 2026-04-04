@@ -25,7 +25,7 @@ export default function ServiciosSection() {
 
         {/* SERVICES GRID */}
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-          <Link href="/servicios#onePage" className="group block h-full">
+          <Link href="/servicios/one-page" className="group block h-full">
             <article className="flex h-full min-h-[230px] flex-col items-center rounded-[8px] border border-transparent bg-[#F5F5F5] p-6 text-center transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg md:p-8">
               <h2 className="card-title">One Page</h2>
 
@@ -41,7 +41,7 @@ export default function ServiciosSection() {
             </article>
           </Link>
 
-          <Link href="/servicios#webFull" className="group block h-full">
+          <Link href="/servicios/web-completa" className="group block h-full">
             <article className="flex h-full min-h-[230px] flex-col items-center rounded-[8px] border border-transparent bg-[#F5F5F5] p-6 text-center transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg md:p-8">
               <h2 className="card-title">Web completa</h2>
 
@@ -57,7 +57,7 @@ export default function ServiciosSection() {
             </article>
           </Link>
 
-          <Link href="/servicios#landing" className="group block h-full">
+          <Link href="/servicios/landing-page" className="group block h-full">
             <article className="flex h-full min-h-[230px] flex-col items-center rounded-[8px] border border-transparent bg-[#F5F5F5] p-6 text-center transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg md:p-8">
               <h2 className="card-title">Landing page</h2>
 
@@ -72,7 +72,10 @@ export default function ServiciosSection() {
             </article>
           </Link>
 
-          <Link href="/servicios#socials" className="group block h-full">
+          <Link
+            href="/servicios/gestion-contenidos"
+            className="group block h-full"
+          >
             <article className="flex h-full min-h-[230px] flex-col items-center rounded-[8px] border border-transparent bg-[#F5F5F5] p-6 text-center transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg md:p-8">
               <h2 className="card-title">Gestión de contenidos</h2>
 
@@ -87,7 +90,7 @@ export default function ServiciosSection() {
             </article>
           </Link>
 
-          <Link href="/servicios#fotografia" className="group block h-full">
+          <Link href="/servicios/fotografia" className="group block h-full">
             <article className="flex h-full min-h-[230px] flex-col items-center rounded-[8px] border border-transparent bg-[#F5F5F5] p-6 text-center transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg md:p-8">
               <h2 className="card-title">Fotografía</h2>
 
@@ -103,7 +106,10 @@ export default function ServiciosSection() {
             </article>
           </Link>
 
-          <Link href="/servicios#optimizacion" className="group block h-full">
+          <Link
+            href="/servicios/optimizacion-web"
+            className="group block h-full"
+          >
             <article className="flex h-full min-h-[230px] flex-col items-center rounded-[8px] border border-transparent bg-[#F5F5F5] p-6 text-center transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg md:p-8">
               <h2 className="card-title">Optimización web</h2>
 
