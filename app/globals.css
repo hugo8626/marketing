@@ -39,7 +39,7 @@
   --primary-hover: #b8933f;
   --text-muted: #767676;
   --border: #e5e7eb;
-  --radius: 8px;
+  --radius: 10px;
 }
 
 /* =========================
@@ -65,9 +65,14 @@ body {
   color: var(--foreground);
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -83,40 +88,45 @@ svg {
 ========================= */
 
 .hero-title {
-  @apply text-4xl leading-[1.05] font-bold sm:text-5xl lg:text-7xl;
+  @apply text-[2.2rem] font-bold leading-[1.05] sm:text-[2.4rem] lg:text-[2.6rem];
   font-family: "ClashDisplay", sans-serif;
   text-wrap: balance;
 }
 
 .section-title {
-  @apply text-3xl leading-tight font-bold sm:text-4xl lg:text-5xl;
+  @apply text-[1.75rem] font-bold leading-[1.1] sm:text-[2rem] lg:text-[2.3rem];
   font-family: "ClashDisplay", sans-serif;
   text-wrap: balance;
 }
 
+/* 🔽 AJUSTADO PARA CARDS (más fino) */
 .card-title {
-  @apply text-base leading-snug;
+  @apply text-[0.98rem] leading-snug sm:text-[1rem] lg:text-[1.05rem];
   font-family: "ClashDisplay", sans-serif;
   font-weight: 600;
+  text-wrap: balance;
   margin-bottom: 1rem;
 }
 
 .eyebrow {
-  @apply text-xs uppercase tracking-[0.2em];
+  @apply text-[0.75rem] font-semibold uppercase;
   font-family: "Inter", sans-serif;
-  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
   color: var(--primary);
 }
 
+/* 🔽 AJUSTADO */
 .text-body {
-  @apply text-base leading-7 md:text-lg;
+  @apply text-[0.93rem] leading-7 sm:text-[0.96rem];
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: var(--text-muted);
 }
 
+/* 🔽 AJUSTADO */
 .text-small {
-  @apply text-sm leading-6;
+  @apply text-[0.82rem] leading-6 sm:text-[0.85rem];
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: var(--text-muted);
@@ -131,23 +141,23 @@ svg {
 ========================= */
 
 .section-grey {
-  background-color: #e1e1e1;
   position: relative;
   left: 50%;
   right: 50%;
   width: 100vw;
   margin-left: -50vw;
   margin-right: -50vw;
+  background-color: #e1e1e1;
 }
 
 .section-black {
-  background-color: #000000;
   position: relative;
   left: 50%;
   right: 50%;
   width: 100vw;
   margin-left: -50vw;
   margin-right: -50vw;
+  background-color: #000000;
 }
 
 /* =========================
@@ -155,8 +165,8 @@ svg {
 ========================= */
 
 .btn-primary {
+  @apply inline-flex w-fit items-center justify-center rounded-[var(--radius)] px-5 py-2 text-white transition-colors duration-300;
   background-color: var(--primary);
-  @apply inline-block w-fit rounded px-5 py-2 text-white transition-colors duration-300;
 }
 
 .btn-primary:hover {
@@ -164,8 +174,8 @@ svg {
 }
 
 .btn-black {
+  @apply inline-flex w-fit items-center justify-center rounded-[var(--radius)] px-5 py-2 text-white transition-colors duration-300;
   background-color: #000000;
-  @apply inline-block w-fit rounded px-5 py-2 text-white transition-colors duration-300;
 }
 
 .btn-black:hover {
@@ -173,8 +183,8 @@ svg {
 }
 
 .btn-secondary {
+  @apply inline-flex w-fit items-center justify-center rounded-[var(--radius)] px-5 py-2 transition-colors duration-300;
   border: 1px solid var(--border);
-  @apply rounded px-5 py-2 transition-colors duration-300;
 }
 
 .btn-secondary:hover {
@@ -186,19 +196,7 @@ svg {
 ========================= */
 
 .card {
+  @apply bg-white p-6;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  @apply bg-white p-6;
-}
-
-
-/* FOOTER LINKS */
-.footer-link {
-  color: var(--text-muted);
-  font-size: 0.875rem;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: var(--foreground);
 }

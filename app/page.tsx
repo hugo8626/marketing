@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex flex-col  gap-7">
             {/* HERO HEADER */}
             <header className="flex flex-col gap-6">
-              <h1 className="hero-title max-w-[23ch]">
+              <h1 className="hero-title  max-w-[23ch]">
                 Tu web debería ayudarte a conseguir clientes,{" "}
                 <span className="text-[var(--primary)]">
                   no solo verse bonita
