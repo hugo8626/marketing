@@ -74,7 +74,7 @@ export default function NegocioSaludPage() {
                 alt="Consulta médica"
                 width={560}
                 height={400}
-                className="w-full rounded-[12px] object-cover shadow-lg"
+                className="w-full rounded-[12px] bg-black/40 p-1 object-cover shadow-lg"
                 priority
               />
             </div>

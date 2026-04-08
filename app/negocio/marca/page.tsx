@@ -69,16 +69,18 @@ export default function NegocioMarcaPage() {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
-            <Image
-              src="/marca.jpeg"
-              alt="Página web para marca personal"
-              width={450}
-              height={300}
-              className="h-auto w-full max-w-[260px] rounded-[12px] border-2 border-black object-cover shadow-lg sm:max-w-[320px] lg:max-w-[380px]"
-              priority
-            />
-          </div>
+        <div className="relative flex justify-center lg:justify-end">
+                    <div className="relative w-full max-w-xl">
+                      <Image
+                        src="/risa.jpeg"
+                        alt="Consulta médica"
+                        width={560}
+                        height={400}
+                        className="w-full rounded-[12px] bg-black/40 p-1 object-cover shadow-lg"
+                        priority
+                      />
+                    </div>
+                  </div>
         </div>
       </section>
 

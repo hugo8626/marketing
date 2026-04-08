@@ -58,11 +58,11 @@ export default function OptimizacionWebContent() {
 
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/servicios/optimizacion-web-hero.jpg"
+              src="/optimaweb.jpeg"
               alt="Persona revisando métricas y rendimiento de una web"
               width={640}
               height={440}
-              className="h-auto w-full max-w-[520px] rounded-[12px] object-cover shadow-lg"
+              className="h-auto w-full max-w-[520px] rounded-[12px] bg-black/40 p-1 object-cover shadow-lg"
               priority
             />
           </div>

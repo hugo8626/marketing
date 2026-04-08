@@ -39,11 +39,11 @@ export default function PortfolioSection() {
 
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/hero.jpeg"
+              src="/marketing.jpeg"
               alt="Vista previa de un proyecto web desarrollado para negocio real"
               width={520}
               height={360}
-              className="h-auto w-full max-w-md rounded-[8px] bg-black p-3 object-cover"
+              className="h-auto w-full max-w-md rounded-[8px] bg-black p-1 object-cover"
               priority
             />
           </div>

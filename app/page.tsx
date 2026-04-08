@@ -193,10 +193,10 @@ export default function Home() {
                 <div className="absolute top-[44%] left-[8%] z-20 w-[68%] overflow-hidden rounded-[12px] border border-[#ececec] bg-white shadow-lg sm:left-[10%] sm:w-[72%] lg:top-[238px] lg:left-[36px] lg:w-[370px]">
                   <Image
                     src="/hero.jpeg"
-                    alt="Preview web"
+                    alt="Preview web"                              
                     width={470}
                     height={310}
-                    className="block h-auto w-full object-cover"
+                    className="block  h-auto w-full object-cover"
                     priority
                   />
                 </div>

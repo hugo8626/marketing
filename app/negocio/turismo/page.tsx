@@ -4,8 +4,8 @@
  * PAGE: NEGOCIO TURISMO
  *
  * Página de captación para negocios turísticos.
- * Mantiene el enfoque del contenido original y mejora
- * estructura, semántica y responsive.
+ * Versión responsive con composición visual estable
+ * en móvil y solapado limpio en desktop.
  */
 
 import Image from "next/image";
@@ -16,7 +16,8 @@ export default function NegocioTurismoPage() {
     <main>
       {/* HERO */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,460px)] lg:items-center lg:gap-16">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(420px,560px)] lg:items-center lg:gap-16">
+          {/* HERO LEFT */}
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-6">
               <p className="eyebrow">
@@ -70,26 +71,58 @@ export default function NegocioTurismoPage() {
             </div>
           </div>
 
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-xl">
-              <video
-                className="w-full rounded-[12px] object-cover shadow-lg"
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src="/video.mp4" type="video/mp4" />
-              </video>
+          {/* HERO RIGHT */}
+          <div className="relative mx-auto w-full max-w-[560px]">
+            {/* MOBILE / TABLET */}
+            <div className="flex flex-col gap-4 lg:hidden">
+              <div className="overflow-hidden rounded-[12px] bg-black/40 p-1 shadow-lg">
+                <Image
+                  src="/hotel.jpeg"
+                  alt="Página web para hotel o alojamiento turístico"
+                  width={470}
+                  height={310}
+                  className="block h-auto w-full rounded-[10px] object-cover"
+                  priority
+                />
+              </div>
 
-              <Image
-                src="/hero.jpeg"
-                alt="Página web para negocio turístico"
-                width={450}
-                height={300}
-                className="mt-4 w-full max-w-[240px] rounded-[12px] border-2 border-black object-cover shadow-lg sm:max-w-[300px] lg:absolute lg:-bottom-14 lg:right-8 lg:mt-0 lg:max-w-[360px]"
-                priority
-              />
+              <div className="overflow-hidden rounded-[12px] bg-black/40 p-1 shadow-lg">
+                <Image
+                  src="/rest.jpeg"
+                  alt="Página web para restaurante o negocio turístico"
+                  width={470}
+                  height={310}
+                  className="block h-auto w-full rounded-[10px] object-cover"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* DESKTOP */}
+            <div className="relative hidden h-[520px] w-full lg:block">
+              {/* TOP IMAGE */}
+              <div className="absolute top-0 left-1/2 w-[500px] -translate-x-1/2 overflow-hidden rounded-[12px] bg-black/40 p-1 shadow-lg">
+                <Image
+                  src="/hotel.jpeg"
+                  alt="Página web para hotel o alojamiento turístico"
+                  width={500}
+                  height={330}
+                  className="block h-auto w-full  rounded-[10px] object-cover"
+                  priority
+                />
+              </div>
+
+              {/* BOTTOM IMAGE */}
+              <div className="absolute bottom-0 left-[88px] w-[390px] overflow-hidden rounded-[12px] bg-black/40 p-1 shadow-xl">
+                <Image
+                  src="/rest.jpeg"
+                  alt="Página web para restaurante o negocio turístico"
+                  width={390}
+                  height={255}
+                  className="block h-auto w-full rounded-[10px] object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

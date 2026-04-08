@@ -11,10 +11,6 @@ export default function Navbar() {
 
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  /* ========================================
-     DESKTOP DROPDOWN
-  ======================================== */
-
   function handleOpen(): void {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
@@ -28,10 +24,6 @@ export default function Navbar() {
       setOpen(false);
     }, 180);
   }
-
-  /* ========================================
-     MOBILE MENU
-  ======================================== */
 
   function toggleMobileMenu(): void {
     setMobileMenuOpen((prev) => {
@@ -54,22 +46,9 @@ export default function Navbar() {
     setMobileBusinessOpen((prev) => !prev);
   }
 
-  /* ========================================
-     BODY LOCK
-  ======================================== */
-
   useEffect(() => {
-    if (mobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-      return;
-    }
-
-    document.body.style.overflow = "";
+    document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
   }, [mobileMenuOpen]);
-
-  /* ========================================
-     CLEANUP
-  ======================================== */
 
   useEffect(() => {
     return () => {
@@ -82,7 +61,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+    <nav className="fixed inset-x-0 top-0 z-[9999] border-b border-black/10 bg-white shadow-sm">
       <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-3 px-4 py-3 sm:px-6 md:px-8">
         <Link href="/" className="shrink-0" onClick={closeMobileMenu}>
           <Image
@@ -104,7 +83,7 @@ export default function Navbar() {
             >
               <button
                 type="button"
-                className="flex items-center gap-2 font-medium transition-opacity hover:opacity-70"
+                className="flex items-center gap-2 font-medium text-black transition-opacity hover:opacity-70"
               >
                 Tipo de negocio
                 <span
@@ -126,21 +105,21 @@ export default function Navbar() {
                 <div className="min-w-[260px] overflow-hidden rounded-2xl border border-black/10 bg-white p-2 shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
                   <Link
                     href="/negocio/turismo"
-                    className="block rounded-xl px-4 py-3 text-sm transition-colors hover:bg-[#f5f5f5]"
+                    className="block rounded-xl px-4 py-3 text-sm text-black transition-colors hover:bg-[#f5f5f5]"
                   >
                     Hostelería y turismo
                   </Link>
 
                   <Link
                     href="/negocio/salud"
-                    className="block rounded-xl px-4 py-3 text-sm transition-colors hover:bg-[#f5f5f5]"
+                    className="block rounded-xl px-4 py-3 text-sm text-black transition-colors hover:bg-[#f5f5f5]"
                   >
                     Salud y bienestar
                   </Link>
 
                   <Link
                     href="/negocio/marca"
-                    className="block rounded-xl px-4 py-3 text-sm transition-colors hover:bg-[#f5f5f5]"
+                    className="block rounded-xl px-4 py-3 text-sm text-black transition-colors hover:bg-[#f5f5f5]"
                   >
                     Marca personal
                   </Link>
@@ -150,28 +129,28 @@ export default function Navbar() {
 
             <Link
               href="/servicios"
-              className="font-medium transition-opacity hover:opacity-70"
+              className="font-medium text-black transition-opacity hover:opacity-70"
             >
               Servicios
             </Link>
 
             <Link
               href="/portfolio"
-              className="font-medium transition-opacity hover:opacity-70"
+              className="font-medium text-black transition-opacity hover:opacity-70"
             >
               Portfolio
             </Link>
 
             <Link
               href="/nosotros"
-              className="font-medium transition-opacity hover:opacity-70"
+              className="font-medium text-black transition-opacity hover:opacity-70"
             >
               Sobre nosotros
             </Link>
 
             <Link
               href="/contacto"
-              className="font-medium transition-opacity hover:opacity-70"
+              className="font-medium text-black transition-opacity hover:opacity-70"
             >
               Contacto
             </Link>
@@ -223,7 +202,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={toggleMobileBusiness}
-            className="flex items-center justify-between rounded-xl px-1 py-4 text-left text-base font-medium"
+            className="flex items-center justify-between rounded-xl px-1 py-4 text-left text-base font-medium text-black"
           >
             <span>Tipo de negocio</span>
             <span
@@ -247,7 +226,7 @@ export default function Navbar() {
                 <Link
                   href="/negocio/turismo"
                   onClick={closeMobileMenu}
-                  className="rounded-xl px-4 py-4 text-sm transition-colors hover:bg-white"
+                  className="rounded-xl px-4 py-4 text-sm text-black transition-colors hover:bg-white"
                 >
                   Hostelería y turismo
                 </Link>
@@ -255,7 +234,7 @@ export default function Navbar() {
                 <Link
                   href="/negocio/salud"
                   onClick={closeMobileMenu}
-                  className="rounded-xl px-4 py-4 text-sm transition-colors hover:bg-white"
+                  className="rounded-xl px-4 py-4 text-sm text-black transition-colors hover:bg-white"
                 >
                   Salud y bienestar
                 </Link>
@@ -263,7 +242,7 @@ export default function Navbar() {
                 <Link
                   href="/negocio/marca"
                   onClick={closeMobileMenu}
-                  className="rounded-xl px-4 py-4 text-sm transition-colors hover:bg-white"
+                  className="rounded-xl px-4 py-4 text-sm text-black transition-colors hover:bg-white"
                 >
                   Marca personal
                 </Link>
@@ -274,7 +253,7 @@ export default function Navbar() {
           <Link
             href="/servicios"
             onClick={closeMobileMenu}
-            className="rounded-xl px-1 py-4 text-base font-medium transition-opacity hover:opacity-70"
+            className="rounded-xl px-1 py-4 text-base font-medium text-black transition-opacity hover:opacity-70"
           >
             Servicios
           </Link>
@@ -282,7 +261,7 @@ export default function Navbar() {
           <Link
             href="/portfolio"
             onClick={closeMobileMenu}
-            className="rounded-xl px-1 py-4 text-base font-medium transition-opacity hover:opacity-70"
+            className="rounded-xl px-1 py-4 text-base font-medium text-black transition-opacity hover:opacity-70"
           >
             Portfolio
           </Link>
@@ -290,7 +269,7 @@ export default function Navbar() {
           <Link
             href="/nosotros"
             onClick={closeMobileMenu}
-            className="rounded-xl px-1 py-4 text-base font-medium transition-opacity hover:opacity-70"
+            className="rounded-xl px-1 py-4 text-base font-medium text-black transition-opacity hover:opacity-70"
           >
             Sobre nosotros
           </Link>
@@ -298,7 +277,7 @@ export default function Navbar() {
           <Link
             href="/contacto"
             onClick={closeMobileMenu}
-            className="rounded-xl px-1 py-4 text-base font-medium transition-opacity hover:opacity-70"
+            className="rounded-xl px-1 py-4 text-base font-medium text-black transition-opacity hover:opacity-70"
           >
             Contacto
           </Link>

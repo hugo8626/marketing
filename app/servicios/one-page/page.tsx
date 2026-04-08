@@ -65,11 +65,11 @@ export default function OnePageHeroSection() {
           {/* HERO IMAGE */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/servicios/one-page-hero.jpg"
+              src="/plantas.jpg"
               alt="Ordenador portátil mostrando una web one page profesional"
               width={640}
               height={440}
-              className="h-auto w-full max-w-[520px] rounded-[12px] object-cover shadow-lg"
+              className="h-auto w-full max-w-[520px] rounded-[12px] bg-black/40 p-1 object-cover shadow-lg"
               priority
             />
           </div>
