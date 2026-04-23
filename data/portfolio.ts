@@ -56,53 +56,53 @@ export const portfolioProjects: PortfolioProject[] = [
 
     // CARD
     cardTitle: "Taverna de la Sal",
-    cardCategory: "Hotel boutique restaurante",
+    cardCategory: "Hotel boutique con restaurante     ",
     cardExcerpt:
-      "Mejoramos la experiencia digital para aumentar reservas y transmitir el valor real del espacio.",
+      "Mejoramos su experiencia digital para reflejar la esencia del espacio, aumentar las reservas y conectar con quienes buscan algo auténtico.",
     coverImage: "/sal.png",
 
     // HERO
     pageTitle:
-      "De una web que no transmitía a una experiencia que invita a reservar",
+      " De una One Page que se quedaba corta a una web completa pensada para generar reservas",
     pageIntro:
-      "Hotel Boutique restaurante Taverna de la Sal",
+      "Hotel boutique y restaurante en la Costa Brava (Girona)",
     websiteUrl: "https://www.tavernadelasal.com",
     websiteLabel: "www.tavernadelasal.com",
 
     // CONTEXTO
     context:
-      "Un hotel boutique y restaurante donde la experiencia y el entorno lo son todo.",
+      " Un negocio que había crecido, pero su web no acompañaba",
     pageDescription:
-      "El reto no era solo tener una web, sino reflejar esa experiencia antes de que el cliente llegue.",
+      " Taverna de la Sal es un hotel boutique con restaurante en la Costa Brava, donde la experiencia del cliente es clave. Durante años funcionaron con una One Page limitada.",
 
     // PROBLEMA
     objective:
-      "Si la web no refleja lo que el cliente vive en el lugar, pierde impacto desde el primer momento.",
+      "La estructura limitaba el crecimiento del negocio. No era solo un problema de diseño. Era un problema de estructura.",
     problemItems: [
-      "No transmitía la calidad real del espacio",
-      "No generaba confianza en los primeros segundos",
-      "No guiaba al usuario",
-      "No incentivaba la reserva",
+      "Una One Page no permitía desarrollar bien los contenidos ",
+      "No posicionaba en Google para búsquedas clave ",
+      "No transmitía la calidad real del espacio ",
+      "No guiaba al usuario hacia la reserva ",
     ],
 
     // ENFOQUE
     approachText:
-      "Replanteamos la estructura de la web para que el usuario entienda rápidamente la propuesta del lugar.",
+      "Pasamos de una One Page a una web pensada para crecer.. Rediseñamos completamente la web, pero sobre todo, replanteamos su estructura.",
     approachItems: [
-      "Simplificamos la estructura",
-      "Priorizamos lo visual",
-      "Clarificamos el mensaje",
-      "Enfocamos todo a la reserva",
+      "Creamos una web multipágina para mejorar el SEO en Girona y Costa Brava",
+      "Organizamos los contenidos para explicar mejor el negocio",
+      "Priorizamos la experiencia visual para transmitir el espacio",
+      "Diseñamos un recorrido claro enfocado en la reserva",
     ],
 
     // RESULTADO
     resultText:
-      "Ahora la web refleja la experiencia real del lugar, con una estética alineada que transmite confianza y facilita la reserva.",
+      "Una web preparada para posicionar y generar reservas Ahora la web no solo refleja la experiencia del lugar. También está preparada para atraer tráfico y convertirlo en clientes.",
     resultItems: [
-      "Imagen más profesional",
-      "Mayor confianza del usuario",
-      "Experiencia más clara",
-      "Base sólida para crecer",
+      "Mejor posicionamiento en Google ",
+      "Mayor confianza desde el primer clic",
+      "Experiencia más clara y completa",
+      "Base sólida para aumentar reservas directas ",
     ],
     finimg:"Ahora la web transmite lo que el cliente espera antes de llegar.",
     // MEDIA
@@ -132,20 +132,20 @@ export const portfolioProjects: PortfolioProject[] = [
     cardTitle: "Bon Toc",
     cardCategory: "E-COMMERCE",
     cardExcerpt:
-      "Diseñamos una experiencia clara y optimizada para comunicar el valor del producto  y facilitar la conversionen un mercado competitivo",
+      "Diseñamos una experiencia clara y optimizada para comunicar el valor del producto y facilitar la conversión en un mercado competitivo.",
     coverImage: "/bon.png",
 
     // HERO
     pageTitle:
-      "De una web que no ayudaba a decidir, a una experiencia que guía la compra.",
+      " De no tener presencia online a una web pensada para vender y guiar la compra",
     pageIntro:
-      "Ecommerce de regalos comestibles diseñado para facilitar la decisión y mejorar la conversión.",
+      "E-commerce de regalos comestibles en Girona",
     websiteUrl: "https://www.bontoc.com",
     websiteLabel: "www.bontoc.com",
 
     // CONTEXTO
     context:
-      "Una marca de regalos comestibles donde el valor está en la experiencia, no solo en el producto.",
+      "Una marca de regalos comestibles donde el valor está en la experiencia, no solo en el producto. sdopsefwejfeoqwfjopwejowejpjpwefjopjopwe",
     pageDescription:
       "",
 
@@ -161,10 +161,10 @@ export const portfolioProjects: PortfolioProject[] = [
 
     // ENFOQUE
     approachText:
-      "No diseñamos solo una web, diseñamos cómo se toma la decisión de compra",
+      "No diseñamos solo una web, diseñamos cómo se toma la decisión de compraadf eklrqwejrjqrlñjqwlñjrqwo`rtjqetgjoltjfqweljtñjqetlñtjeqwj",
     approachItems: [
       "Simplificamos el proceso de compra",
-      "Organizamos el contenido por momentos (regalos, celebraciones…)",
+      "Organizamos el contenido por momentos ",
       "Priorizamos claridad sobre saturación",
       "Eliminamos fricción en cada paso",
     ],
@@ -197,79 +197,7 @@ export const portfolioProjects: PortfolioProject[] = [
     finalTitle:
       "Si vendes un producto, no necesitas solo una web. Necesitas una experiencia que convierta.",
   },
-{
 
-    slug: "prueba",
-
-    // CARD
-    cardTitle: "pagina prueba",
-    cardCategory: "text",
-    cardExcerpt:
-      "lorem",
-    coverImage: "/bon.png",
-
-    // HERO
-    pageTitle:
-      "De una web que no ayudaba a decidir, a una experiencia que guía la compra.",
-    pageIntro:
-      "Ecommerce de regalos comestibles diseñado para facilitar la decisión y mejorar la conversión.",
-    websiteUrl: "https://www.bontoc.es",
-    websiteLabel: "www.prueba.es",
-
-    // CONTEXTO
-    context:
-      "Una marca de regalos comestibles donde el valor está en la experiencia, no solo en el producto.",
-    pageDescription:
-      "",
-
-    // PROBLEMA
-    objective:
-      "El problema no era vender cajas, era ayudar a tomar una decisión emocional.",
-    problemItems: [
-      "Demasiadas opciones sin estructura clara",
-      "Dificultad para decidir rápido",
-      "Falta de conexión emocional",
-      "Experiencia de compra poco fluida",
-    ],
-
-    // ENFOQUE
-    approachText:
-      "No diseñamos solo una web, diseñamos cómo se toma la decisión de compra",
-    approachItems: [
-      "Simplificamos el proceso de compra",
-      "Organizamos el contenido por momentos (regalos, celebraciones…)",
-      "Priorizamos claridad sobre saturación",
-      "Eliminamos fricción en cada paso",
-    ],
-
-    // RESULTADO
-    resultText:
-      "Una web pensada para facilitar la decisión de compra, con una experiencia clara, cuidada y alineada con la marca. La estética, la fotografía y el lenguaje construyen una experiencia cálida que transmite valor y mejora la conversión.",
-    resultItems: [
-      "Experiencia de compra más clara",
-      "Mayor facilidad de compra",
-      "Mejor percepción del producto",
-      "Web preparada para convertir",
-    ],
-    finimg:"Ahora la web acompaña el momento en el que alguien decide regalar.",
-    // MEDIA
-    featuredImage: "/bon.png",
-    featuredImageAlt: "page",
-    gallery: [
-      {
-        src: "/bon.png",
-        alt: "cajas",
-      },
-      {
-        src: "/sal.png",
-        alt: "regalos",
-      },
-    ],
-
-    // FINAL
-    finalTitle:
-      "Si vendes un producto, no necesitas solo una web. Necesitas una experiencia que convierta.",
-  }
 
 
 

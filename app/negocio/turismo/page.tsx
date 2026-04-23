@@ -21,51 +21,47 @@ export default function NegocioTurismoPage() {
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-6">
               <p className="eyebrow">
-                Diseño web para hoteles, restaurantes y alojamientos turísticos
-                en Girona
+                Diseño web para turismo
               </p>
 
               <h1 className="hero-title max-w-3xl">
-                Más reservas directas.{" "}
-                <span className="text-[var(--primary)]">
-                  Menos comisiones.
-                </span>
+                Consigue más reservas directas en tu web
+               
               </h1>
 
               <p className="text-body max-w-2xl">
-                Diseñamos páginas web para hoteles, restaurantes y alojamientos
-                en Girona pensadas para aumentar las reservas directas, reducir
-                la dependencia de plataformas como Booking y Airbnb y mejorar la
-                experiencia de tus clientes.
+                Diseñamos páginas web para hoteles, restaurantes y 
+                alojamientos turísticos en Girona y la Costa Brava,
+                 enfocadas en aumentar tus reservas y reducir la dependencia de plataformas como Booking o Airbnb.
               </p>
             </header>
 
-            <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
+            <ul className="grid  gap-3 sm:grid-cols-2 xl:grid-cols-1">
               <li className="flex items-center gap-3 rounded-[8px] bg-white p-4 text-sm">
                 <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
                   ✔
                 </span>
-                <span>Aumenta tus reservas directas (sin intermediarios)</span>
+                <span>Aumenta tus reservas directas sin comisiones </span>
               </li>
 
               <li className="flex items-center gap-3 rounded-[8px] bg-white p-4 text-sm">
                 <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
                   ✔
                 </span>
-                <span>Reduce la dependencia de Booking y Airbnb</span>
+                <span>Reduce la dependencia de Booking y Airbnb </span>
               </li>
 
               <li className="flex items-center gap-3 rounded-[8px] bg-white p-4 text-sm">
                 <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
                   ✔
                 </span>
-                <span>Mejora la experiencia de tus clientes</span>
+                <span>Convierte visitas en reservas reales </span>
               </li>
             </ul>
 
             <div className="flex flex-col items-start gap-2">
               <Link className="btn-black text-sm" href="/contacto">
-                QUIERO MÁS RESERVAS DIRECTAS →
+                QUIERO MÁS RESERVAS DIRECTAS
               </Link>
               <p className="text-xs">Respuesta en menos de 24 horas</p>
             </div>
@@ -136,12 +132,13 @@ export default function NegocioTurismoPage() {
 
             <h2 className="section-title max-w-2xl">
               Muchos negocios turísticos tienen web…
-              <span className="block">pero no les genera reservas.</span>
+              <span className="block text-[var(--primary)]">pero no les genera reservas</span>
             </h2>
 
             <p className="text-small max-w-xl">
-              El problema no es tener web, es cómo está pensada para tu negocio
-              y su capacidad de generar resultados.
+              
+                El problema no es tener web.
+                Es que no está pensada para que el cliente reserve.
             </p>
           </header>
 
@@ -178,9 +175,10 @@ export default function NegocioTurismoPage() {
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              <span>Reservar es complicado y el cliente se va</span>
+              <span>Reservar es complicado y el cliente abandona </span>
             </li>
           </ul>
+          <p className="text-body">  Cada sector necesita una estrategia diferente.</p>
         </div>
       </section>
 
@@ -192,12 +190,13 @@ export default function NegocioTurismoPage() {
 
             <h2 className="section-title max-w-xl">
               Una web pensada
-              <span className="block">para generar reservas reales</span>
+              <span className="block text-[var(--primary)]">para generar reservas directas
+</span>
             </h2>
 
             <p className="text-body max-w-lg">
-              No se trata solo de diseño, sino de crear una experiencia clara,
-              rápida y enfocada en facilitar la reserva.
+              No se trata solo de diseño.
+              <span className="block">Se trata de crear una web clara, rápida y enfocada en facilitar la reserva.</span>
             </p>
           </div>
 
@@ -207,7 +206,7 @@ export default function NegocioTurismoPage() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Estructura pensada para facilitar la reserva
+                Estructura pensada para facilitar la reserva 
               </span>
             </li>
 
@@ -216,7 +215,7 @@ export default function NegocioTurismoPage() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Botón de reserva visible en todo momento
+                Botón de reserva visible en todo momento 
               </span>
             </li>
 
@@ -225,7 +224,7 @@ export default function NegocioTurismoPage() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Integración con sistema de reservas
+                Integración con sistema de reservas 
               </span>
             </li>
 
@@ -234,7 +233,7 @@ export default function NegocioTurismoPage() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Diseño que refleja la experiencia de tu negocio
+                Diseño que refleja la experiencia de tu negocio 
               </span>
             </li>
 
@@ -260,18 +259,14 @@ export default function NegocioTurismoPage() {
               No somos solo desarrolladores
             </h2>
 
-            <p className="text-body">Conocemos el sector desde dentro.</p>
+            <p className="text-body">Conocemos cómo funciona el sector turístico desde dentro.</p>
 
             <p className="text-small max-w-2xl">
-              Entendemos cómo funciona un restaurante, hotel y sitios turísticos
-              por dentro, cómo decide un cliente antes de reservar y qué
-              detalles marcan la diferencia entre elegirte a ti o a tu
-              competencia.
+              Sabemos cómo decide un cliente dónde reservar y qué hace que elija una opción u otra.
             </p>
 
             <blockquote className="max-w-2xl rounded-[8px] border-l-2 border-[var(--primary)] px-4 py-3">
-              No diseñamos webs bonitas. Diseñamos webs que convierten en
-              reservas.
+              No diseñamos webs bonitas. <strong className="block">Diseñamos webs que convierten en reservas.</strong>
             </blockquote>
           </div>
 
@@ -285,7 +280,7 @@ export default function NegocioTurismoPage() {
           <header className="mb-10 flex flex-col items-center text-center">
             <p className="eyebrow">Comparativa</p>
             <h2 className="section-title max-w-4xl">
-              La diferencia entre tener una web y tener un canal de reservas
+              La diferencia entre tener una web <span className="block text-[var(--primary)]" >y tener un canal de reservas</span>
             </h2>
           </header>
 
@@ -298,21 +293,14 @@ export default function NegocioTurismoPage() {
                   <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
                     X
                   </span>
-                  <span>Web genérica</span>
+                  <span>Plantillas sin estrategia </span>
                 </li>
 
                 <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
                   <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
                     X
                   </span>
-                  <span>Plantillas</span>
-                </li>
-
-                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
-                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
-                    X
-                  </span>
-                  <span>Dependencia de plataformas</span>
+                  <span>Dependencia de plataformas </span>
                 </li>
 
                 <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
@@ -320,6 +308,13 @@ export default function NegocioTurismoPage() {
                     X
                   </span>
                   <span>Baja conversión</span>
+                </li>
+
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
+                    X
+                  </span>
+                  <span>Web generica</span>
                 </li>
               </ul>
             </article>
@@ -332,32 +327,35 @@ export default function NegocioTurismoPage() {
                   <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  <span>Web estratégica FITYX DIGITAL</span>
+                  <span>Web estratégica enfocada en reservas </span>
                 </li>
 
                 <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
                   <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  <span>Diseño a medida</span>
+                  <span>Diseño a medida para tu negocio </span>
                 </li>
 
                 <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
                   <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  <span>Reservas directas</span>
+                  <span>Más reservas directas</span>
                 </li>
 
                 <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
                   <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  <span>Optimizada para negocio real</span>
+                  <span>Optimizada para generar ingresos</span>
                 </li>
               </ul>
             </article>
           </div>
+          <p className="text-center text-lg font-bold text-body mt-10">
+            Y eso es lo que marca la diferencia.
+          </p>
         </div>
       </section>
 
@@ -402,7 +400,7 @@ export default function NegocioTurismoPage() {
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Más visibilidad y mejor conversión desde tu web</span>
+              <span>Más visibilidad en Google y mejor conversión </span>
             </li>
           </ul>
         </div>
@@ -413,7 +411,8 @@ export default function NegocioTurismoPage() {
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col items-center gap-4 text-center">
             <p className="eyebrow">Qué incluye</p>
-            <h2 className="section-title">Todo lo que necesitas</h2>
+            <h2 className="section-title">Todo lo que necesitas para conseguir reservas desde tu web
+</h2>
           </header>
 
           <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -428,35 +427,35 @@ export default function NegocioTurismoPage() {
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Diseño enfocado en convertir visitas en clientes</span>
+              <span>Diseño enfocado en convertir visitas en clientes </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Integración con sistema de reservas</span>
+              <span>Integración con sistema de reservas </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Diseño alineado con la experiencia de tu negocio</span>
+              <span>Web rápida y optimizada para todos los dispositivos </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Web rápida y optimizada para todos los dispositivos</span>
+              <span>Base SEO para atraer clientes en Girona y Costa Brava </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Base SEO para atraer clientes en tu zona</span>
+              <span>Diseño alineado con la experiencia de tu negocio </span>
             </li>
           </ul>
         </div>
@@ -466,49 +465,42 @@ export default function NegocioTurismoPage() {
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col gap-4">
-            <p className="eyebrow">Cómo trabajamos</p>
+            <p className="eyebrow">Cómo creamos tu web paso a paso</p>
 
             <h2 className="section-title max-w-4xl">
-              Un proceso simple, claro y pensado para que tu web funcione desde
-              el primer día.
+              Un proceso simple para que tu web   <span className="text-[var(--primary)] block">empiece a darte resultados
+</span>
             </h2>
           </header>
 
           <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
             <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">01</p>
-              <h3 className="card-title">Entendemos tu negocio</h3>
+              <h3 className="card-title">Analizamos tu negocio y cómo consigues reservas</h3>
               <p className="text-small">
-                Analizamos tu situación, objetivos y tipo de cliente. Nos
-                encargamos de todo.
+                Estudiamos cómo llegan tus clientes y qué necesita tu negocio para aumentar reservas directas desde tu web.
               </p>
             </article>
 
             <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">02</p>
-              <h3 className="card-title">Definimos la estructura</h3>
+              <h3 className="card-title">Diseñamos una web pensada para posicionar y convertir</h3>
               <p className="text-small">
-                Organizamos tu web para que sea clara, lógica y orientada a
-                conversión.
+                Creamos una web clara, rápida y optimizada para destacar en Google y guiar al usuario hasta la reserva.
               </p>
             </article>
 
             <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">03</p>
-              <h3 className="card-title">Diseñamos y desarrollamos</h3>
+              <h3 className="card-title"> Lanzamos tu web lista para generar reservas</h3>
               <p className="text-small">
-                Creamos una web rápida, profesional y adaptada a tu negocio.
+                Publicamos tu web preparada para atraer visitas, posicionarse en Girona y convertirlas en reservas reales.
               </p>
             </article>
 
-            <article className="flex flex-col gap-3">
-              <p className="section-title text-[var(--primary)]">04</p>
-              <h3 className="card-title">Lanzamos y optimizamos</h3>
-              <p className="text-small">
-                Publicamos tu web lista para generar oportunidades reales.
-              </p>
-            </article>
+           
           </div>
+          <p className="text-body pt-6">Publicamos tu web preparada para atraer visitas, posicionarse en Girona y convertirlas en reservas reales.</p>
         </div>
       </section>
 
@@ -520,8 +512,8 @@ export default function NegocioTurismoPage() {
           </h2>
 
           <p className="text-body max-w-2xl">
-            Tu web debería ayudarte a llenar tu calendario con reservas
-            directas, no depender de plataformas externas.
+            Muchos negocios cuidan cada detalle de su espacio, pero su web no lo refleja.
+Diseñamos webs pensadas para transmitir confianza y generar más reservas directas, sin depender de plataformas externas.
           </p>
         </div>
       </section>
@@ -532,19 +524,17 @@ export default function NegocioTurismoPage() {
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-4">
               <h2 className="section-title max-w-4xl">
-                Diseño web para negocios turísticos en Girona y Cataluña
+                Diseño web para negocios turísticos  <span className="text-[var(--primary)] block">en Girona y la Costa Brava</span>
               </h2>
 
               <p className="text-body max-w-2xl">
-                Creamos páginas web para hoteles, restaurantes y alojamientos
-                turísticos pensadas para aumentar las reservas directas y
-                reducir la dependencia de plataformas como Booking y Airbnb.
+                Creamos páginas web pensadas para aumentar tus reservas directas y reducir comisiones.
               </p>
             </header>
 
             <div className="flex flex-col items-start gap-2 pt-2">
               <Link className="btn-primary text-sm" href="/contacto">
-                QUIERO MÁS RESERVAS DIRECTAS →
+                QUIERO MÁS RESERVAS DIRECTAS
               </Link>
               <p className="text-xs">Respuesta en menos de 24 horas</p>
             </div>

@@ -20,15 +20,14 @@ export default function Home() {
             {/* HERO HEADER */}
             <header className="flex flex-col gap-6">
               <h1 className="hero-title  max-w-[23ch]">
-                Tu web debería ayudarte a conseguir clientes,{" "}
+                Diseño web en Girona {" "}
                 <span className="text-[var(--primary)]">
-                  no solo verse bonita
+                   para conseguir más clientes y hacer crecer tu negocio
                 </span>
               </h1>
 
               <p className="text-body max-w-[35ch]">
-                Ayudamos a negocios de turismo, salud y marca personal en Girona
-                a conseguir resultados reales con un diseño web estratégico.
+                Creamos páginas web estratégicas y profesionales, con una inversión accesible, pensadas para negocios de turismo, salud, marca personal y proyectos digitales que buscan más reservas, contactos y ventas sin depender de plataformas externas.
               </p>
             </header>
 
@@ -50,7 +49,7 @@ export default function Home() {
                     d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5"
                   />
                 </svg>
-                <span>Más reservas directas</span>
+                <span>Más reservas y contactos sin depender de terceros </span>
               </li>
 
               <li className="flex items-center gap-2 whitespace-nowrap">
@@ -69,7 +68,7 @@ export default function Home() {
                     d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
                   />
                 </svg>
-                <span>Más citas y confianza</span>
+                <span>Más confianza desde el primer segundo </span>
               </li>
 
               <li className="flex items-center gap-2 whitespace-nowrap">
@@ -88,7 +87,7 @@ export default function Home() {
                     d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
                   />
                 </svg>
-                <span>Más oportunidades de negocio</span>
+                <span>Más clientes sin tener que perseguirlos </span>
               </li>
             </ul>
 
@@ -96,22 +95,22 @@ export default function Home() {
             <ul className="flex flex-wrap gap-x-5 gap-y-2 text-[13px] leading-none xl:hidden">
               <li className="flex items-center gap-2">
                 <span className="text-[var(--primary)]">✦</span>
-                <span>Más reservas directas</span>
+                <span>Más reservas y contactos sin depender de terceros </span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-[var(--primary)]">✦</span>
-                <span>Más citas y confianza</span>
+                <span>Más confianza desde el primer segundo </span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-[var(--primary)]">✦</span>
-                <span>Más oportunidades de negocio</span>
+                <span>Más clientes sin tener que perseguirlos </span>
               </li>
             </ul>
 
             {/* HERO CTA */}
             <div className="flex flex-col items-start gap-2">
               <Link className="btn-black text-sm" href="/contacto">
-                QUIERO EMPEZAR MI PROYECTO →
+                QUIERO UNA WEB QUE FUNCIONE
               </Link>
               <p className="text-xs">Respuesta en menos de 24 horas</p>
             </div>
@@ -125,18 +124,18 @@ export default function Home() {
                 id="business-types-title"
                 className="eyebrow text-left text-[11px] text-[var(--text-muted)]"
               >
-                ¿QUÉ TIPO DE NEGOCIO TIENES?
+                Soluciones según tu tipo de negocio
               </h2>
 
               <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <Link href="/restauracion" className="group block h-full">
                   <article className="h-full min-h-[170px] rounded-[8px] border border-[var(--border)] bg-white px-6 py-6 transition-colors duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#faf7ef]">
                     <h3 className="mb-3 font-['ClashDisplay'] text-[17px] leading-[1.35] font-semibold text-black">
-                      Tengo un negocio turístico
+                      Turismo
                     </h3>
 
                     <p className="font-['Inter'] text-[15px] leading-7 text-[var(--text-muted)]">
-                      Quiero más reservas directas (sin pagar comisiones)
+                      Deja de depender de plataformas y consigue reservas directas
                     </p>
                   </article>
                 </Link>
@@ -144,11 +143,11 @@ export default function Home() {
                 <Link href="/salud" className="group block h-full">
                   <article className="h-full min-h-[170px] rounded-[8px] border border-[var(--border)] bg-white px-6 py-6 transition-colors duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#faf7ef]">
                     <h3 className="mb-3 font-['ClashDisplay'] text-[17px] leading-[1.35] font-semibold text-black">
-                      Tengo un negocio de salud o bienestar
+                       Salud / bienestar
                     </h3>
 
                     <p className="font-['Inter'] text-[15px] leading-7 text-[var(--text-muted)]">
-                      Quiero más pacientes y transmitir confianza
+                      Consigue más pacientes y transmite confianza desde tu web
                     </p>
                   </article>
                 </Link>
@@ -156,11 +155,11 @@ export default function Home() {
                 <Link href="/marca-personal" className="group block h-full">
                   <article className="h-full min-h-[170px] rounded-[8px] border border-[var(--border)] bg-white px-6 py-6 transition-colors duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#faf7ef]">
                     <h3 className="mb-3 font-['ClashDisplay'] text-[17px] leading-[1.35] font-semibold text-black">
-                      Tengo una marca personal
+                       Marca personal
                     </h3>
 
                     <p className="font-['Inter'] text-[15px] leading-7 text-[var(--text-muted)]">
-                      Quiero más oportunidades de negocio
+                      Convierte tu web en tu principal canal de clientes                                                                                                                                                                                                                       Cada sector necesita una estrategia diferente.
                     </p>
                   </article>
                 </Link>
@@ -208,11 +207,7 @@ export default function Home() {
                 />
               </div>
 
-              {/* MESSAGE BELOW MEDIA */}
-              <p className="text-small mt-3 max-w-[300px] italic">
-                Ayudamos a negocios de hospitalidad y salud en Girona a conseguir
-                resultados reales con un diseño web estratégico.
-              </p>
+         
             </div>
           </div>
         </div>
@@ -222,9 +217,9 @@ export default function Home() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
           <h2 className="section-title">
-            Tener una web no significa
+            Muchos negocios tienen páginas web…
             <span className="block text-[var(--primary)]">
-              que esté funcionando
+              pero no generan ni visitas ni clientes.
             </span>
           </h2>
         </div>
@@ -234,16 +229,15 @@ export default function Home() {
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-start">
           <header className="flex flex-col gap-4">
-            <p className="eyebrow">Lo que pasa en la mayoría de webs</p>
+            <p className="eyebrow">La realidad de muchas webs</p>
 
             <h2 className="section-title max-w-2xl">
-              Muchos negocios tienen web…
-              <span className="block">pero no les genera clientes.</span>
+              Por qué muchas webs
+              <span className="block">no consiguen clientes.</span>
             </h2>
 
             <p className="text-small max-w-xl">
-              El problema no es tener web, es cómo está pensada para tu negocio
-              y su capacidad de generar resultados.
+              El problema no es lo que cuesta una web. Es que muchas no están pensadas para funcionar.  
             </p>
           </header>
 
@@ -252,28 +246,28 @@ export default function Home() {
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              <span>No transmite claramente lo que haces</span>
+              <span>No deja claro lo que haces en segundos</span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              <span>No genera confianza en segundos</span>
+              <span> No genera confianza cuando alguien entra</span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              <span>No está pensada para convertir visitas en clientes</span>
+              <span> No está diseñada para convertir visitas en clientes</span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              <span>No facilita que el cliente te contacte</span>
+              <span> No facilita que te contacten fácilmente</span>
             </li>
           </ul>
         </div>
@@ -283,16 +277,14 @@ export default function Home() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
           <header className="order-2 flex flex-col gap-4 lg:order-2">
-            <p className="eyebrow">La solución</p>
+            <p className="eyebrow">Captación de clientes online</p>
 
             <h2 className="section-title max-w-xl">
-              Creamos webs pensadas para convertir
+              Diseñamos páginas web en Girona enfocadas en generar clientes 
             </h2>
 
             <p className="text-small max-w-lg">
-              Cada decisión está enfocada en una cosa: que tu web comunique
-              mejor, genere confianza y facilite oportunidades reales de
-              negocio.
+              Estrategia profesional clara y una inversión accesible para obtener resultados reales
             </p>
           </header>
 
@@ -302,7 +294,7 @@ export default function Home() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Estructura clara y pensada para guiar al usuario
+                Explicar claramente lo que haces desde el primer segundo
               </span>
             </li>
 
@@ -311,7 +303,7 @@ export default function Home() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Mensaje directo que transmite lo que haces
+                 Generar confianza y credibilidad en cada visita
               </span>
             </li>
 
@@ -320,7 +312,7 @@ export default function Home() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Diseño profesional que genera confianza
+                Convertir visitas en contactos reales
               </span>
             </li>
 
@@ -329,7 +321,7 @@ export default function Home() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Enfoque en facilitar el contacto
+                Posicionarte en Google y atraer clientes de forma constante
               </span>
             </li>
           </ul>
@@ -340,48 +332,39 @@ export default function Home() {
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col gap-4">
-            <p className="eyebrow">Cómo trabajamos</p>
+            <p className="eyebrow">Cómo creamos una web que te trae clientes</p>
 
             <h2 className="section-title max-w-4xl">
-              Un proceso simple, claro y pensado para que tu web funcione desde
-              el primer día.
+               Sin complicaciones. Sin procesos eternos. Con foco en resultados.
             </h2>
           </header>
 
           <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
             <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">01</p>
-              <h3 className="card-title">Entendemos tu negocio</h3>
+              <h3 className="card-title">Entendemos tu negocio y definimos la estrategia</h3>
               <p className="text-small">
-                Analizamos tu situación, objetivos y tipo de cliente. Nos
-                encargamos de todo.
+                Analizamos cómo consigues clientes y qué necesita tu negocio para crear una web enfocada en generar resultados.
               </p>
             </article>
 
             <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">02</p>
-              <h3 className="card-title">Definimos la estructura</h3>
+              <h3 className="card-title">Diseñamos una web pensada para posicionar y convertir</h3>
               <p className="text-small">
-                Organizamos tu web para que sea clara, lógica y orientada a
-                conversión.
+                Creamos una página clara, rápida y profesional, estructurada para destacar en Google y guiar al usuario hasta el contacto.
               </p>
             </article>
 
             <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">03</p>
-              <h3 className="card-title">Diseñamos y desarrollamos</h3>
+              <h3 className="card-title">Lanzamos tu web lista para atraer clientes</h3>
               <p className="text-small">
-                Creamos una web rápida, profesional y adaptada a tu negocio.
+                Publicamos tu web optimizada para posicionarse en Girona, atraer visitas y generar oportunidades reales desde el inicio.
               </p>
             </article>
 
-            <article className="flex flex-col gap-3">
-              <p className="section-title text-[var(--primary)]">04</p>
-              <h3 className="card-title">Lanzamos y optimizamos</h3>
-              <p className="text-small">
-                Publicamos tu web lista para generar oportunidades reales.
-              </p>
-            </article>
+            
           </div>
         </div>
       </section>
@@ -390,26 +373,24 @@ export default function Home() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col gap-4">
-            <p className="eyebrow">Servicios</p>
+            <p className="eyebrow">Soluciones adaptadas a tu negocio</p>
             <h2 className="section-title max-w-4xl">
-              Servicios diseñados para generar resultados
+              Elige el servicio que necesitas para empezar a generar clientes
             </h2>
             <p className="text-body max-w-3xl">
-              No todos los negocios están en el mismo punto. Por eso cada
-              servicio responde a una necesidad diferente.
+              Cada negocio está en un punto diferente. Por eso ofrecemos soluciones pensadas para ayudarte a atraer clientes, mejorar tu presencia online y hacer crecer tu negocio.Diseño web profesional 
             </p>
           </header>
 
           <div className="mb-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             <Link href="/servicios#onePage" className="group block h-full">
               <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
-                <h3 className="card-title">Empieza con una web que funcione</h3>
+                <h3 className="card-title">Empieza con una web que atrae clientes</h3>
                 <p className="mb-3 text-small italic">
-                  Ideal si estás empezando o quieres validar tu negocio online
+                  Para negocios que están empezando o quieren validar su idea online
                 </p>
                 <p className="text-body">
-                  Una web clara, rápida y pensada para empezar a atraer clientes
-                  desde el inicio
+                  Una web clara, rápida y enfocada en generar tus primeros contactos desde el inicio
                 </p>
                 <span className="mt-4 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100">
                   →
@@ -419,14 +400,12 @@ export default function Home() {
 
             <Link href="/servicios#webFull" className="group block h-full">
               <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
-                <h3 className="card-title">Escala tu negocio online</h3>
+                <h3 className="card-title">Escala tu negocio con una web estratégica</h3>
                 <p className="mb-3 text-small italic">
-                  Ideal si quieres crecer y convertir tu web en tu principal
-                  canal de captación
+                  Para negocios que quieren crecer y convertir su web en su principal canal de captación
                 </p>
                 <p className="text-body">
-                  Una web completa con estructura estratégica para crecer,
-                  posicionarte y generar más oportunidades
+                  Una web completa, optimizada para posicionar en Google y generar más oportunidades
                 </p>
                 <span className="mt-4 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100">
                   →
@@ -436,12 +415,12 @@ export default function Home() {
 
             <Link href="/servicios#landing" className="group block h-full">
               <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
-                <h3 className="card-title">Convierte visitas en clientes</h3>
+                <h3 className="card-title">Convierte visitas en clientes con landing pages</h3>
                 <p className="mb-3 text-small italic">
-                  Ideal si estás invirtiendo en publicidad o campañas
+                  Para negocios que invierten en publicidad o campañas
                 </p>
                 <p className="text-body">
-                  Landing pages optimizadas para anuncios, campañas y captación
+                  Páginas optimizadas para maximizar conversiones y generar resultados medibles
                 </p>
                 <span className="mt-4 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100">
                   →
@@ -452,14 +431,13 @@ export default function Home() {
             <Link href="/servicios#socials" className="group block h-full">
               <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
                 <h3 className="card-title">
-                  Gana visibilidad en redes de forma constante
+                  Gana visibilidad y atrae clientes con contenido
                 </h3>
                 <p className="mb-3 text-small italic">
-                  Ideal si quieres atraer clientes y mantener presencia activa
+                  Para negocios que quieren mantener presencia activa y generar oportunidades constantes
                 </p>
                 <p className="text-body">
-                  Contenido estratégico para reforzar tu marca y generar
-                  oportunidades.
+                  Estrategia de contenido pensada para reforzar tu marca y atraer clientes
                 </p>
                 <span className="mt-4 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100">
                   →
@@ -470,14 +448,13 @@ export default function Home() {
             <Link href="/servicios#fotografia" className="group block h-full">
               <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
                 <h3 className="card-title">
-                  Haz que tu negocio transmita confianza
+                  Refuerza tu imagen y genera confianza
                 </h3>
                 <p className="mb-3 text-small italic">
-                  Ideal si necesitas mejorar tu imagen profesional
+                  Para negocios que necesitan mejorar su percepción profesional
                 </p>
                 <p className="text-body">
-                  Fotografía pensada para generar confianza y mejorar la
-                  percepción de tu marca
+                  Fotografía estratégica que transmite confianza y mejora la conversión
                 </p>
                 <span className="mt-4 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100">
                   →
@@ -487,13 +464,13 @@ export default function Home() {
 
             <Link href="/servicios#optimizacion" className="group block h-full">
               <article className="card h-full border border-transparent p-4 transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg">
-                <h3 className="card-title">Mejora lo que ya tienes</h3>
+                <h3 className="card-title">Optimiza tu web y mejora resultados</h3>
                 <p className="mb-3 text-small italic">
-                  Ideal si tu web no está dando resultados
+                  Para negocios cuya web no está generando clientes
+
                 </p>
                 <p className="text-body">
-                  Optimizamos tu web para que convierta mejor y genere más
-                  oportunidades
+                  Mejoramos tu web para que posicione mejor, convierta más y genere oportunidades reales
                 </p>
                 <span className="mt-4 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100">
                   →
@@ -509,7 +486,7 @@ export default function Home() {
               negocio y objetivos.
             </p>
             <Link href="/contacto" className="btn-black">
-              TE AYUDAMOS A ELEGIR
+              ASESORÍA GRATUITA
             </Link>
           </div>
         </div>
@@ -519,15 +496,13 @@ export default function Home() {
       <section className="section-grey px-4 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col items-center gap-4 text-center">
-            <p className="eyebrow">Comparativa</p>
+            <p className="eyebrow">Diferencias que importan</p>
             <h2 className="section-title max-w-4xl">
-              No todas las webs se construyen de la misma
-              <span className="block">manera.</span>
+              No todas las webs están pensadas para conseguir
+              <span className="block">clientes</span>
             </h2>
             <p className="text-body max-w-5xl">
-              Existen diferentes formas de crear una web. Nosotros trabajamos
-              con desarrollo a medida porque nos permite adaptar cada detalle a
-              tu negocio, y no al revés.
+              La forma en la que está hecha tu web marca la diferencia. Por eso trabajamos con desarrollo a medida, adaptando cada detalle a tu negocio para que funcione de verdad.
             </p>
           </header>
 
@@ -570,35 +545,35 @@ export default function Home() {
                   <span className="block font-medium text-black">Diseño</span>
                   <span>
                     <span className="mr-2 text-[var(--primary)]">✓</span>
-                    Diseño adaptado a tu negocio
+                      Diseño adaptado a tu negocio y a tus objetivos
                   </span>
                 </li>
                 <li className="border-b border-gray-200 pb-4">
                   <span className="block font-medium text-black">Integración</span>
                   <span>
                     <span className="mr-2 text-[var(--primary)]">✓</span>
-                    Todo funciona de forma integrada
+                    Todo integrado para que tu web funcione como un sistema
                   </span>
                 </li>
                 <li className="border-b border-gray-200 pb-4">
                   <span className="block font-medium text-black">Velocidad</span>
                   <span>
                     <span className="mr-2 text-[var(--primary)]">✓</span>
-                    Rápida desde el inicio
+                    Carga rápida desde el primer momento
                   </span>
                 </li>
                 <li className="border-b border-gray-200 pb-4">
                   <span className="block font-medium text-black">Escalabilidad</span>
                   <span>
                     <span className="mr-2 text-[var(--primary)]">✓</span>
-                    Preparada para crecer contigo
+                    Estructura pensada para facilitar el contacto
                   </span>
                 </li>
                 <li>
                   <span className="block font-medium text-black">SEO</span>
                   <span>
                     <span className="mr-2 text-[var(--primary)]">✓</span>
-                    Optimizada para posicionar
+                    Optimizada para posicionarse en Google
                   </span>
                 </li>
               </ul>
@@ -619,7 +594,7 @@ export default function Home() {
                 <p className="text-muted">✕ Diseños poco personalizados</p>
                 <p>
                   <span className="mr-2 text-[var(--primary)]">✓</span>
-                  Diseño adaptado a tu negocio
+                   Diseño adaptado a tu negocio y a tus objetivos
                 </p>
               </div>
 
@@ -630,7 +605,7 @@ export default function Home() {
                 </p>
                 <p>
                   <span className="mr-2 text-[var(--primary)]">✓</span>
-                  Todo funciona de forma integrada
+                  Todo integrado para que tu web funcione como un sistema
                 </p>
               </div>
 
@@ -641,7 +616,7 @@ export default function Home() {
                 </p>
                 <p>
                   <span className="mr-2 text-[var(--primary)]">✓</span>
-                  Rápida desde el inicio
+                  Carga rápida desde el primer momento
                 </p>
               </div>
 
@@ -650,7 +625,7 @@ export default function Home() {
                 <p className="text-muted">✕ Limitada para crecer</p>
                 <p>
                   <span className="mr-2 text-[var(--primary)]">✓</span>
-                  Preparada para crecer contigo
+                   Estructura pensada para facilitar el contacto
                 </p>
               </div>
 
@@ -659,7 +634,7 @@ export default function Home() {
                 <p className="text-muted">✕ SEO básico</p>
                 <p>
                   <span className="mr-2 text-[var(--primary)]">✓</span>
-                  Optimizada para posicionar
+                  Optimizada para posicionarse en Google
                 </p>
               </div>
             </div>
@@ -671,13 +646,12 @@ export default function Home() {
       <section className="px-4 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col items-center gap-4 text-center">
-            <p className="eyebrow">Proyectos</p>
+            <p className="eyebrow">Resultados que importan</p>
             <h2 className="section-title">
-              Proyectos reales. Resultados que se notan.
+              Páginas web en Girona pensadas para generar clientes
             </h2>
             <p className="text-body max-w-4xl">
-              Cada proyecto está pensado para que tu negocio se vea mejor online
-              y convierta visitas en oportunidades de negocio.
+              Cada proyecto está diseñado con un objetivo: generar oportunidades de negocio desde el primer momento.
             </p>
           </header>
 
@@ -733,14 +707,15 @@ export default function Home() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6 text-center">
           <h2 className="section-title max-w-4xl">
-            La diferencia no está en tener web,
-            <span className="block">sino en cómo está planteada.</span>
+            Trabajamos con negocios en Girona y 
+            <span className="block">la Costa Brava</span>
             <span className="block text-[var(--primary)]">
-              Creamos webs que ayudan a tu negocio a crecer.
+              Creamos páginas web para negocios locales en Girona, Figueres, Roses, Empuriabrava, Banyoles, Pals, Begur y alrededores, adaptándonos a cada tipo de negocio y mercado.
             </span>
           </h2>
           <p className="text-body">
-            Cada decisión está enfocada en una cosa: que tu web funcione.
+            Si tu negocio está en la zona y quieres más visibilidad y clientes, podemos ayudarte.
+También trabajamos online con negocios de toda España.
           </p>
         </div>
       </section>
@@ -749,11 +724,12 @@ export default function Home() {
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-6 text-center">
           <h2 className="section-title max-w-lg">
-            Empieza con una One Page desde{" "}
-            <strong className="text-[var(--primary)]">400€</strong>
+            Web profesional para captar clientes por {" "}
+            <strong className="text-[var(--primary)]">430€</strong>
           </h2>
           <p className="text-body">
-            Una web clara, rápida y pensada para empezar a generar clientes.
+            No necesitas la web más cara.
+Necesitas una web bien planteada que funcione para tu negocio.
           </p>
           <Link href="/contacto" className="btn-black">
             QUIERO MI WEB →
@@ -769,12 +745,11 @@ export default function Home() {
 
             <h2 className="section-title max-w-2xl">
               No hacemos solo webs bonitas.
-              <span className="block">Hacemos webs que funcionan.</span>
+              <span className="block">Hacemos webs que generan clientes.</span>
             </h2>
 
             <p className="text-small max-w-lg">
-              Entendemos cómo funciona un negocio y creamos webs pensadas para
-              conseguir resultados y atraer clientes.
+              Entendemos cómo funciona tu negocio y creamos webs pensadas para posicionar, generar confianza y convertir visitas en clientes.
             </p>
 
             <div>
@@ -794,15 +769,15 @@ export default function Home() {
               <ul className="flex flex-col gap-3 text-sm">
                 <li>
                   <span className="mr-2 text-[var(--primary)]">•</span>
-                  Cercanos
+                  Cercanos y enfocados en tu negocio
                 </li>
                 <li>
                   <span className="mr-2 text-[var(--primary)]">•</span>
-                  Estratégicos
+                   Estratégicos, no solo diseño
                 </li>
                 <li>
                   <span className="mr-2 text-[var(--primary)]">•</span>
-                  Enfocados en resultados
+                  Enfocados en resultados reales
                 </li>
                 <li>
                   <span className="mr-2 text-[var(--primary)]">•</span>
@@ -817,15 +792,19 @@ export default function Home() {
               <ul className="flex flex-col gap-3 text-sm">
                 <li>
                   <span className="mr-2 text-gray-400">•</span>
-                  Agencia masiva
+                  Una agencia masiva
                 </li>
                 <li>
                   <span className="mr-2 text-gray-400">•</span>
-                  Plantillas genéricas
+                  Webs basadas en plantillas genéricas
                 </li>
                 <li>
                   <span className="mr-2 text-gray-400">•</span>
-                  Proyectos sin seguimiento
+                  Proyectos sin seguimiento ni estrategia  
+                </li>
+                <li>
+                  <span className="mr-2 text-gray-400">•</span>
+                  Diseños pensados solo para verse   
                 </li>
               </ul>
             </article>
@@ -837,46 +816,66 @@ export default function Home() {
       <FaqSection />
 
       {/* DISCLAIMER */}
-      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+      <section className="px-6 py-16 md:px-10 md:py-24  lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
           <h2 className="section-title mb-4">
             Una web es una herramienta, no un milagro
           </h2>
-          <p className="text-body mb-3 max-w-2xl">
-            Una web bien hecha puede mejorar tus resultados, pero no lo es todo.
-            También influyen factores como tu servicio, precios o la demanda.
+          <p className="text-body mb-3 max-w-2xl ">
+           Una buena web puede ayudarte a conseguir más clientes, pero no lo es todo.
+            También influyen tu servicio, precios o la demanda de tu sector.
           </p>
-          <p className="text-body max-w-2xl">
-            Nuestro trabajo es que tu web esté preparada para comunicar mejor,
-            generar confianza y facilitar oportunidades reales de negocio.
+          <p className="text-body max-w-2xl pb-3">
+            Nuestro trabajo es que tu web esté preparada para:
+          </p>
+          <ul className="flex flex-col gap-2 text-sm text-left">
+            <li>
+              <span className="mr-2 text-[var(--primary)]">✓</span>
+              Posicionarse en Google  
+            </li>
+            <li>
+              <span className="mr-2 text-[var(--primary)]">✓</span>
+              Transmitir confianza 
+            </li>
+            <li>
+              <span className="mr-2 text-[var(--primary)]">✓</span>
+              Facilitar el contacto
+            </li>
+          </ul>
+          <p className="text-body max-w-2xl text-left pt-3 ">
+            Para que cada visita tenga sentido.
           </p>
         </div>
       </section>
 
       {/* BLACK CTA */}
-      <section className="section-black px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="section-title mb-2 text-white">
+          <h2 className="section-title mb-2 ">
             Tu web no es solo una web.
             <span className="block text-[var(--primary)]">
-              Es tu canal de ventas.
+              Es tu canal de captación de clientes 
             </span>
           </h2>
           <p className="text-body text-white/70">
-            Si tu web no está generando clientes, no está haciendo su trabajo.
+            Puede estar ayudándote a crecer… o haciéndote perder oportunidades.
+Si no te está generando contactos, es porque no está bien planteada.
+Y eso es lo que cambiamos.
           </p>
         </div>
       </section>
 
       {/* FINAL CTA */}
-      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+      <section className="section-black px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-3 text-center">
-          <h2 className="section-title">¿Listo para empezar?</h2>
+          <h2 className="section-title text-white">Tu web puede ser tu mejor vendedor… <span className=""> o solo un gasto más</span>
+          </h2>
           <p className="text-body">
-            Tu próximo cliente está a un clic de distancia.
+            Si ahora no te genera clientes, no está haciendo su trabajo.
+Vamos a cambiar eso.
           </p>
           <Link className="btn-primary" href="/contacto">
-            Empezar proyecto
+             EMPEZAR MI PROYECTO
           </Link>
         </div>
       </section>

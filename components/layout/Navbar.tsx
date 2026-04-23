@@ -85,7 +85,7 @@ export default function Navbar() {
                 type="button"
                 className="flex items-center gap-2 font-medium text-black transition-opacity hover:opacity-70"
               >
-                Tipo de negocio
+                Soluciones
                 <span
                   className={`text-xs transition-transform duration-300 ${
                     open ? "rotate-180" : ""

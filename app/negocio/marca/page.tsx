@@ -20,50 +20,49 @@ export default function NegocioMarcaPage() {
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-6">
               <p className="eyebrow">
-                Diseño web para marca personal en Girona y Cataluña
+                Diseño web para marca personal
               </p>
 
               <h1 className="hero-title max-w-3xl">
-                Convierte tu conocimiento{" "}
-                <span className="text-[var(--primary)]">
-                  en oportunidades.
-                </span>
+                Convierte tu conocimiento en clientes
+
+              
               </h1>
 
               <p className="text-body max-w-2xl">
-                Creamos páginas web para coaches, consultores y profesionales
-                independientes pensadas para posicionarte como experto, generar
-                confianza y convertir visitas en oportunidades reales de
-                negocio.
+                Creamos páginas web para coaches, consultores y profesionales independientes en Girona, pensadas para comunicar mejor lo que haces y atraer clientes de forma constante.
+
               </p>
             </header>
+            <p className="text-body">Diseñamos webs con un objetivo claro:</p>
+            <p className="text-body">que tu mensaje se entienda, conecte y genere oportunidades reales de negocio.</p>
 
             <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
               <li className="flex items-center gap-3 rounded-[8px] bg-white p-4 text-sm">
                 <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
                   ✔
                 </span>
-                <span>Más citas desde tu web</span>
+                <span>Atrae más clientes desde tu web</span>
               </li>
 
               <li className="flex items-center gap-3 rounded-[8px] bg-white p-4 text-sm">
                 <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
                   ✔
                 </span>
-                <span>Mejor posicionamiento como experto</span>
+                <span> Refuerza tu posicionamiento como experto</span>
               </li>
 
               <li className="flex items-center gap-3 rounded-[8px] bg-white p-4 text-sm">
                 <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
                   ✔
                 </span>
-                <span>Mayor claridad en tu propuesta</span>
+                <span> Comunica tu propuesta con claridad</span>
               </li>
             </ul>
 
             <div className="flex flex-col items-start gap-2">
               <Link className="btn-black text-sm" href="/contacto">
-                QUIERO MÁS CLIENTES →
+                QUIERO MÁS CLIENTES
               </Link>
               <p className="text-xs">Respuesta en menos de 24 horas</p>
             </div>
@@ -96,7 +95,12 @@ export default function NegocioMarcaPage() {
             </h2>
 
             <p className="text-small max-w-xl">
-              El visitante entra, no entiende tu valor y se va.
+              El problema no es tener una web.
+
+            </p>
+            <p className="text-small max-w-xl">
+              Es que no comunica bien lo que haces ni a quién ayudas.
+
             </p>
           </header>
 
@@ -105,21 +109,21 @@ export default function NegocioMarcaPage() {
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              <span>No queda claro qué servicios ofreces realmente</span>
+              <span>No queda claro qué servicios ofreces </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              <span>Mensaje genérico que no conecta con nadie</span>
+              <span>Mensaje genérico que no conecta </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              <span>No transmite autoridad ni especialización</span>
+              <span>No transmite autoridad ni especialización </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-white p-4">
@@ -133,7 +137,7 @@ export default function NegocioMarcaPage() {
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
                 X
               </span>
-              <span>No convierte visitas en contactos</span>
+              <span>No convierte visitas en contactos </span>
             </li>
           </ul>
         </div>
@@ -146,10 +150,18 @@ export default function NegocioMarcaPage() {
             <p className="eyebrow">La solución</p>
 
             <h2 className="section-title max-w-xl">
-              Una web diseñada para comunicar tu valor y facilitar que te
-              contacten
+              Una web diseñada para comunicar tu valor
+              <span className="block text-[var(--primary)]">y facilitar que te contacten</span>
             </h2>
+          <div> 
+             <p className="text-body">No se trata solo de diseño.</p>
+              <p className="text-body">Se trata de que tu web explique bien lo que haces y por qué deberían elegirte.</p>
           </div>
+        
+
+          </div>
+
+
 
           <ul className="order-1 flex flex-col gap-3 lg:order-1">
             <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
@@ -157,7 +169,7 @@ export default function NegocioMarcaPage() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Mensaje claro desde el primer segundo
+                Mensaje claro desde el primer segundo 
               </span>
             </li>
 
@@ -193,7 +205,7 @@ export default function NegocioMarcaPage() {
                 ✔
               </span>
               <span className="text-small text-black">
-                SEO para atraer oportunidades relevantes
+                SEO para atraer oportunidades cualificadas 
               </span>
             </li>
           </ul>
@@ -207,21 +219,21 @@ export default function NegocioMarcaPage() {
             <p className="eyebrow">Por qué somos diferentes</p>
 
             <h2 className="section-title max-w-2xl">
-              No es solo diseño. Es estrategia.
+              No es solo diseño. <span className="block text-[var(--primary)]">Es estrategia</span>
             </h2>
 
             <p className="text-body">
-              Entendemos cómo funciona una marca personal y qué necesita para
-              convertir visitas en clientes.
+              Entendemos cómo funciona una marca personal y qué necesita para convertir visitas en clientes.
             </p>
 
             <p className="text-small max-w-2xl">
-              Sabemos cómo estructurar tu web para que quede claro qué haces, a
-              quién ayudas y por qué deberían elegirte.
+              Sabemos cómo estructurar tu web para que quede claro:
+              <span className="block">qué haces, a quién ayudas y por qué deberían elegirte.</span>
             </p>
 
             <blockquote className="max-w-2xl rounded-[8px] border-l-2 border-[var(--primary)] px-4 py-3">
-              No diseñamos webs bonitas. Diseñamos webs que venden.
+              No diseñamos solo webs bonitas.
+              <span className="block">Diseñamos webs que venden.</span>
             </blockquote>
           </div>
 
@@ -235,8 +247,8 @@ export default function NegocioMarcaPage() {
           <header className="mb-10 flex flex-col items-center text-center">
             <p className="eyebrow">Comparativa</p>
             <h2 className="section-title max-w-4xl">
-              La diferencia entre tener presencia online y generar oportunidades
-              reales
+              La diferencia entre tener presencia online
+               <span className="block text-[var(--primary)]">y generar oportunidades reales</span>
             </h2>
           </header>
 
@@ -283,28 +295,28 @@ export default function NegocioMarcaPage() {
                   <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  <span>Web estratégica FITYX DIGITAL</span>
+                  <span>Web estratégica enfocada a clientes </span>
                 </li>
 
                 <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
                   <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  <span>Mensaje claro</span>
+                  <span>Mensaje claro y directo </span>
                 </li>
 
                 <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
                   <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  <span>Posicionamiento profesional</span>
+                  <span>Posicionamiento como experto </span>
                 </li>
 
                 <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
                   <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                     ✔
                   </span>
-                  <span>Generación de clientes</span>
+                  <span>Generación de oportunidades reales</span>
                 </li>
               </ul>
             </article>
@@ -334,21 +346,21 @@ export default function NegocioMarcaPage() {
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Mayor autoridad</span>
+              <span>Mayor autoridad en tu sector </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Mejor posicionamiento</span>
+              <span>Mejor posicionamiento </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Diferenciación clara</span>
+              <span>Diferenciación clara </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4 md:col-span-2">
@@ -366,7 +378,9 @@ export default function NegocioMarcaPage() {
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col items-center gap-4 text-center">
             <p className="eyebrow">Qué incluye</p>
-            <h2 className="section-title">Todo lo que necesitas</h2>
+            <h2 className="section-title">Todo lo que necesitas
+              <span className="block text-[var(--primary)]">para conseguir clientes desde tu web</span>
+            </h2>
           </header>
 
           <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -381,7 +395,7 @@ export default function NegocioMarcaPage() {
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Estructura pensada para tus servicios</span>
+              <span>Definición clara de tu propuesta</span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
@@ -389,7 +403,7 @@ export default function NegocioMarcaPage() {
                 ✔
               </span>
               <span>
-                Secciones estratégicas (sobre ti, servicios, contacto)
+                Estructura pensada para tus servicios
               </span>
             </li>
 
@@ -397,29 +411,24 @@ export default function NegocioMarcaPage() {
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Diseño profesional alineado con tu imagen</span>
+              <span>Diseño profesional alineado con tu imagen </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>Web rápida y optimizada</span>
+              <span>Web rápida y optimizada </span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4">
               <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
                 ✔
               </span>
-              <span>SEO básico para visibilidad</span>
+              <span>SEO básico para visibilidad </span>
             </li>
 
-            <li className="flex items-start gap-3 rounded-[8px] bg-[var(--background)] p-4 md:col-span-2 lg:col-span-1">
-              <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
-                ✔
-              </span>
-              <span>Definición clara de tu propuesta</span>
-            </li>
+            
           </ul>
         </div>
       </section>
@@ -428,47 +437,39 @@ export default function NegocioMarcaPage() {
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 flex flex-col gap-4">
-            <p className="eyebrow">Cómo trabajamos</p>
+            <p className="eyebrow">Proceso</p>
 
             <h2 className="section-title max-w-4xl">
-              Un proceso simple, claro y pensado para que tu web funcione desde
-              el primer día.
+              Así creamos una web que te trae clientes
             </h2>
           </header>
 
           <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
             <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">01</p>
-              <h3 className="card-title">Entendemos tu negocio</h3>
+              <h3 className="card-title">Entendemos tu marca y tu propuesta</h3>
               <p className="text-small">
-                Analizamos tu situación, objetivos y tipo de cliente.
+                Analizamos qué haces, a quién ayudas y cómo comunicarlo para atraer a tus clientes ideales.
               </p>
             </article>
 
             <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">02</p>
-              <h3 className="card-title">Definimos la estructura</h3>
+              <h3 className="card-title">Diseñamos una web pensada para posicionarte y convertir</h3>
               <p className="text-small">
-                Organizamos tu web para que sea clara, lógica y orientada a
-                conversión.
+                Creamos una web clara y profesional que transmite tu valor, conecta con tu audiencia y genera confianza.
               </p>
             </article>
 
             <article className="flex flex-col gap-3">
               <p className="section-title text-[var(--primary)]">03</p>
-              <h3 className="card-title">Diseñamos y desarrollamos</h3>
+              <h3 className="card-title">Lanzamos tu web lista para atraer clientes</h3>
               <p className="text-small">
-                Creamos una web rápida, profesional y adaptada a tu negocio.
+                Publicamos tu web optimizada para que te encuentren, confíen en ti y den el paso de contactarte.
               </p>
             </article>
 
-            <article className="flex flex-col gap-3">
-              <p className="section-title text-[var(--primary)]">04</p>
-              <h3 className="card-title">Lanzamos y optimizamos</h3>
-              <p className="text-small">
-                Publicamos tu web lista para generar oportunidades reales.
-              </p>
-            </article>
+            
           </div>
         </div>
       </section>
@@ -477,13 +478,11 @@ export default function NegocioMarcaPage() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
           <h2 className="section-title max-w-4xl">
-            Tu conocimiento tiene valor.
+            Tu conocimiento tiene valor.  <span className="text-[var(--primary)]">Tu web debería reflejarlo</span>
           </h2>
 
           <p className="text-body max-w-2xl">
-            Tu web debería ayudarte a comunicarlo y convertirlo en
-            oportunidades.
-          </p>
+            Tu web debería ayudarte a comunicar mejor lo que haces y convertir visitas en oportunidades reales          </p>
         </div>
       </section>
 
@@ -493,19 +492,17 @@ export default function NegocioMarcaPage() {
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-4">
               <h2 className="section-title max-w-4xl">
-                Diseño web para marcas personales en Girona y Cataluña
+                Diseño web para marcas personales      <span className="text-[var(--primary)]">  en Girona y Cataluña</span>
               </h2>
 
               <p className="text-body max-w-2xl">
-                Creamos páginas web para profesionales, coaches y consultores
-                pensadas para posicionarte como experto, transmitir tu valor y
-                generar oportunidades reales de negocio.
+                Creamos páginas web pensadas paraposicionarte como experto y atraer clientes.
               </p>
             </header>
 
             <div className="flex flex-col items-start gap-2 pt-2">
               <Link className="btn-primary text-sm" href="/contacto">
-                QUIERO MÁS OPORTUNIDADES →
+                QUIERO MÁS OPORTUNIDADES
               </Link>
               <p className="text-xs">Respuesta en menos de 24 horas</p>
             </div>

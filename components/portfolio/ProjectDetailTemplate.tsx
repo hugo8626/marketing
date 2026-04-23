@@ -55,8 +55,8 @@ export default function ProjectDetailTemplate({ project }: Props) {
 
       {/* CONTEXTO */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
-        <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-          <p className="eyebrow mb-3">Contexto</p>
+        <div className="mx-auto flex max-w-4xl flex-col items-center pt-6 text-center">
+         
 
           <h2 className="section-title mb-5">El negocio</h2>
 
@@ -70,8 +70,8 @@ export default function ProjectDetailTemplate({ project }: Props) {
       {/* PROBLEMA */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-start">
-          <div className="flex flex-col gap-4">
-            <p className="eyebrow">El problema</p>
+          <div className="flex flex-col gap-4 pt-6">
+           
 
             <h2 className="section-title">El problema</h2>
 
@@ -98,8 +98,8 @@ export default function ProjectDetailTemplate({ project }: Props) {
       {/* ENFOQUE */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-start">
-          <div className="flex flex-col gap-4">
-            <p className="eyebrow">Enfoque</p>
+          <div className="flex flex-col gap-4 pt-6">
+            
 
             <h2 className="section-title">Qué hicimos</h2>
 
@@ -126,8 +126,8 @@ export default function ProjectDetailTemplate({ project }: Props) {
       {/* RESULTADO */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-start">
-          <div className="flex flex-col gap-4">
-            <p className="eyebrow">Resultado</p>
+          <div className="flex flex-col gap-4 pt-6">
+           
 
             <h2 className="section-title">El resultado</h2>
 

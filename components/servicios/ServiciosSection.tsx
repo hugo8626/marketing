@@ -15,12 +15,14 @@ export default function ServiciosSection() {
         <header className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
           <p className="eyebrow">Servicios</p>
 
-          <h1 className="hero-title">Lo que hacemos</h1>
+          <h1 className="hero-title">Soluciones para atraer clientes online</h1>
 
           <p className="text-body max-w-2xl">
-            Diseño web y soluciones digitales para negocios que quieren crecer
-            con estrategia, diseño y tecnología.
+            No se trata solo de tener una web, sino de construir una presencia digital que funcione.
           </p>
+          <p className="text-body max-w-2xl">
+            Cada negocio está en un punto diferente: empezar, mejorar o escalar.
+Aquí tienes cómo podemos ayudarte según tu situación.</p>
         </header>
 
         {/* SERVICES GRID */}
@@ -30,12 +32,11 @@ export default function ServiciosSection() {
               <h2 className="card-title">One Page</h2>
 
               <p className="mt-4 text-body">
-                Una web directa, clara y enfocada a conversión, ideal para
-                profesionales y negocios que necesitan presencia digital sin
-                complicaciones.
+                
+Ideal para empezar a conseguir tus primeros clientes sin complicaciones
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">
+              <span className="mt-8 inline-block text-[var(--primary)] ">
                 →
               </span>
             </article>
@@ -43,15 +44,14 @@ export default function ServiciosSection() {
 
           <Link href="/servicios/web-completa" className="group block h-full">
             <article className="flex h-full min-h-[230px] flex-col items-center rounded-[8px] border border-transparent bg-[#F5F5F5] p-6 text-center transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg md:p-8">
-              <h2 className="card-title">Web completa</h2>
+              <h2 className="card-title">Web completa
+</h2>
 
               <p className="mt-4 text-body">
-                Un sitio web profesional con múltiples secciones, pensado para
-                transmitir confianza, posicionarte como referente y generar
-                clientes.
+                Pensada para posicionarte en Google y generar clientes de forma constante
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">
+              <span className="mt-8 inline-block text-[var(--primary)] ">
                 →
               </span>
             </article>
@@ -62,11 +62,10 @@ export default function ServiciosSection() {
               <h2 className="card-title">Landing page</h2>
 
               <p className="mt-4 text-body">
-                Páginas de aterrizaje diseñadas para captar leads y convertir
-                visitas en clientes con una propuesta clara y enfocada.
+                Optimizada para convertir visitas en clientes desde campañas y anuncios 
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">
+              <span className="mt-8 inline-block text-[var(--primary)] ">
                 →
               </span>
             </article>
@@ -80,11 +79,10 @@ export default function ServiciosSection() {
               <h2 className="card-title">Gestión de contenidos</h2>
 
               <p className="mt-4 text-body">
-                Estrategia, creación y gestión de contenidos para que tu marca
-                conecte, gane visibilidad y genere oportunidades reales.
+                Atrae clientes de forma constante con contenido estratégico
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">
+              <span className=" mt-8 inline-block text-[var(--primary)] ">
                 →
               </span>
             </article>
@@ -95,12 +93,10 @@ export default function ServiciosSection() {
               <h2 className="card-title">Fotografía</h2>
 
               <p className="mt-4 text-body">
-                Fotografía profesional para tu negocio, pensada para transmitir
-                calidad, reforzar tu marca y mejorar la percepción de tus
-                productos y servicios.
+                Genera confianza y mejora la percepción de tu negocio desde el primer vistazo
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">
+              <span className="mt-8 inline-block text-[var(--primary)] ">
                 →
               </span>
             </article>
@@ -114,11 +110,10 @@ export default function ServiciosSection() {
               <h2 className="card-title">Optimización web</h2>
 
               <p className="mt-4 text-body">
-                Mejoramos el rendimiento, la velocidad y la experiencia de tu
-                web para que funcione mejor, posicione mejor y convierta más.
+                Convierte tu web actual en una herramienta que genere resultados
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">
+              <span className="mt-8 inline-block text-[var(--primary)] ">
                 →
               </span>
             </article>
@@ -127,23 +122,19 @@ export default function ServiciosSection() {
 
         {/* BOTTOM MESSAGE */}
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
-          <p className="text-body">
-            No se trata solo de tener una web, sino de tener una herramienta que
-            te ayude a conseguir clientes y hacer crecer tu negocio.
-          </p>
+          <h2 className="section-title">
+            No se trata solo de tener una web.
+          </h2>
 
           <p className="text-body">
-            Por eso cada proyecto parte de entender qué necesitas y cómo
-            convertirlo en resultados reales.
+            Es una herramienta para atraer clientes y hacer crecer tu negocio, empezando por entender tus necesidades y convertirlas en resultados. Si no lo tienes claro, te ayudamos a definirlo.
+
           </p>
 
-          <p className="text-body">
-            Si no tienes claro qué necesitas, podemos ayudarte a definirlo.
-          </p>
-
+       
           <Link
             href="/sobre-nosotros"
-            className="mt-2 inline-block border-b border-[var(--primary)] pb-1 text-[var(--primary)] transition-opacity duration-300 hover:opacity-70"
+            className="btn-primary"
           >
             Cuéntanos tu caso →
           </Link>

@@ -16,12 +16,11 @@ export default function OptimizacionWebContent() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,420px)] lg:items-center lg:gap-16">
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-5">
-              <p className="eyebrow">OPTIMIZACIÓN WEB</p>
+              <p className="eyebrow">Optimización web en Girona </p>
 
               <h1 className="hero-title max-w-4xl">
-                Tu web puede estar
-                <span className="block">perdiendo clientes</span>
-                <span className="block">sin que lo sepas</span>
+                Mejoramos tu página para que:
+                
               </h1>
 
               <p className="text-body max-w-2xl">
@@ -33,17 +32,17 @@ export default function OptimizacionWebContent() {
             <ul className="flex flex-col gap-3 text-sm">
               <li className="flex items-center gap-2">
                 <span className="text-[var(--primary)]">✓</span>
-                <span>Más claridad</span>
+                <span>Posicione mejor en Google</span>
               </li>
 
               <li className="flex items-center gap-2">
                 <span className="text-[var(--primary)]">✓</span>
-                <span>Más confianza</span>
+                <span>Transmita confianza desde el primer segundo</span>
               </li>
 
               <li className="flex items-center gap-2">
                 <span className="text-[var(--primary)]">✓</span>
-                <span>Más resultados</span>
+                <span>Convierta visitas en clientes</span>
               </li>
             </ul>
 
@@ -76,25 +75,15 @@ export default function OptimizacionWebContent() {
             <p className="eyebrow">El problema</p>
 
             <h2 className="section-title max-w-3xl">
-              Tener una web no
-              <span className="block">significa que funcione</span>
+               Tener una web no significa que esté funcionando
+             
             </h2>
           </header>
 
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">La gente entra y no entiende</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">No hay estructura clara</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">Es lenta</p>
+              <p className="text-small"> No aparece en Google</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
@@ -104,11 +93,21 @@ export default function OptimizacionWebContent() {
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">No genera reservas ni ventas</p>
+              <p className="text-small">No guía al usuario</p>
+            </div>
+
+            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
+              <span className="text-sm text-[#999]">✕</span>
+              <p className="text-small">Es  lenta</p>
+            </div>
+
+            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
+              <span className="text-sm text-[#999]">✕</span>
+              <p className="text-small"> No convierte visitas en clientes</p>
             </div>
 
             <p className="text-body pt-2 text-sm italic">
-              “Y lo peor: no sabes por qué.”
+              Si no está optimizada, no funciona
             </p>
           </div>
         </div>
@@ -118,12 +117,11 @@ export default function OptimizacionWebContent() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-7xl flex-col gap-6">
           <h2 className="section-title max-w-4xl">
-            El problema no es tener web... es que no esté optimizada
+           El problema no es tener una web. <span className="block">Es que no esté pensada para conseguir clientes.</span>
           </h2>
 
           <p className="text-body max-w-2xl">
-            Muchas webs están hechas sin estrategia, no guían al usuario y no
-            están pensadas para convertir.
+            Muchas webs están hechas sin estrategia, no guían al usuario y no ayudan a tomar una decisión.  
           </p>
 
           <p className="rounded-[8px] bg-[#F5F5F5] px-5 py-4 text-sm italic">
@@ -140,35 +138,35 @@ export default function OptimizacionWebContent() {
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Revisamos estructura</p>
+              <p className="text-small">La claridad de tu mensaje (que se entienda lo que haces)</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Mejoramos mensajes</p>
+              <p className="text-small"> La estructura (que guíe al usuario paso a paso)</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Optimizamos velocidad</p>
+              <p className="text-small">El diseño (que genere confianza)</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Ajustamos diseño</p>
+              <p className="text-small">La velocidad (para no perder oportunidades)</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Aplicamos SEO básico</p>
+              <p className="text-small"> El SEO (para empezar a aparecer en Google)</p>
             </div>
           </div>
 
@@ -176,9 +174,9 @@ export default function OptimizacionWebContent() {
             <p className="eyebrow">La solución</p>
 
             <h2 className="section-title max-w-3xl">
-              Analizamos tu web y
-              <span className="block">mejoramos lo que</span>
-              <span className="block">realmente importa</span>
+              Analizamos qué falla y optimizamos lo necesario para que empiece a atraer clientes.
+Qué mejoramos
+              
             </h2>
           </div>
         </div>
@@ -253,9 +251,9 @@ export default function OptimizacionWebContent() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-7xl flex-col gap-14 md:gap-16 lg:gap-20">
           <header className="flex max-w-4xl flex-col gap-5">
-            <p className="eyebrow">Cómo trabajamos</p>
+            <p className="eyebrow">Proceso de optimización</p>
 
-            <h2 className="section-title">Cómo trabajamos tu web</h2>
+            <h2 className="section-title">Así mejoramos tu web para que genere clientes         </h2>
           </header>
 
           <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-5">
@@ -265,11 +263,11 @@ export default function OptimizacionWebContent() {
               </span>
 
               <h3 className="card-title text-left text-base">
-                Analizamos tu web actual
+                Analizamos tu web y detectamos qué falla
               </h3>
 
               <p className="text-body text-sm text-[var(--text-muted)]">
-                Revisamos estructura, mensajes, velocidad y diseño.
+                Revisamos estructura, mensajes y rendimiento para entender por qué no está generando resultados.
               </p>
             </article>
 
@@ -279,11 +277,11 @@ export default function OptimizacionWebContent() {
               </span>
 
               <h3 className="card-title text-left text-base">
-                Detectamos fallos
+                Definimos las mejoras con mayor impacto
               </h3>
 
               <p className="text-body text-sm text-[var(--text-muted)]">
-                Identificamos qué no funciona y por qué.
+                Priorizamos los cambios que realmente pueden mejorar la conversión y la captación de clientes.
               </p>
             </article>
 
@@ -293,45 +291,20 @@ export default function OptimizacionWebContent() {
               </span>
 
               <h3 className="card-title text-left text-base">
-                Definimos mejoras
+                 Aplicamos y optimizamos para generar resultados
               </h3>
 
               <p className="text-body text-sm text-[var(--text-muted)]">
-                Priorizamos los cambios con mayor impacto.
+                Implementamos mejoras y ajustamos lo necesario para que tu web empiece a funcionar.
               </p>
             </article>
 
-            <article className="flex flex-col gap-3">
-              <span className="font-['ClashDisplay'] text-4xl font-semibold text-[var(--primary)] opacity-30">
-                04
-              </span>
+       
 
-              <h3 className="card-title text-left text-base">
-                Aplicamos cambios
-              </h3>
-
-              <p className="text-body text-sm text-[var(--text-muted)]">
-                Implementamos las mejoras de forma clara y visible.
-              </p>
-            </article>
-
-            <article className="flex flex-col gap-3">
-              <span className="font-['ClashDisplay'] text-4xl font-semibold text-[var(--primary)] opacity-30">
-                05
-              </span>
-
-              <h3 className="card-title text-left text-base">
-                Optimizamos resultados
-              </h3>
-
-              <p className="text-body text-sm text-[var(--text-muted)]">
-                Medimos y ajustamos para maximizar conversión.
-              </p>
-            </article>
           </div>
 
           <p className="text-small text-[var(--text-muted)]">
-            Sin tecnicismos. Sin complicaciones.
+            Sin tecnicismos. Sin complicaciones. Solo cambios que generan resultados.
           </p>
         </div>
       </section>
@@ -353,35 +326,35 @@ export default function OptimizacionWebContent() {
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Más claridad para el cliente</p>
+              <p className="text-small">Mejora de la estructura para que el usuario entienda tu web</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Más confianza</p>
+              <p className="text-small">Optimización de mensajes para comunicar mejor y generar confianza</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Más contactos</p>
+              <p className="text-small">Mejora de velocidad y experiencia de usuario</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Mejor posicionamiento local</p>
+              <p className="text-small"> Ajustes SEO para mejorar posicionamiento en Google</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Mejor rendimiento general</p>
+              <p className="text-small">Optimización del recorrido y llamadas a la acción para aumentar contactos</p>
             </div>
           </div>
         </div>
@@ -449,15 +422,15 @@ export default function OptimizacionWebContent() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center">
           <h2 className="section-title">
-            Mejora tu web sin empezar de cero
+            Optimiza tu web y empieza a generar resultados
           </h2>
 
           <p className="font-['ClashDisplay'] text-5xl leading-none font-semibold text-black sm:text-6xl md:text-7xl">
-            Desde 290€
+            Precio: 270€
           </p>
 
           <p className="text-body max-w-2xl">
-            Solucionamos lo que no está funcionando sin rehacer toda la web.
+            No necesitas una web nueva. <span className="block">Necesitas que la que ya tienes funcione.</span>
           </p>
 
           <Link href="/contacto" className="btn-black text-sm">

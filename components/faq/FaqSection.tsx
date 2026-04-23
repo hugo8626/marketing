@@ -9,29 +9,29 @@ type FaqItem = {
 
 const faqItems: FaqItem[] = [
   {
-    question: "¿El precio bajo significa mala calidad?",
+    question: "¿Cuánto cuesta una página web?",
     answer:
-      "No. Trabajamos con procesos optimizados y sin estructuras innecesarias. Eso nos permite ofrecer precios accesibles sin bajar la calidad.",
+      "  El precio depende de lo que necesite tu negocio  Trabajamos con webs desde 430€, pensadas para empezar a captar clientes desde el primer momento.  ",
   },
   {
-    question: "¿Puedo ampliar la web más adelante?",
+    question: "¿Es buena idea hacer una web barata?",
     answer:
-      "Sí. Todas nuestras webs están pensadas para crecer contigo. Puedes añadir secciones o funcionalidades cuando lo necesites.",
+      " Depende de lo que busques.  Si solo necesitas presencia, puede servir. Pero si quieres conseguir clientes, necesitas una web bien planteada, pensada para posicionar y convertir.  ",
   },
   {
-    question: "¿Desaparecéis después de entregar?",
+    question: "¿Cuánto tarda en posicionarse una web en Google?",
     answer:
-      "No. Seguimos contigo después de la entrega. Ofrecemos soporte y acompañamiento para que tu web siga funcionando.",
+      "  Depende del sector y la competencia.    Desde el inicio, la web queda preparada para posicionarse, pero los resultados suelen verse a medio plazo.    ",
   },
   {
-    question: "¿Cuánto tarda en estar lista mi web?",
+    question: "¿Mi web puede conseguir clientes?",
     answer:
-      "Depende del proyecto, pero una One Page puede estar lista en pocos días. Trabajamos rápido sin sacrificar calidad.",
+      "Sí, si está bien planteada. Una web que transmite confianza y guía al usuario puede convertirse en un canal constante de contactos.",
   },
   {
-    question: "¿Necesito saber de tecnología o diseño?",
+    question: "¿Cómo sé si esto va a funcionar en mi caso?",
     answer:
-      "No. Nos encargamos de todo y te explicamos el proceso de forma clara. Tú te centras en tu negocio.",
+      "Es una duda normal. Analizamos tu negocio y planteamos una web adaptada a tu situación. Si existe demanda, la web puede ayudarte a generar oportunidades reales.",
   },
 ];
 
@@ -45,12 +45,12 @@ export default function FaqSection() {
   return (
     <section className="section-grey px-6 py-16 sm:px-8 md:px-12 md:py-24 lg:px-20 lg:py-30">
       <div className="mx-auto w-full max-w-4xl">
-        <span className="mb-4 block text-xs font-medium uppercase tracking-[0.2em] text-[#c79a3b] sm:text-sm">
-          FAQ
+        <span className="eyebrow"> 
+          Resolvemos tus dudas
         </span>
 
         <h2 className="mb-8 text-3xl font-black tracking-tight text-black sm:mb-10 sm:text-4xl md:mb-12 md:text-5xl">
-          Preguntas frecuentes
+          Preguntas frecuentes antes de crear tu web
         </h2>
 
         <div className="border-t border-black/10">

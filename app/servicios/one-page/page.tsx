@@ -18,38 +18,39 @@ export default function OnePageHeroSection() {
           {/* HERO CONTENT */}
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-5">
-              <p className="eyebrow">PRESENCIA ONLINE SIMPLE</p>
+              <p className="eyebrow">Diseño web basica profesional en Girona</p>
 
               <h1 className="hero-title max-w-4xl">
-                Tu web profesional
-                <span className="block">en una sola página</span>
+                Página web en Girona económica para empezar
+                <span className="block">a conseguir clientes desde el primer día</span>
               </h1>
 
               <p className="text-body max-w-2xl">
-                Creamos una web clara, rápida y bien estructurada para que
-                presentes tu negocio y empieces a generar clientes.
+                Si no tienes web, estás perdiendo oportunidades.
+              </p>
+              <p className="text-body max-w-2xl">
+                Si tienes una y no te genera contactos, no está haciendo su trabajo.
               </p>
 
               <p className="text-small max-w-2xl text-[var(--text-muted)]">
-                También conocida como web One Page, es la forma más simple y
-                efectiva de tener presencia online profesional.
+                Creamos páginas web One Page en , claras, rápidas y optimizadas para convertir visitas en clientes..
               </p>
             </header>
 
             <ul className="flex flex-col gap-3 text-sm sm:flex-row sm:flex-wrap sm:gap-x-8 sm:gap-y-3">
               <li className="flex items-center gap-2">
                 <span className="text-[var(--primary)]">✓</span>
-                <span>Presencia profesional</span>
+                <span>Presencia profesional desde el inicios</span>
               </li>
 
               <li className="flex items-center gap-2">
                 <span className="text-[var(--primary)]">✓</span>
-                <span>Mensaje claro</span>
+                <span> Mensaje claro que tu cliente entiende</span>
               </li>
 
               <li className="flex items-center gap-2">
                 <span className="text-[var(--primary)]">✓</span>
-                <span>Lista para convertir</span>
+                <span>Estructura pensada para generar contactos</span>
               </li>
             </ul>
 
@@ -83,40 +84,37 @@ export default function OnePageHeroSection() {
             <header className="flex max-w-3xl flex-col gap-4">
               <p className="eyebrow">Concepto</p>
 
-              <h2 className="section-title">¿Qué es una One Page?</h2>
+              <h2 className="section-title">¿Qué es una página web One Page? </h2>
 
               <p className="text-body max-w-2xl">
-                Una One Page es una web de una sola página donde el usuario
-                encuentra toda la información haciendo scroll, sin necesidad de
-                navegar entre diferentes secciones.
+               Una One Page es una página web profesional en una sola estructura, pensada para que el usuario entienda tu negocio rápido y contacte sin complicaciones.
+Es la forma más rápida de tener presencia online sin invertir de más, pero con una base bien planteada.
               </p>
             </header>
 
             <div className="grid gap-4 md:grid-cols-3">
               <article className="rounded-[8px] bg-white p-5">
-                <div className="mb-4 text-[var(--primary)]">✓</div>
-                <h3 className="card-title text-left text-base">
-                  Todo en una sola página
+               <h3 className="card-title text-center p-6">
+                 <span className=" text-[var(--primary)]">✓</span> Toda la información en una sola página
                 </h3>
               </article>
 
               <article className="rounded-[8px] bg-white p-5">
-                <div className="mb-4 text-[var(--primary)]">✓</div>
-                <h3 className="card-title text-left text-base">
-                  Navegación simple
+                
+                <h3 className="  text-center p-6">
+                 <span className=" text-[var(--primary)]">✓</span> Navegación simple y sin distracciones
                 </h3>
               </article>
 
               <article className="rounded-[8px] bg-white p-5">
-                <div className="mb-4 text-[var(--primary)]">✓</div>
-                <h3 className="card-title text-left text-base">
-                  Información clara y directa
+                 <h3 className="card-title text-center p-6">
+                 <span className=" text-[var(--primary)]">✓</span> Mensaje claro orientado a captar clientes
                 </h3>
               </article>
             </div>
           </div>
 
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6  mt-14">
             <header className="flex flex-col gap-3">
               <h2 className="section-title">¿Cómo funciona?</h2>
             </header>
@@ -125,28 +123,26 @@ export default function OnePageHeroSection() {
               <article className="flex flex-col gap-2">
                 <p className="section-title text-[var(--primary)]">1</p>
                 <h3 className="card-title text-left text-base">
-                  El usuario entra
+                  El usuario entiende en segundos qué haces
                 </h3>
+                <p>Tu mensaje es claro desde el primer momento y conecta con lo que está buscando</p>
               </article>
 
               <article className="flex flex-col gap-2">
                 <p className="section-title text-[var(--primary)]">2</p>
-                <h3 className="card-title text-left text-base">Hace scroll</h3>
+                <h3 className="card-title text-left text-base">Generas confianza y guías la decisión</h3>
+                <p>La estructura y el contenido transmiten seguridad y llevan al usuario paso a paso.</p>
               </article>
 
               <article className="flex flex-col gap-2">
                 <p className="section-title text-[var(--primary)]">3</p>
                 <h3 className="card-title text-left text-base">
-                  Entiende tu negocio
+                  El usuario da el paso y contacta contigo
                 </h3>
+                <p>Todo está pensado para facilitar la acción: reservar, escribir o llamar.</p>
               </article>
 
-              <article className="flex flex-col gap-2">
-                <p className="section-title text-[var(--primary)]">4</p>
-                <h3 className="card-title text-left text-base">
-                  Contacta contigo
-                </h3>
-              </article>
+              
             </div>
           </div>
         </div>
@@ -157,7 +153,7 @@ export default function OnePageHeroSection() {
         <div className="mx-auto flex max-w-7xl flex-col gap-10">
           <header className="flex flex-col gap-4">
             <p className="eyebrow">Perfil ideal</p>
-            <h2 className="section-title">¿Es para ti?</h2>
+            <h2 className="section-title">  Esta opción es para ti si…</h2>
           </header>
 
           <div className="grid gap-5 md:grid-cols-2">
@@ -165,31 +161,32 @@ export default function OnePageHeroSection() {
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">Estás empezando</p>
+              <p className="text-body"> Estás empezando y necesitas una página web económica</p>
             </article>
 
             <article className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">No necesitas muchas secciones</p>
+              <p className="text-body"> No tienes web o la que tienes no te genera clientes</p>
             </article>
 
             <article className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">Quieres algo rápido y profesional</p>
+              <p className="text-body">Quieres algo rápido, claro y profesional</p>
             </article>
 
             <article className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">Necesitas presencia online clara</p>
+              <p className="text-body"> Necesitas presencia online sin complicaciones  </p>
             </article>
           </div>
         </div>
+         <p className="text-center mt-8 text-bould">Si tu web no consigue esto, no está funcionando</p>
       </section>
 
       {/* PROBLEMA */}
@@ -199,30 +196,31 @@ export default function OnePageHeroSection() {
             <p className="eyebrow">El problema</p>
 
             <h2 className="section-title max-w-3xl">
-              Muchos negocios empiezan… pero no comunican bien
+              Muchos negocios empiezan… pero su web no les ayuda a vender
             </h2>
           </header>
 
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3 rounded-[8px] bg-[#F5F5F5] px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">No tienen web</p>
+              <p className="text-small">No tienes web → no existes en Google</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-[#F5F5F5] px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">Usan redes como única presencia</p>
+              <p className="text-small">Usas redes como única presencia → dependes de terceros</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-[#F5F5F5] px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">No transmiten profesionalidad</p>
+              <p className="text-small"> No transmites profesionalidad → pierdes confianza</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-[#F5F5F5] px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
               <p className="text-small">
-                El cliente no entiende qué ofrecen
+                No se entiende lo que haces → no te contactan
+
               </p>
             </div>
           </div>
@@ -240,7 +238,7 @@ export default function OnePageHeroSection() {
             <p className="eyebrow">La solución</p>
 
             <h2 className="section-title max-w-3xl">
-              Una web simple, pero bien pensada
+               Una página web simple, pero pensada para conseguir clientes
             </h2>
           </header>
 
@@ -249,85 +247,105 @@ export default function OnePageHeroSection() {
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Estructura clara</p>
+              <p className="text-small">Estructura clara que guía al usuario</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Mensaje directo</p>
+              <p className="text-small">Mensaje directo que conecta con tu cliente</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Diseño profesional</p>
+              <p className="text-small"> Diseño profesional que transmite confianza</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
               </span>
-              <p className="text-small">Optimizada para conversión</p>
+              <p className="text-small">Optimización para convertir visitas en contactos</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* COMPARATIVA */}
-      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
-        <div className="mx-auto flex max-w-7xl flex-col gap-12">
-          <header className="flex flex-col gap-4">
+     <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          <header className="mb-10 flex flex-col items-center text-center">
             <p className="eyebrow">Comparativa</p>
-
             <h2 className="section-title max-w-4xl">
-              Una web básica vs una web estratégica
+               La diferencia entre tener web… y tener clientes
             </h2>
           </header>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-3 rounded-[8px] bg-[#F5F5F5] px-5 py-4">
-                <span className="text-sm text-[#999]">✕</span>
-                <p className="text-small">Información desordenada</p>
-              </div>
+          <div className="grid gap-6 lg:grid-cols-2">
+            <article className="rounded-[12px] border border-black/10 p-6">
+              <h3 className="mb-5 font-bold">Web basica</h3>
 
-              <div className="flex items-center gap-3 rounded-[8px] bg-[#F5F5F5] px-5 py-4">
-                <span className="text-sm text-[#999]">✕</span>
-                <p className="text-small">Diseño sin intención</p>
-              </div>
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
+                    X
+                  </span>
+                  <span>Información desordenada</span>
+                </li>
 
-              <div className="flex items-center gap-3 rounded-[8px] bg-[#F5F5F5] px-5 py-4">
-                <span className="text-sm text-[#999]">✕</span>
-                <p className="text-small">No genera contactos</p>
-              </div>
-            </div>
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
+                    X
+                  </span>
+                  <span>Diseño sin objetivo</span>
+                </li>
 
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                  ✓
-                </span>
-                <p className="text-small">Web One Page FITYX DIGITAL</p>
-              </div>
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm">
+                    X
+                  </span>
+                  <span>No genera contactos</span>
+                </li>
 
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                  ✓
-                </span>
-                <p className="text-small">Clara, directa y profesional</p>
-              </div>
+           
+              </ul>
+            </article>
 
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                  ✓
-                </span>
-                <p className="text-small">Pensada para convertir</p>
-              </div>
-            </div>
+            <article className="rounded-[12px] border border-[var(--primary)] p-6">
+              <h3 className="mb-5 font-bold">Web One Page FITYX</h3>
+
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+                    ✔
+                  </span>
+                  <span>Mensaje claro y directo</span>
+                </li>
+
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+                    ✔
+                  </span>
+                  <span>Pensada para convertir</span>
+                </li>
+
+                <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-4">
+                  <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F0ECE4] text-[var(--primary)] text-sm">
+                    ✔
+                  </span>
+                  <span>Enfocada en conseguir clientes</span>
+                </li>
+
+               
+              </ul>
+            </article>
           </div>
+          <p className="text-center text-lg font-bold text-body mt-10">
+            Y eso es lo que marca la diferencia.
+          </p>
         </div>
       </section>
 
@@ -337,7 +355,7 @@ export default function OnePageHeroSection() {
           <header className="flex flex-col gap-4">
             <p className="eyebrow">Resultados</p>
 
-            <h2 className="section-title">Lo que consigues</h2>
+            <h2 className="section-title">Lo que consigues con una web bien planteada</h2>
           </header>
 
           <div className="grid gap-5 md:grid-cols-2">
@@ -345,28 +363,28 @@ export default function OnePageHeroSection() {
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">Presencia profesional inmediata</p>
+              <p className="text-body">Presencia profesional desde el primer día</p>
             </div>
 
             <div className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">Más confianza</p>
+              <p className="text-body">Más confianza en tu negocio</p>
             </div>
 
             <div className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">Mejor percepción de tu negocio</p>
+              <p className="text-body"> Mejor percepción de tu marca</p>
             </div>
 
             <div className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">Base para crecer en el futuro</p>
+              <p className="text-body">Base para empezar a captar clientes</p>
             </div>
           </div>
         </div>
@@ -378,7 +396,7 @@ export default function OnePageHeroSection() {
           <header className="flex flex-col gap-4">
             <p className="eyebrow">Detalle</p>
 
-            <h2 className="section-title">Qué incluye tu web</h2>
+            <h2 className="section-title">Qué incluye tu página web económica en Girona</h2>
           </header>
 
           <div className="grid gap-5 md:grid-cols-2">
@@ -386,30 +404,14 @@ export default function OnePageHeroSection() {
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">Diseño personalizado</p>
+              <p className="text-body"> Diseño web personalizado adaptado a tu negocio</p>
             </div>
 
             <div className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">Estructura estratégica</p>
-            </div>
-
-            <div className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
-                ✓
-              </span>
-              <p className="text-body">
-                Secciones clave (servicios, sobre ti, contacto)
-              </p>
-            </div>
-
-            <div className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
-                ✓
-              </span>
-              <p className="text-body">Optimización básica SEO</p>
+              <p className="text-body">Estructura estratégica pensada para generar contactos</p>
             </div>
 
             <div className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
@@ -417,7 +419,7 @@ export default function OnePageHeroSection() {
                 ✓
               </span>
               <p className="text-body">
-                Adaptación a ordenador, tablet y móvil
+                Secciones clave (Inicio, Sobre ti, Servicios y Contacto)
               </p>
             </div>
 
@@ -425,7 +427,23 @@ export default function OnePageHeroSection() {
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
                 ✓
               </span>
-              <p className="text-body">Carga rápida</p>
+              <p className="text-body">Botón de WhatsApp y formulario para facilitar el contacto</p>
+            </div>
+
+            <div className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
+                ✓
+              </span>
+              <p className="text-body">
+                Web adaptada a móvil, tablet y ordenador
+              </p>
+            </div>
+
+            <div className="flex items-center gap-4 rounded-[8px] border border-[#E5E5E5] bg-white px-6 py-5">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-sm">
+                ✓
+              </span>
+              <p className="text-body">Optimización SEO básica para empezar a aparecer en Google</p>
             </div>
           </div>
         </div>
@@ -437,18 +455,19 @@ export default function OnePageHeroSection() {
           <header className="flex flex-col items-center gap-4">
             <p className="eyebrow">Inversión</p>
 
-            <h2 className="section-title">Profesionalidad accesible</h2>
+            <h2 className="section-title">Página web económica en Girona   </h2>
 
             <p className="font-['ClashDisplay'] text-5xl leading-none font-semibold text-black sm:text-6xl md:text-7xl">
-              Desde 400€
+              Desde 430€
             </p>
 
-            <p className="text-body">Precio claro. Sin sorpresas.</p>
+            <p className="text-body">Precio cerrado. Sin sorpresas.</p>
           </header>
 
           <Link href="/contacto" className="btn-black text-sm">
-            QUIERO MI ONE PAGE →
+            QUIERO MI ONE PAGE
           </Link>
+          <p className="text-center"> Limitamos los proyectos cada mes para mantener la calidad en cada trabajo</p>
         </div>
       </section>
 
@@ -456,13 +475,11 @@ export default function OnePageHeroSection() {
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-7xl flex-col gap-14 md:gap-16 lg:gap-20">
           <header className="flex max-w-3xl flex-col gap-5">
-            <p className="eyebrow">Cómo trabajamos</p>
+            <p className="eyebrow">Nuestro proceso</p>
 
             <h2 className="section-title">
-              Un proceso simple, claro y pensado
-              <span className="block">
-                para que tu web funcione desde el primer día.
-              </span>
+             Así creamos una web que te trae clientes   
+              
             </h2>
           </header>
 
@@ -473,11 +490,11 @@ export default function OnePageHeroSection() {
               </span>
 
               <h3 className="card-title text-left text-base">
-                Entendemos tu negocio
+                Entendemos tu negocio y definimos la estrategia
               </h3>
 
               <p className="text-body text-sm text-[var(--text-muted)]">
-                Analizamos tu situación, objetivos y tipo de cliente.
+                Analizamos tu situación, objetivos y tipo de cliente para crear una web con sentido.
               </p>
             </article>
 
@@ -487,12 +504,11 @@ export default function OnePageHeroSection() {
               </span>
 
               <h3 className="card-title text-left text-base">
-                Definimos la estructura
+                Diseñamos una web pensada para convertir
               </h3>
 
               <p className="text-body text-sm text-[var(--text-muted)]">
-                Organizamos tu web para que sea clara, lógica y orientada a
-                conversión.
+                Creamos una web clara, rápida y estructurada para guiar al usuario y generar contactos.
               </p>
             </article>
 
@@ -502,27 +518,15 @@ export default function OnePageHeroSection() {
               </span>
 
               <h3 className="card-title text-left text-base">
-                Diseñamos y desarrollamos
+                Lanzamos tu web lista para generar resultados
               </h3>
 
               <p className="text-body text-sm text-[var(--text-muted)]">
-                Creamos una web rápida, profesional y adaptada a tu negocio.
+                Publicamos tu web optimizada para atraer visitas y convertirlas en oportunidades reales.
               </p>
             </article>
 
-            <article className="flex flex-col gap-3">
-              <span className="font-['ClashDisplay'] text-4xl font-semibold text-[var(--primary)] opacity-30">
-                04
-              </span>
-
-              <h3 className="card-title text-left text-base">
-                Lanzamos y optimizamos
-              </h3>
-
-              <p className="text-body text-sm text-[var(--text-muted)]">
-                Publicamos tu web lista para generar oportunidades reales.
-              </p>
-            </article>
+       
           </div>
         </div>
       </section>

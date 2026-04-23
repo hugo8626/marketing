@@ -18,22 +18,23 @@ export default function NosotrosPage() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,460px)] lg:gap-16">
           <div className="flex flex-col gap-6">
-            <p className="eyebrow">Quiénes somos</p>
+            <p className="eyebrow">Quién hay detrás</p>
 
             <h1 className="hero-title max-w-3xl">
               No somos una agencia más.
             </h1>
 
             <p className="text-body max-w-2xl italic">
-              Somos un equipo que entiende los negocios desde dentro.
+              Somos parte de tu negocio
+
             </p>
 
             <p className="text-body max-w-2xl">
-              FITYX DIGITAL nace de una combinación real: estrategia digital,
-              desarrollo web y experiencia directa en sectores como salud,
-              restauración y turismo. No trabajamos por volumen. Trabajamos
-              proyecto a proyecto.
+             En FITYX DIGITAL No trabajamos por volumen ni hacemos webs sin sentido.
+Creamos páginas web en Girona pensadas para ayudarte a conseguir clientes y hacer crecer tu negocio.
             </p>
+              <p className="text-body max-w-2xl">Entendemos cómo funciona un negocio por dentro.
+Y eso cambia completamente cómo planteamos tu web.</p>
 
             <div className="flex flex-col items-start gap-3">
               <Link className="btn-black text-sm" href="/contacto">
@@ -64,8 +65,13 @@ export default function NosotrosPage() {
             <p className="eyebrow">Nuestra base</p>
 
             <h2 className="section-title">
-              Esto no es teoría. Es experiencia real.
+              No hablamos desde fuera. Sabemos cómo funciona tu negocio
             </h2>
+            <p className="text-body">
+             No trabajamos solo desde el diseño o el marketing.
+Entendemos cómo funcionan los negocios por dentro y cómo toman decisiones tus clientes.
+Esa experiencia es la que aplicamos para crear webs, contenido y estrategias que realmente funcionan.
+            </p>
           </header>
 
           <div className="grid w-full gap-4 md:grid-cols-2">
@@ -74,17 +80,16 @@ export default function NosotrosPage() {
 
               <p className="text-small">
                 <span className="mr-2">•</span>
-                Enfermera profesional con 5 años en entorno hospitalario
+                Experiencia real de más de 8 años trabajando en entorno clínico
               </p>
 
               <p className="text-small">
                 <span className="mr-2">•</span>
-                2 años en entorno extrahospitalario
+                Contacto directo con pacientes y necesidades reales 
               </p>
 
               <p className="text-small italic">
-                Entendimiento real del sector salud, pacientes y necesidades del
-                negocio desde dentro.
+                Entendemos cómo piensa un paciente antes de decidir.
               </p>
             </article>
 
@@ -93,40 +98,40 @@ export default function NosotrosPage() {
 
               <p className="text-small">
                 <span className="mr-2">•</span>
-                Conocimiento directo de cómo funciona un restaurante, la presión
-                operativa y lo que realmente importa para vender.
+                Más de 18 años de experiencia real en restauración y operativa diaria
+              </p>
+               <p className="text-small">
+                <span className="mr-2">•</span>
+                Conocimiento de cómo se toman decisiones de compra  
+              </p>
+
+              <p className="text-small italic">
+                Sabemos qué hace que un cliente reserve o no. 
               </p>
             </article>
 
             <article className="card flex flex-col gap-3 md:col-span-2">
               <h3 className="card-title text-center">
-                Experiencia en hospitalidad y turismo
+                Experiencia en turismo 
               </h3>
 
               <p className="text-small text-center">
                 <span className="mr-2">•</span>
-                Experiencia en entorno hotelero
+                Más de 4 años de  experiencia en entorno hotelero 
               </p>
 
               <p className="text-small text-center">
                 <span className="mr-2">•</span>
-                Conocimiento de la gestión y experiencia del cliente
+                Conocimiento del cliente y su proceso de reserva 
               </p>
 
               <p className="text-small text-center italic">
-                Sabemos cómo funciona un alojamiento turístico por dentro: desde
-                la operativa diaria hasta lo que hace que un cliente reserve o
-                no.
+                Entendemos qué hace que un cliente elija tu negocio.
               </p>
             </article>
           </div>
 
-          <div className="flex flex-col items-center gap-2 text-center">
-            <p className="text-body">No hablamos desde fuera.</p>
-            <p className="text-body">
-              Entendemos cómo funciona un negocio por dentro.
-            </p>
-          </div>
+     
         </div>
       </section>
 
@@ -141,20 +146,20 @@ export default function NosotrosPage() {
 
           <div className="flex flex-col gap-5">
             <p className="text-body">
-              Hace unos años también tuvimos nuestro propio negocio. Sabemos lo
-              que es gestionar clientes, operar el día a día, tomar decisiones
-              constantes y, al mismo tiempo, intentar hacer crecer algo.
+             Hemos tenido negocio.
+ <span className="block">Hemos gestionado clientes.</span>
+   <span className="block">Hemos tenido que tomar decisiones cada día.</span>
             </p>
 
             <p className="text-body">
-              Sabemos que no es solo tener una web o estar en redes. Es hacerlo
-              sin perder tiempo y sin descuidar el negocio.
+              Sabemos lo que es invertir sin saber si va a funcionar.
+Y también lo que es perder tiempo en cosas que no dan resultado.
             </p>
 
             <blockquote className="rounded-[8px] border-l-4 border-[var(--primary)] bg-[#E1E1E1] p-5 italic">
               <p className="text-body">
-                Por eso no trabajamos como una agencia externa. Trabajamos
-                contigo como si fuéramos parte de tu negocio.
+                Por eso no trabajamos como una agencia externa.
+                Trabajamos contigo como si fuéramos parte de tu negocio.
               </p>
             </blockquote>
           </div>
@@ -169,9 +174,11 @@ export default function NosotrosPage() {
               <p className="eyebrow">Lo que pasa en la mayoría de negocios</p>
 
               <h2 className="section-title max-w-md">
-                Muchos negocios tienen presencia...
-                <span className="block">pero no les genera clientes.</span>
+                Muchos negocios tienen presencia online…
+                <span className="block">pero no les genera clientes</span>
               </h2>
+              <p className="text-body">No es falta de web o redes sociales
+                Es falta de estrategia. </p>
             </div>
 
             <ul className="flex flex-col gap-3">
@@ -189,7 +196,16 @@ export default function NosotrosPage() {
                   X
                 </span>
                 <span className="text-small text-black">
-                  Plantillas genéricas
+                  Plantillas sin sentido 
+                </span>
+              </li> 
+
+              <li className="flex items-center gap-3 rounded-[8px] bg-white p-5">
+                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+                  X
+                </span>
+                <span className="text-small text-black">
+                  No transmiten confianza 
                 </span>
               </li>
 
@@ -198,16 +214,7 @@ export default function NosotrosPage() {
                   X
                 </span>
                 <span className="text-small text-black">
-                  No transmiten confianza
-                </span>
-              </li>
-
-              <li className="flex items-center gap-3 rounded-[8px] bg-white p-5">
-                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
-                  X
-                </span>
-                <span className="text-small text-black">
-                  Dependencia de plataformas
+                  Dependencia de plataformas 
                 </span>
               </li>
             </ul>
@@ -226,8 +233,13 @@ export default function NosotrosPage() {
             <p className="eyebrow">Nuestro enfoque</p>
 
             <h2 className="section-title max-w-xl">
-              No diseñamos webs. Construimos estructura.
-            </h2>
+              No diseñamos webs.
+Construimos estructuras que generan clientes
+            </h2>  
+            <p className="text-body">
+          Antes del diseño, está la estrategia.
+Antes de lo visual, está lo que quieres conseguir.
+            </p>
           </header>
 
           <ul className="flex flex-col gap-3">
@@ -236,7 +248,7 @@ export default function NosotrosPage() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Estrategia antes que diseño
+                Estrategia antes que diseño 
               </span>
             </li>
 
@@ -245,7 +257,7 @@ export default function NosotrosPage() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Desarrollo a medida
+               Desarrollo a medida 
               </span>
             </li>
 
@@ -284,46 +296,44 @@ export default function NosotrosPage() {
             <p className="eyebrow">Cómo trabajamos</p>
 
             <h2 className="section-title">
-              Un proceso simple, claro y pensado para que tu web funcione desde
-              el primer día.
+              Un proceso claro para que tu web funcione desde el primer día
             </h2>
           </header>
 
           <div className="grid w-full gap-6 md:grid-cols-2 xl:grid-cols-3">
             <article className="card">
               <p className="section-title text-[var(--primary)]">01</p>
-              <h3 className="card-title">Analizamos tu negocio</h3>
+              <h3 className="card-title">Entendemos tu negocio</h3>
+              <p className="text-body">
+                Analizamos cómo consigues clientes y qué necesita tu web para ayudarte a crecer.
+
+              </p>
             </article>
 
             <article className="card">
               <p className="section-title text-[var(--primary)]">02</p>
-              <h3 className="card-title">Definimos estructura estratégica</h3>
+              <h3 className="card-title">Definimos la estrategia</h3>
+              <p className="text-body">
+                Creamos una estructura pensada para posicionar, generar confianza y convertir.
+              </p>
             </article>
 
             <article className="card">
               <p className="section-title text-[var(--primary)]">03</p>
-              <h3 className="card-title">Diseñamos experiencia</h3>
+              <h3 className="card-title">Diseñamos y lanzamos tu web</h3>
+              <p className="text-body">
+                Creamos una web clara, rápida y profesional, lista para generar oportunidades reales.
+              </p>
             </article>
 
-            <article className="card">
-              <p className="section-title text-[var(--primary)]">04</p>
-              <h3 className="card-title">Programamos desde cero</h3>
-            </article>
+          
 
-            <article className="card">
-              <p className="section-title text-[var(--primary)]">05</p>
-              <h3 className="card-title">Lanzamos</h3>
-            </article>
+         
 
-            <article className="card">
-              <p className="section-title text-[var(--primary)]">06</p>
-              <h3 className="card-title">Acompañamos</h3>
-            </article>
+        
           </div>
 
-          <p className="text-body text-center">
-            Sin procesos confusos. Sin desaparecer después del pago.
-          </p>
+     
         </div>
       </section>
 
@@ -386,7 +396,7 @@ export default function NosotrosPage() {
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 text-center">
           <h2 className="section-title">
             Si buscas solo una web bonita, no somos para ti.{" "}
-            <span className="text-[var(--primary)]">
+            <span className="text-[var(--primary)] block">
               Si buscas una web que atraiga clientes, hablemos.
             </span>
           </h2>
