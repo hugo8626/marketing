@@ -158,7 +158,7 @@ A diferencia de una web tradicional, elimina distracciones y guía al usuario di
       {/* SOLUCIÓN */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
-          <div className="order-2 flex flex-col gap-4 lg:order-2">
+          <div className="order-1 flex flex-col gap-4 lg:order-2">
             <p className="eyebrow">La solución</p>
 
             <h2 className="section-title max-w-3xl">
@@ -168,7 +168,7 @@ A diferencia de una web tradicional, elimina distracciones y guía al usuario di
             </h2>
           </div>
 
-          <div className="order-1 flex flex-col gap-3 lg:order-1">
+          <div className="order-2 flex flex-col gap-3 lg:order-1">
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
                 ✓
