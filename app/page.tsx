@@ -668,7 +668,7 @@ export default function Home() {
             >
               <article className="flex h-full flex-col gap-4">
                 <Image
-                  src="/sal.png"
+                  src="/tavernad.jpeg"
                   alt="Taverna de la Sal"
                   width={700}
                   height={420}
@@ -690,7 +690,7 @@ export default function Home() {
             >
               <article className="flex h-full flex-col gap-4">
                 <Image
-                  src="/bon.png"
+                  src="/bond.jpeg"
                   alt="Bon Toc"
                   width={700}
                   height={420}

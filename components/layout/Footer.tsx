@@ -36,9 +36,7 @@ export default function Footer() {
               <Link href="#" className="text-sm hover:text-[var(--primary)]">
                 Instagram
               </Link>
-              <Link href="#" className="text-sm hover:text-[var(--primary)]">
-                LinkedIn
-              </Link>
+              
               <Link href="#" className="text-sm hover:text-[var(--primary)]">
                 WhatsApp
               </Link>

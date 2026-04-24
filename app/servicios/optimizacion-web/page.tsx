@@ -174,8 +174,7 @@ export default function OptimizacionWebContent() {
             <p className="eyebrow">La solución</p>
 
             <h2 className="section-title max-w-3xl">
-              Analizamos qué falla y optimizamos lo necesario para que empiece a atraer clientes.
-Qué mejoramos
+              Analizamos qué falla y optimizamos 
               
             </h2>
           </div>

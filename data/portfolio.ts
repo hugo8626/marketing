@@ -110,11 +110,11 @@ export const portfolioProjects: PortfolioProject[] = [
     featuredImageAlt: "Habitación hotel",
     gallery: [
       {
-        src: "/sal.png",
+        src: "/terraza.png",
         alt: "Habitación",
       },
       {
-        src: "/sal.png",
+        src: "/ruinas.png",
         alt: "Interior hotel",
       },
     ],
@@ -184,11 +184,11 @@ export const portfolioProjects: PortfolioProject[] = [
     featuredImageAlt: "page",
     gallery: [
       {
-        src: "/bon.png",
-        alt: "cajas",
+        src: "/sensacion.png",
+        alt: "teraza",
       },
       {
-        src: "/bon.png",
+        src: "/regalo.png",
         alt: "regalos",
       },
     ],

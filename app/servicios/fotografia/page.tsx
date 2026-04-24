@@ -178,8 +178,7 @@ export default function FotografiaContent() {
 
             <h2 className="section-title max-w-3xl">
               Fotografía que hace que tu negocio se vea como realmente es…       
-              <span className="block">y que el cliente confíe </span>
-              <span className="block">desde el primer vistazo</span>
+             
             </h2>
           </div>
         </div>
@@ -235,7 +234,7 @@ export default function FotografiaContent() {
           <h2 className="section-title max-w-4xl">
             La fotografía no es solo estética.
             <span className="block">
-              Es lo que hace que un cliente confíe en tu negocio… o siga buscando.
+              Es lo que hace que un cliente confíe 
             </span>
           </h2>
 

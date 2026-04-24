@@ -163,8 +163,7 @@ A diferencia de una web tradicional, elimina distracciones y guía al usuario di
 
             <h2 className="section-title max-w-3xl">
                Una landing page pensada para que el usuario compre
-              <span className="block">No se trata de diseño.</span>
-              <span className="block">Se trata de dirigir la atención y facilitar la decisión.</span>
+             
             </h2>
           </div>
 
