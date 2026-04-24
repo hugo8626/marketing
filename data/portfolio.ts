@@ -63,7 +63,7 @@ export const portfolioProjects: PortfolioProject[] = [
 
     // HERO
     pageTitle:
-      " De una One Page que se quedaba corta a una web completa pensada para generar reservas",
+      " De One Page básica a web que genera reservas",
     pageIntro:
       "Hotel boutique y restaurante en la Costa Brava (Girona)",
     websiteUrl: "https://www.tavernadelasal.com",
@@ -77,7 +77,7 @@ export const portfolioProjects: PortfolioProject[] = [
 
     // PROBLEMA
     objective:
-      "La estructura limitaba el crecimiento del negocio. No era solo un problema de diseño. Era un problema de estructura.",
+      "La estructura estaba frenando el crecimiento del negocio, no era un problema de diseño sino de estrategia.",
     problemItems: [
       "Una One Page no permitía desarrollar bien los contenidos ",
       "No posicionaba en Google para búsquedas clave ",
@@ -87,9 +87,9 @@ export const portfolioProjects: PortfolioProject[] = [
 
     // ENFOQUE
     approachText:
-      "Pasamos de una One Page a una web pensada para crecer.. Rediseñamos completamente la web, pero sobre todo, replanteamos su estructura.",
+      "Pasamos de una One Page a una web pensada para crecer, rediseñando completamente la web y, sobre todo, replanteando su estructura.",
     approachItems: [
-      "Creamos una web multipágina para mejorar el SEO en Girona y Costa Brava",
+      "Creamos una web multipágina para mejorar el SEO",
       "Organizamos los contenidos para explicar mejor el negocio",
       "Priorizamos la experiencia visual para transmitir el espacio",
       "Diseñamos un recorrido claro enfocado en la reserva",
@@ -97,14 +97,14 @@ export const portfolioProjects: PortfolioProject[] = [
 
     // RESULTADO
     resultText:
-      "Una web preparada para posicionar y generar reservas Ahora la web no solo refleja la experiencia del lugar. También está preparada para atraer tráfico y convertirlo en clientes.",
+      "Una web preparada para posicionar y generar reservas, que no solo refleja la experiencia del lugar sino que también está optimizada para atraer tráfico y convertirlo en clientes  ",
     resultItems: [
-      "Mejor posicionamiento en Google ",
-      "Mayor confianza desde el primer clic",
-      "Experiencia más clara y completa",
-      "Base sólida para aumentar reservas directas ",
+      "Imagen más profesional",
+      "Mayor confianza del usuario",
+      "Experiencia más clara",
+      "Base sólida para crecer",
     ],
-    finimg:"Ahora la web transmite lo que el cliente espera antes de llegar.",
+    finimg:"",
     // MEDIA
     featuredImage: "/sal.png",
     featuredImageAlt: "Habitación hotel",
@@ -137,48 +137,48 @@ export const portfolioProjects: PortfolioProject[] = [
 
     // HERO
     pageTitle:
-      " De no tener presencia online a una web pensada para vender y guiar la compra",
+      " De no tener presencia online a una web que vende.",
     pageIntro:
-      "E-commerce de regalos comestibles en Girona",
+      "Ecommerce de regalos comestibles diseñado para facilitar la decisión y mejorar la conversión.",
     websiteUrl: "https://www.bontoc.com",
     websiteLabel: "www.bontoc.com",
 
     // CONTEXTO
     context:
-      "Una marca de regalos comestibles donde el valor está en la experiencia, no solo en el producto. sdopsefwejfeoqwfjopwejowejpjpwefjopjopwe",
+      "Bon Toc es un producto emocional donde el valor está en la experiencia de regalar, no solo en el producto, y necesitaba una web a la altura. El reto no era solo vender cajas, sino ayudar al usuario a elegir, conectar y tomar una decisión",
     pageDescription:
       "",
 
     // PROBLEMA
     objective:
-      "El problema no era vender cajas, era ayudar a tomar una decisión emocional.",
+      "No era solo no tener web, sino no tener un sistema que guiará al cliente y convirtiera el interés en ventas",
     problemItems: [
-      "Demasiadas opciones sin estructura clara",
-      "Dificultad para decidir rápido",
-      "Falta de conexión emocional",
-      "Experiencia de compra poco fluida",
+      "Cuando hay demasiadas opciones, elegir se vuelve difícil",
+      "Sin una guía clara, el usuario duda o abandona",
+      "El producto no conectaba a nivel emocional",
+      "La decisión requería más esfuerzo del necesario",
     ],
 
     // ENFOQUE
     approachText:
-      "No diseñamos solo una web, diseñamos cómo se toma la decisión de compraadf eklrqwejrjqrlñjqwlñjrqwo`rtjqetgjoltjfqweljtñjqetlñtjeqwj",
+      "Creamos una web pensada para facilitar la decisión de compra, no solo diseñando una página sino estructurando todo el proceso para guiar al cliente desde el interés hasta la conversión ",
     approachItems: [
       "Simplificamos el proceso de compra",
-      "Organizamos el contenido por momentos ",
+      "Organizamos el contenido por momentos",
       "Priorizamos claridad sobre saturación",
       "Eliminamos fricción en cada paso",
     ],
 
     // RESULTADO
     resultText:
-      "Una web pensada para facilitar la decisión de compra, con una experiencia clara, cuidada y alineada con la marca. La estética, la fotografía y el lenguaje construyen una experiencia cálida que transmite valor y mejora la conversión.",
+      "Es una web que guía al usuario y facilita la compra, con una experiencia clara, cuidada y alineada con la marca, donde cada elemento —diseño, fotografía y mensaje— trabaja para transmitir valor, generar confianza y convertir visitas en clientes. ",
     resultItems: [
       "Experiencia de compra más clara",
       "Mayor facilidad de compra",
       "Mejor percepción del producto",
       "Web preparada para convertir",
     ],
-    finimg:"Ahora la web acompaña el momento en el que alguien decide regalar.",
+    finimg:" ",
     // MEDIA
     featuredImage: "/bon.png",
     featuredImageAlt: "page",
