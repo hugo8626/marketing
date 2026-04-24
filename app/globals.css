@@ -126,7 +126,7 @@ svg {
 
 /* 🔽 AJUSTADO */
 .text-small {
-  @apply text-[0.82rem] leading-6 sm:text-[0.85rem];
+  @apply text-[0.85rem] leading-6 sm:text-[0.85rem];
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: var(--text-muted);
