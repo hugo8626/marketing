@@ -707,16 +707,15 @@ export default function Home() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6 text-center">
           <h2 className="section-title max-w-4xl">
-            Trabajamos con negocios en Girona y 
-            <span className="block">la Costa Brava</span>
+            Trabajamos  online con negocios de toda 
+             
             <span className="block text-[var(--primary)]">
-              Creamos páginas web para negocios locales en Girona, Figueres, Roses, Empuriabrava, Banyoles, Pals, Begur y alrededores, adaptándonos a cada tipo de negocio y mercado.
+             negocios de toda España
             </span>
           </h2>
           <p className="text-body">
-            Si tu negocio está en la zona y quieres más visibilidad y clientes, podemos ayudarte.
-También trabajamos online con negocios de toda España.
-          </p>
+            Si quieres más visibilidad y clientes, podemos ayudarte.
+También trabajamos online con negocios de toda España.   </p>
         </div>
       </section>
 
