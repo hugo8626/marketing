@@ -274,59 +274,63 @@ export default function Home() {
       </section>
 
       {/* SOLUTION */}
-      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
-          <header className="order-2 flex flex-col gap-4 lg:order-2">
-            <p className="eyebrow">Captación de clientes online</p>
+     <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+  <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
+    
+    {/* TEXTO ARRIBA EN MOBILE */}
+    <header className="order-1 flex flex-col gap-4 lg:order-2">
+      <p className="eyebrow">Captación de clientes online</p>
 
-            <h2 className="section-title max-w-xl">
-              Diseñamos páginas web en Girona enfocadas en generar clientes 
-            </h2>
+      <h2 className="section-title max-w-xl">
+        Diseñamos páginas web en Girona enfocadas en generar clientes
+      </h2>
 
-            <p className="text-small max-w-lg">
-              Estrategia profesional clara y una inversión accesible para obtener resultados reales
-            </p>
-          </header>
+      <p className="text-small max-w-lg">
+        Estrategia profesional clara y una inversión accesible para obtener resultados reales
+      </p>
+    </header>
 
-          <ul className="order-1 flex flex-col gap-3 lg:order-1">
-            <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
-              <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
-                ✔
-              </span>
-              <span className="text-small text-black">
-                Explicar claramente lo que haces desde el primer segundo
-              </span>
-            </li>
+    {/* LISTA ABAJO EN MOBILE */}
+    <ul className="order-2 flex flex-col gap-3 lg:order-1">
+      <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
+        <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
+          ✔
+        </span>
+        <span className="text-small text-black">
+          Explicar claramente lo que haces desde el primer segundo
+        </span>
+      </li>
 
-            <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
-              <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
-                ✔
-              </span>
-              <span className="text-small text-black">
-                 Generar confianza y credibilidad en cada visita
-              </span>
-            </li>
+      <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
+        <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
+          ✔
+        </span>
+        <span className="text-small text-black">
+          Generar confianza y credibilidad en cada visita
+        </span>
+      </li>
 
-            <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
-              <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
-                ✔
-              </span>
-              <span className="text-small text-black">
-                Convertir visitas en contactos reales
-              </span>
-            </li>
+      <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
+        <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
+          ✔
+        </span>
+        <span className="text-small text-black">
+          Convertir visitas en contactos reales
+        </span>
+      </li>
 
-            <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
-              <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
-                ✔
-              </span>
-              <span className="text-small text-black">
-                Posicionarte en Google y atraer clientes de forma constante
-              </span>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
+        <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] leading-none text-[var(--primary)]">
+          ✔
+        </span>
+        <span className="text-small text-black">
+          Posicionarte en Google y atraer clientes de forma constante
+        </span>
+      </li>
+    </ul>
+
+  </div>
+</section>
 
       {/* PROCESS */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">

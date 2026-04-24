@@ -121,44 +121,51 @@ export default function NegocioSaludPage() {
       </section>
 
       {/* SOLUCIÓN */}
-      <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
-          <ul className="flex flex-col gap-3">
-            {[
-              "Estructura clara pensada para generar citas ",
-              "Botones de contacto visibles (WhatsApp, llamada…) ",
-              "Diseño que transmite profesionalidad y confianza ",
-              "Mensajes claros que resuelven dudas del paciente",
-              "SEO local para atraer pacientes en Girona ",
-            ].map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5"
-              >
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
-                  ✔
-                </span>
-                {item}
-              </li>
-            ))}
-          </ul>
+    <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
+  <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
 
-          <div className="flex flex-col gap-4">
-            <p className="eyebrow">La solución</p>
-            <h2 className="section-title">
-              Una web pensada para 
-              <span className="block text-[var(--primary)]"> generar citas</span>
-              
-            </h2>
-            <p className="text-body">
-              No se trata solo de diseño.
-            </p>
-            <p className="text-body">
-              Se trata de crear una web que genere confianza y facilite que el paciente contacte contigo.
-            </p>
-          </div>
-        </div>
-      </section>
+    {/* TEXTO ARRIBA EN MOBILE */}
+    <div className="order-1 flex flex-col gap-4 lg:order-2">
+      <p className="eyebrow">La solución</p>
+
+      <h2 className="section-title">
+        Una web pensada para
+        <span className="block text-[var(--primary)]"> generar citas</span>
+      </h2>
+
+      <p className="text-body">
+        No se trata solo de diseño.
+      </p>
+
+      <p className="text-body">
+        Se trata de crear una web que genere confianza y facilite que el paciente contacte contigo.
+      </p>
+    </div>
+
+    {/* LISTA ABAJO EN MOBILE */}
+    <ul className="order-2 flex flex-col gap-3 lg:order-1">
+      {[
+        "Estructura clara pensada para generar citas",
+        "Botones de contacto visibles (WhatsApp, llamada…)",
+        "Diseño que transmite profesionalidad y confianza",
+        "Mensajes claros que resuelven dudas del paciente",
+        "SEO local para atraer pacientes en Girona",
+      ].map((item) => (
+        <li
+          key={item}
+          className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5"
+        >
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)]">
+            ✔
+          </span>
+
+          {item}
+        </li>
+      ))}
+    </ul>
+
+  </div>
+</section>
 
       {/* DIFERENCIA */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
