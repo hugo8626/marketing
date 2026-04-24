@@ -55,7 +55,7 @@ export const portfolioProjects: PortfolioProject[] = [
     slug: "taverna-la-sal",
 
     // CARD
-    cardTitle: "Taverna de la Sal",
+    cardTitle: "Taverna de la Sal ➜",
     cardCategory: "Hotel boutique con restaurante     ",
     cardExcerpt:
       "Mejoramos su experiencia digital para reflejar la esencia del espacio, aumentar las reservas y conectar con quienes buscan algo auténtico.",
@@ -129,7 +129,7 @@ export const portfolioProjects: PortfolioProject[] = [
     slug: "bon-toc",
 
     // CARD
-    cardTitle: "Bon Toc",
+    cardTitle: "Bon Toc ➜",
     cardCategory: "E-COMMERCE",
     cardExcerpt:
       "Diseñamos una experiencia clara y optimizada para comunicar el valor del producto y facilitar la conversión en un mercado competitivo.",
