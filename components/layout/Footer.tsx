@@ -37,9 +37,12 @@ export default function Footer() {
                 Instagram
               </Link>
               
-              <Link href="#" className="text-sm hover:text-[var(--primary)]">
-                WhatsApp
-              </Link>
+              <Link
+                  href="https://wa.me/34689083475"
+                  className="text-sm hover:text-[var(--primary)]"
+                  target="_blank"
+                >  WhatsApp
+                </Link>
             </div>
           </div>
 
