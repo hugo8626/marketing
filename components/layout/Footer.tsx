@@ -75,7 +75,7 @@ export default function Footer() {
 
             <div className="flex flex-col gap-2 text-sm text-[var(--text-muted)]">
               <p>info@fityxdigital.com</p>
-              <p>+34 600 000 000</p>
+              <p>+34 689083475</p>
               <p>Girona, España</p>
             </div>
 
