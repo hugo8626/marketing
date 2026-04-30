@@ -46,7 +46,8 @@ const SERVICE_OPTIONS = [
   "No estoy seguro, necesito orientación",
 ] as const;
 
-const WHATSAPP_URL = "https://wa.me/TU_NUMERO_AQUI";
+const WHATSAPP_URL =
+  "https://wa.me/34689083475?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20un%20proyecto";
 
 /* ========================================
    COMPONENT
@@ -93,7 +94,13 @@ export default function ContactPage() {
       formData.subject.trim() === "" ||
       formData.message.trim() === ""
     );
-  }, [formData.email, formData.message, formData.name, formData.subject, submitState]);
+  }, [
+    formData.email,
+    formData.message,
+    formData.name,
+    formData.subject,
+    submitState,
+  ]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -365,9 +372,7 @@ export default function ContactPage() {
             {submitMessage ? (
               <p
                 className={`text-center text-sm ${
-                  submitState === "success"
-                    ? "text-green-700"
-                    : "text-red-700"
+                  submitState === "success" ? "text-green-700" : "text-red-700"
                 }`}
               >
                 {submitMessage}
@@ -395,7 +400,7 @@ export default function ContactPage() {
 
           <h2 className="section-title mb-4">Dónde estamos</h2>
 
-          <p className="text-body">Estamos en La Escala (Girona),</p>
+          <p className="text-body">Estamos en L&apos;Escala (Girona),</p>
 
           <p className="text-body">
             pero trabajamos con negocios en toda Cataluña y también de forma

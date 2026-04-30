@@ -132,7 +132,7 @@ export default function NegocioTurismoPage() {
 
             <h2 className="section-title max-w-2xl">
               Muchos negocios turísticos tienen web…
-              <span className="block text-[var(--primary)]">pero no les genera reservas</span>
+             
             </h2>
 
             <p className="text-small max-w-xl">
