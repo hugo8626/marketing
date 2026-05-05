@@ -2,10 +2,15 @@
 //
 // SECTION: SERVICIOS
 //
-// Bloque de servicios responsive con cabecera, grid de cards
-// y cierre con mensaje final orientado a conversión.
+// Bloque principal de servicios.
+// Presenta las soluciones digitales disponibles para atraer clientes online.
+// Incluye grid de servicios y CTA final hacia contacto.
 
 import Link from "next/link";
+
+/* ========================================
+   SECTION
+======================================== */
 
 export default function ServiciosSection() {
   return (
@@ -15,14 +20,19 @@ export default function ServiciosSection() {
         <header className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
           <p className="eyebrow">Servicios</p>
 
-          <h1 className="hero-title">Soluciones para atraer clientes online</h1>
+          <h1 className="hero-title">
+            Soluciones digitales para atraer clientes online
+          </h1>
 
           <p className="text-body max-w-2xl">
-            No se trata solo de tener una web, sino de construir una presencia digital que funcione.
+            No se trata solo de tener una web, sino de construir una presencia
+            digital clara, profesional y preparada para generar oportunidades.
           </p>
+
           <p className="text-body max-w-2xl">
             Cada negocio está en un punto diferente: empezar, mejorar o escalar.
-Aquí tienes cómo podemos ayudarte según tu situación.</p>
+            Aquí tienes cómo podemos ayudarte según tu situación.
+          </p>
         </header>
 
         {/* SERVICES GRID */}
@@ -32,28 +42,24 @@ Aquí tienes cómo podemos ayudarte según tu situación.</p>
               <h2 className="card-title">One Page</h2>
 
               <p className="mt-4 text-body">
-                
-Ideal para empezar a conseguir tus primeros clientes sin complicaciones
+                Ideal para empezar a conseguir tus primeros clientes sin
+                complicaciones.
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] ">
-                →
-              </span>
+              <span className="mt-8 inline-block text-[var(--primary)]">→</span>
             </article>
           </Link>
 
           <Link href="/servicios/web-completa" className="group block h-full">
             <article className="flex h-full min-h-[230px] flex-col items-center rounded-[8px] border border-transparent bg-[#F5F5F5] p-6 text-center transition-all duration-300 group-hover:border-[var(--primary)] group-hover:bg-[#f9f5ed] group-hover:shadow-lg md:p-8">
-              <h2 className="card-title">Web completa
-</h2>
+              <h2 className="card-title">Web completa</h2>
 
               <p className="mt-4 text-body">
-                Pensada para posicionarte en Google y generar clientes de forma constante
+                Pensada para posicionarte en Google y generar clientes de forma
+                constante.
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] ">
-                →
-              </span>
+              <span className="mt-8 inline-block text-[var(--primary)]">→</span>
             </article>
           </Link>
 
@@ -62,12 +68,11 @@ Ideal para empezar a conseguir tus primeros clientes sin complicaciones
               <h2 className="card-title">Landing page</h2>
 
               <p className="mt-4 text-body">
-                Optimizada para convertir visitas en clientes desde campañas y anuncios 
+                Optimizada para convertir visitas en clientes desde campañas y
+                anuncios.
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] ">
-                →
-              </span>
+              <span className="mt-8 inline-block text-[var(--primary)]">→</span>
             </article>
           </Link>
 
@@ -79,12 +84,10 @@ Ideal para empezar a conseguir tus primeros clientes sin complicaciones
               <h2 className="card-title">Gestión de contenidos</h2>
 
               <p className="mt-4 text-body">
-                Atrae clientes de forma constante con contenido estratégico
+                Atrae clientes de forma constante con contenido estratégico.
               </p>
 
-              <span className=" mt-8 inline-block text-[var(--primary)] ">
-                →
-              </span>
+              <span className="mt-8 inline-block text-[var(--primary)]">→</span>
             </article>
           </Link>
 
@@ -93,12 +96,11 @@ Ideal para empezar a conseguir tus primeros clientes sin complicaciones
               <h2 className="card-title">Fotografía</h2>
 
               <p className="mt-4 text-body">
-                Genera confianza y mejora la percepción de tu negocio desde el primer vistazo
+                Genera confianza y mejora la percepción de tu negocio desde el
+                primer vistazo.
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] ">
-                →
-              </span>
+              <span className="mt-8 inline-block text-[var(--primary)]">→</span>
             </article>
           </Link>
 
@@ -110,12 +112,10 @@ Ideal para empezar a conseguir tus primeros clientes sin complicaciones
               <h2 className="card-title">Optimización web</h2>
 
               <p className="mt-4 text-body">
-                Convierte tu web actual en una herramienta que genere resultados
+                Convierte tu web actual en una herramienta que genere resultados.
               </p>
 
-              <span className="mt-8 inline-block text-[var(--primary)] ">
-                →
-              </span>
+              <span className="mt-8 inline-block text-[var(--primary)]">→</span>
             </article>
           </Link>
         </div>
@@ -127,15 +127,12 @@ Ideal para empezar a conseguir tus primeros clientes sin complicaciones
           </h2>
 
           <p className="text-body">
-            Es una herramienta para atraer clientes y hacer crecer tu negocio, empezando por entender tus necesidades y convertirlas en resultados. Si no lo tienes claro, te ayudamos a definirlo.
-
+            Es una herramienta para atraer clientes y hacer crecer tu negocio,
+            empezando por entender tus necesidades y convertirlas en resultados.
+            Si no lo tienes claro, te ayudamos a definirlo.
           </p>
 
-       
-          <Link
-            href="/sobre-nosotros"
-            className="btn-primary"
-          >
+          <Link href="/contacto" className="btn-primary">
             Cuéntanos tu caso →
           </Link>
         </div>

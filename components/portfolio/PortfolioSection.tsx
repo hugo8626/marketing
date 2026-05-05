@@ -20,14 +20,15 @@ export default function PortfolioSection() {
             <p className="eyebrow">Proyectos</p>
 
             <h1 className="hero-title max-w-4xl">
-                 Tu negocio puede ser el siguiente caso de éxito
-
+              Tu negocio puede ser el siguiente caso de éxito
             </h1>
 
             <p className="text-body max-w-2xl">
-              
-            No se trata solo de diseñar una web <span className="block">Se trata de entender qué necesita tu negocio y construir algo que funcione de verdad.</span>
-
+              No se trata solo de diseñar una web
+              <span className="block">
+                Se trata de entender qué necesita tu negocio y construir algo que
+                funcione de verdad.
+              </span>
             </p>
 
             <div className="mt-4 flex flex-col items-start gap-2">
@@ -57,12 +58,19 @@ export default function PortfolioSection() {
         <div className="mx-auto flex max-w-7xl flex-col gap-6">
           <p className="eyebrow">Cómo trabajamos</p>
 
-          <h2 className="section-title max-w-3xl">No hacemos webs por hacer. 
-            <span className="block text-[var(--primary)]">Creamos webs con sentido</span>       </h2>
+          <h2 className="section-title max-w-3xl">
+            No hacemos webs por hacer.
+            <span className="block text-[var(--primary)]">
+              Creamos webs con sentido
+            </span>
+          </h2>
 
           <p className="text-body max-w-2xl">
-           Trabajamos con negocios que necesitan mejorar su presencia online para conseguir más clientes.
-           <span className="block">Cada proyecto empieza con una pregunta clave:</span>
+            Trabajamos con negocios que necesitan mejorar su presencia online
+            para conseguir más clientes.
+            <span className="block">
+              Cada proyecto empieza con una pregunta clave:
+            </span>
           </p>
 
           <blockquote className="max-w-3xl border-l-4 border-[var(--primary)] pl-4 text-xl font-extrabold leading-snug">
@@ -80,8 +88,9 @@ export default function PortfolioSection() {
             <h2 className="section-title max-w-xl">
               ¿Por qué muchas webs no generan clientes?
             </h2>
-          <p>No es falta de diseño</p>
-          <p>Es falta de estrategia.</p>
+
+            <p>No es falta de diseño</p>
+            <p>Es falta de estrategia.</p>
           </div>
 
           <ul className="flex flex-col gap-3">
@@ -90,7 +99,7 @@ export default function PortfolioSection() {
                 X
               </span>
               <span className="text-small text-black">
-                La web no explica bien qué hace el negocio 
+                La web no explica bien qué hace el negocio
               </span>
             </li>
 
@@ -108,8 +117,7 @@ export default function PortfolioSection() {
                 X
               </span>
               <span className="text-small text-black">
-                No guía al usuario ni facilita la decisión 
-
+                No guía al usuario ni facilita la decisión
               </span>
             </li>
 
@@ -118,7 +126,7 @@ export default function PortfolioSection() {
                 X
               </span>
               <span className="text-small text-black">
-                No está pensada para convertir visitas en contactos 
+                No está pensada para convertir visitas en contactos
               </span>
             </li>
           </ul>
@@ -134,7 +142,7 @@ export default function PortfolioSection() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Estructura clara que guía al usuario paso a paso 
+                Estructura clara que guía al usuario paso a paso
               </span>
             </li>
 
@@ -152,7 +160,7 @@ export default function PortfolioSection() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Diseño alineado con tu negocio y tu cliente 
+                Diseño alineado con tu negocio y tu cliente
               </span>
             </li>
 
@@ -161,7 +169,7 @@ export default function PortfolioSection() {
                 ✔
               </span>
               <span className="text-small text-black">
-                Enfoque en facilitar el contacto y la conversión 
+                Enfoque en facilitar el contacto y la conversión
               </span>
             </li>
           </ul>
@@ -171,11 +179,13 @@ export default function PortfolioSection() {
 
             <h2 className="section-title max-w-xl">
               Qué hacemos en cada proyecto
-             
             </h2>
 
             <p className="text-body max-w-lg">
-              No buscamos solo una web bonita. <span className="block">Buscamos que tu negocio comunique mejor y convierta más.</span>
+              No buscamos solo una web bonita.
+              <span className="block">
+                Buscamos que tu negocio comunique mejor y convierta más.
+              </span>
             </p>
           </div>
         </div>
@@ -191,11 +201,6 @@ export default function PortfolioSection() {
               ¿Qué buscamos en
               <span className="block">todos los proyectos?</span>
             </h2>
-
-            <p className="text-body max-w-lg">
-             No buscamos solo una web bonita.
-Buscamos que tu negocio comunique mejor y convierta más.
-            </p>
           </div>
 
           <ul className="flex flex-col gap-3">
@@ -204,10 +209,10 @@ Buscamos que tu negocio comunique mejor y convierta más.
                 ✔
               </span>
               <span className="text-small text-black">
-                Mayor claridad en lo que ofreces 
+                Mayor claridad en lo que ofreces
               </span>
             </li>
- 
+
             <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
               <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] leading-none">
                 ✔
@@ -222,7 +227,7 @@ Buscamos que tu negocio comunique mejor y convierta más.
                 ✔
               </span>
               <span className="text-small text-black">
-                Mejor experiencia para el usuario 
+                Mejor experiencia para el usuario
               </span>
             </li>
 
@@ -242,11 +247,14 @@ Buscamos que tu negocio comunique mejor y convierta más.
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto w-full max-w-7xl">
           <div className="mb-10 flex flex-col gap-3">
-            <h2 className="section-title">Webs diseñadas para generar resultados</h2>
+            <h2 className="section-title">
+              Webs diseñadas para generar resultados
+            </h2>
 
             <p className="text-body max-w-3xl">
-              Cada proyecto es diferente, pero todos tienen un objetivo en común:
-atraer clientes, generar confianza y convertir visitas en oportunidades reales.
+              Cada proyecto es diferente, pero todos tienen un objetivo en
+              común: atraer clientes, generar confianza y convertir visitas en
+              oportunidades reales.
             </p>
           </div>
 

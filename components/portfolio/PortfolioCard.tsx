@@ -7,21 +7,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
-import type { PortfolioProject } from "../../data/portfolio";
-
+import type { PortfolioProject } from "@/data/portfolio";
 
 type PortfolioCardProps = {
   project: PortfolioProject;
 };
 
 export default function PortfolioCard({ project }: PortfolioCardProps) {
-
-  
   return (
     <Link
       href={`/portfolio/${project.slug}`}
-      className="block transition-opacity duration-300 hover:opacity-90"
+      className="group block transition-opacity duration-300 hover:opacity-90"
     >
       <article>
         <Image
@@ -29,7 +25,8 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
           alt={project.cardTitle}
           width={900}
           height={560}
-          className="mb-4 h-[280px] w-full rounded object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="mb-4 h-[280px] w-full rounded-[8px] object-cover"
         />
 
         <p className="eyebrow mb-2">{project.cardCategory}</p>

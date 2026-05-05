@@ -1,15 +1,48 @@
-// FILE: src/app/nosotros/page.tsx
+// FILE: app/nosotros/page.tsx
 //
 // PAGE: NOSOTROS
 //
-// Página corporativa responsive y semántica.
-// - jerarquía de headings corregida
-// - estructura visual más consistente
-// - contenedores y espaciados unificados
-// - responsive limpio y profesional
+// Página corporativa de Fityx Digital.
+// Explica quién hay detrás, experiencia, enfoque, proceso y filosofía.
+// Optimizada con SEO para producción.
 
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+/* ========================================
+   SEO
+======================================== */
+
+export const metadata: Metadata = {
+  title: "Sobre nosotros | Diseño web estratégico en Girona",
+  description:
+    "Conoce Fityx Digital, estudio de diseño web en Girona enfocado en crear páginas estratégicas para atraer clientes y hacer crecer negocios.",
+  alternates: {
+    canonical: "/nosotros",
+  },
+  openGraph: {
+    title: "Sobre nosotros | Fityx Digital",
+    description:
+      "Creamos páginas web estratégicas para negocios reales, con foco en confianza, conversión y captación de clientes.",
+    url: "/nosotros",
+    siteName: "Fityx Digital",
+    images: [
+      {
+        url: "/hero.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Fityx Digital diseño web estratégico",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+};
+
+/* ========================================
+   PAGE
+======================================== */
 
 export default function NosotrosPage() {
   return (
@@ -25,16 +58,19 @@ export default function NosotrosPage() {
             </h1>
 
             <p className="text-body max-w-2xl italic">
-              Somos parte de tu negocio
-
+              Somos parte de tu negocio.
             </p>
 
             <p className="text-body max-w-2xl">
-             En FITYX DIGITAL No trabajamos por volumen ni hacemos webs sin sentido.
-Creamos páginas web en Girona pensadas para ayudarte a conseguir clientes y hacer crecer tu negocio.
+              En Fityx Digital no trabajamos por volumen ni hacemos webs sin
+              sentido. Creamos páginas web en Girona pensadas para ayudarte a
+              conseguir clientes y hacer crecer tu negocio.
             </p>
-              <p className="text-body max-w-2xl">Entendemos cómo funciona un negocio por dentro.
-Y eso cambia completamente cómo planteamos tu web.</p>
+
+            <p className="text-body max-w-2xl">
+              Entendemos cómo funciona un negocio por dentro. Y eso cambia
+              completamente cómo planteamos tu web.
+            </p>
 
             <div className="flex flex-col items-start gap-3">
               <Link className="btn-black text-sm" href="/contacto">
@@ -48,7 +84,7 @@ Y eso cambia completamente cómo planteamos tu web.</p>
           <div className="flex justify-center lg:justify-end">
             <Image
               src="/hero.jpeg"
-              alt="Equipo de FITYX DIGITAL trabajando en estrategia y desarrollo web"
+              alt="Fityx Digital trabajando en estrategia y desarrollo web"
               width={450}
               height={300}
               className="h-auto w-full max-w-md rounded-[8px] border-2 border-black object-cover"
@@ -67,10 +103,12 @@ Y eso cambia completamente cómo planteamos tu web.</p>
             <h2 className="section-title">
               No hablamos desde fuera. Sabemos cómo funciona tu negocio
             </h2>
+
             <p className="text-body">
-             No trabajamos solo desde el diseño o el marketing.
-Entendemos cómo funcionan los negocios por dentro y cómo toman decisiones tus clientes.
-Esa experiencia es la que aplicamos para crear webs, contenido y estrategias que realmente funcionan.
+              No trabajamos solo desde el diseño o el marketing. Entendemos cómo
+              funcionan los negocios por dentro y cómo toman decisiones tus
+              clientes. Esa experiencia es la que aplicamos para crear webs,
+              contenido y estrategias que realmente funcionan.
             </p>
           </header>
 
@@ -85,7 +123,7 @@ Esa experiencia es la que aplicamos para crear webs, contenido y estrategias que
 
               <p className="text-small">
                 <span className="mr-2">•</span>
-                Contacto directo con pacientes y necesidades reales 
+                Contacto directo con pacientes y necesidades reales
               </p>
 
               <p className="text-small italic">
@@ -98,31 +136,33 @@ Esa experiencia es la que aplicamos para crear webs, contenido y estrategias que
 
               <p className="text-small">
                 <span className="mr-2">•</span>
-                Más de 18 años de experiencia real en restauración y operativa diaria
+                Más de 18 años de experiencia real en restauración y operativa
+                diaria
               </p>
-               <p className="text-small">
+
+              <p className="text-small">
                 <span className="mr-2">•</span>
-                Conocimiento de cómo se toman decisiones de compra  
+                Conocimiento de cómo se toman decisiones de compra
               </p>
 
               <p className="text-small italic">
-                Sabemos qué hace que un cliente reserve o no. 
+                Sabemos qué hace que un cliente reserve o no.
               </p>
             </article>
 
             <article className="card flex flex-col gap-3 md:col-span-2">
               <h3 className="card-title text-center">
-                Experiencia en turismo 
+                Experiencia en turismo
               </h3>
 
               <p className="text-small text-center">
                 <span className="mr-2">•</span>
-                Más de 4 años de  experiencia en entorno hotelero 
+                Más de 4 años de experiencia en entorno hotelero
               </p>
 
               <p className="text-small text-center">
                 <span className="mr-2">•</span>
-                Conocimiento del cliente y su proceso de reserva 
+                Conocimiento del cliente y su proceso de reserva
               </p>
 
               <p className="text-small text-center italic">
@@ -130,8 +170,6 @@ Esa experiencia es la que aplicamos para crear webs, contenido y estrategias que
               </p>
             </article>
           </div>
-
-     
         </div>
       </section>
 
@@ -146,20 +184,22 @@ Esa experiencia es la que aplicamos para crear webs, contenido y estrategias que
 
           <div className="flex flex-col gap-5">
             <p className="text-body">
-             Hemos tenido negocio.
- <span className="block">Hemos gestionado clientes.</span>
-   <span className="block">Hemos tenido que tomar decisiones cada día.</span>
+              Hemos tenido negocio.
+              <span className="block">Hemos gestionado clientes.</span>
+              <span className="block">
+                Hemos tenido que tomar decisiones cada día.
+              </span>
             </p>
 
             <p className="text-body">
-              Sabemos lo que es invertir sin saber si va a funcionar.
-Y también lo que es perder tiempo en cosas que no dan resultado.
+              Sabemos lo que es invertir sin saber si va a funcionar. Y también
+              lo que es perder tiempo en cosas que no dan resultado.
             </p>
 
             <blockquote className="rounded-[8px] border-l-4 border-[var(--primary)] bg-[#E1E1E1] p-5 italic">
               <p className="text-body">
-                Por eso no trabajamos como una agencia externa.
-                Trabajamos contigo como si fuéramos parte de tu negocio.
+                Por eso no trabajamos como una agencia externa. Trabajamos
+                contigo como si fuéramos parte de tu negocio.
               </p>
             </blockquote>
           </div>
@@ -177,8 +217,10 @@ Y también lo que es perder tiempo en cosas que no dan resultado.
                 Muchos negocios tienen presencia online…
                 <span className="block">pero no les genera clientes</span>
               </h2>
-              <p className="text-body">No es falta de web o redes sociales
-                Es falta de estrategia. </p>
+
+              <p className="text-body">
+                No es falta de web o redes sociales. Es falta de estrategia.
+              </p>
             </div>
 
             <ul className="flex flex-col gap-3">
@@ -196,16 +238,7 @@ Y también lo que es perder tiempo en cosas que no dan resultado.
                   X
                 </span>
                 <span className="text-small text-black">
-                  Plantillas sin sentido 
-                </span>
-              </li> 
-
-              <li className="flex items-center gap-3 rounded-[8px] bg-white p-5">
-                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
-                  X
-                </span>
-                <span className="text-small text-black">
-                  No transmiten confianza 
+                  Plantillas sin sentido
                 </span>
               </li>
 
@@ -214,7 +247,16 @@ Y también lo que es perder tiempo en cosas que no dan resultado.
                   X
                 </span>
                 <span className="text-small text-black">
-                  Dependencia de plataformas 
+                  No transmiten confianza
+                </span>
+              </li>
+
+              <li className="flex items-center gap-3 rounded-[8px] bg-white p-5">
+                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#DEDEDE] text-sm leading-none">
+                  X
+                </span>
+                <span className="text-small text-black">
+                  Dependencia de plataformas
                 </span>
               </li>
             </ul>
@@ -233,12 +275,12 @@ Y también lo que es perder tiempo en cosas que no dan resultado.
             <p className="eyebrow">Nuestro enfoque</p>
 
             <h2 className="section-title max-w-xl">
-              No diseñamos webs.
-Construimos estructuras que generan clientes
-            </h2>  
+              No diseñamos webs. Construimos estructuras que generan clientes
+            </h2>
+
             <p className="text-body">
-          Antes del diseño, está la estrategia.
-Antes de lo visual, está lo que quieres conseguir.
+              Antes del diseño, está la estrategia. Antes de lo visual, está lo
+              que quieres conseguir.
             </p>
           </header>
 
@@ -248,7 +290,7 @@ Antes de lo visual, está lo que quieres conseguir.
                 ✔
               </span>
               <span className="text-small text-black">
-                Estrategia antes que diseño 
+                Estrategia antes que diseño
               </span>
             </li>
 
@@ -256,9 +298,7 @@ Antes de lo visual, está lo que quieres conseguir.
               <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] leading-none">
                 ✔
               </span>
-              <span className="text-small text-black">
-               Desarrollo a medida 
-              </span>
+              <span className="text-small text-black">Desarrollo a medida</span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
@@ -305,8 +345,8 @@ Antes de lo visual, está lo que quieres conseguir.
               <p className="section-title text-[var(--primary)]">01</p>
               <h3 className="card-title">Entendemos tu negocio</h3>
               <p className="text-body">
-                Analizamos cómo consigues clientes y qué necesita tu web para ayudarte a crecer.
-
+                Analizamos cómo consigues clientes y qué necesita tu web para
+                ayudarte a crecer.
               </p>
             </article>
 
@@ -314,7 +354,8 @@ Antes de lo visual, está lo que quieres conseguir.
               <p className="section-title text-[var(--primary)]">02</p>
               <h3 className="card-title">Definimos la estrategia</h3>
               <p className="text-body">
-                Creamos una estructura pensada para posicionar, generar confianza y convertir.
+                Creamos una estructura pensada para posicionar, generar confianza
+                y convertir.
               </p>
             </article>
 
@@ -322,18 +363,11 @@ Antes de lo visual, está lo que quieres conseguir.
               <p className="section-title text-[var(--primary)]">03</p>
               <h3 className="card-title">Diseñamos y lanzamos tu web</h3>
               <p className="text-body">
-                Creamos una web clara, rápida y profesional, lista para generar oportunidades reales.
+                Creamos una web clara, rápida y profesional, lista para generar
+                oportunidades reales.
               </p>
             </article>
-
-          
-
-         
-
-        
           </div>
-
-     
         </div>
       </section>
 
@@ -362,9 +396,7 @@ Antes de lo visual, está lo que quieres conseguir.
               <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] leading-none">
                 ✔
               </span>
-              <span className="text-small text-black">
-                No prometemos humo
-              </span>
+              <span className="text-small text-black">No prometemos humo</span>
             </li>
 
             <li className="flex items-start gap-3 rounded-[8px] bg-[#F5F5F5] p-5">
@@ -396,7 +428,7 @@ Antes de lo visual, está lo que quieres conseguir.
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 text-center">
           <h2 className="section-title">
             Si buscas solo una web bonita, no somos para ti.{" "}
-            <span className="text-[var(--primary)] block">
+            <span className="block text-[var(--primary)]">
               Si buscas una web que atraiga clientes, hablemos.
             </span>
           </h2>

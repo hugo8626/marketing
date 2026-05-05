@@ -1,22 +1,57 @@
-// FILE: components/servicios/fotografia/FotografiaContent.tsx
+// FILE: app/servicios/fotografia/page.tsx
 //
-// SECTION: FOTOGRAFÍA CONTENT
+// PAGE: FOTOGRAFÍA
 //
-// Bloque completo de contenido para la página de servicio
-// de fotografía profesional para negocio.
+// Página del servicio de fotografía profesional.
+// Contiene el contenido completo y el SEO de la página.
 
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function FotografiaContent() {
+/* ========================================
+   SEO
+======================================== */
+
+export const metadata: Metadata = {
+  title: "Precio fotografía profesional en Girona | Sesión desde 180€",
+  description:
+    "Fotografía profesional para negocios en Girona desde 180€. Mejora la imagen de tu web, redes y presencia online con fotos pensadas para generar confianza y atraer clientes.",
+  alternates: {
+    canonical: "/servicios/fotografia",
+  },
+  openGraph: {
+    title: "Precio fotografía profesional en Girona | Sesión desde 180€",
+    description:
+      "Sesiones de fotografía profesional desde 180€ para negocios que quieren mejorar su imagen, transmitir confianza y atraer más clientes.",
+    url: "/servicios/fotografia",
+    siteName: "Fityx Digital",
+    images: [
+      {
+        url: "/foto.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Fotografía profesional para negocios en Girona desde 180€",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+};    
+
+/* ========================================
+   PAGE
+======================================== */
+
+export default function FotografiaPage() {
   return (
-    <>
+    <main>
       {/* HERO */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,420px)] lg:items-center lg:gap-16">
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-5">
-              <p className="eyebrow">Fotografia profesional en girona </p>
+              <p className="eyebrow">Fotografía profesional en Girona</p>
 
               <h1 className="hero-title max-w-4xl">
                 La diferencia entre
@@ -62,7 +97,8 @@ export default function FotografiaContent() {
               alt="Fotógrafo trabajando en una sesión profesional"
               width={640}
               height={440}
-              className="h-auto w-full max-w-[520px] bg-black/40 p-1 rounded-[12px] object-cover shadow-lg"
+              sizes="(max-width: 1024px) 100vw, 420px"
+              className="h-auto w-full max-w-[520px] rounded-[12px] bg-black/40 p-1 object-cover shadow-lg"
               priority
             />
           </div>
@@ -76,16 +112,15 @@ export default function FotografiaContent() {
             <p className="eyebrow">El problema</p>
 
             <h2 className="section-title max-w-3xl">
-               El problema no es tu negocio…
-              <span className="block">es lo que transmite tu imagen.
-</span>
+              El problema no es tu negocio…
+              <span className="block">es lo que transmite tu imagen.</span>
             </h2>
           </header>
 
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small"> Imágenes sin calidad ni intención</p>
+              <p className="text-small">Imágenes sin calidad ni intención</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
@@ -97,21 +132,26 @@ export default function FotografiaContent() {
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small"> Contenido poco cuidado o improvisado</p>
+              <p className="text-small">Contenido poco cuidado o improvisado</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">No transmite confianza al primer vistazo</p>
+              <p className="text-small">
+                No transmite confianza al primer vistazo
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">Da sensación de poca profesionalidad  </p>
+              <p className="text-small">Da sensación de poca profesionalidad</p>
             </div>
 
             <p className="text-body pt-2 text-sm italic">
-               El cliente no compara, decide en segundos. <span className="block">Y muchas veces decide solo por lo que ve.</span>
+              El cliente no compara, decide en segundos.
+              <span className="block">
+                Y muchas veces decide solo por lo que ve.
+              </span>
             </p>
           </div>
         </div>
@@ -121,19 +161,22 @@ export default function FotografiaContent() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-7xl flex-col gap-6">
           <h2 className="section-title max-w-4xl">
-            Puedes tener una web perfecta... pero si las fotos fallan, todo lo demás pierde valor.
+            Puedes tener una web perfecta... pero si las fotos fallan, todo lo
+            demás pierde valor.
           </h2>
 
           <p className="text-body max-w-2xl">
             Porque antes de leer, el cliente mira.
-            <span className="block">Y en segundos decide si confiar o seguir buscando.
-</span>
+            <span className="block">
+              Y en segundos decide si confiar o seguir buscando.
+            </span>
           </p>
 
           <p className="rounded-[8px] bg-[#F5F5F5] px-5 py-4 text-sm italic">
-           La fotografía no acompaña tu web.
-              <span className="block">Es lo que marca la diferencia entre visitar… o convertir.</span>
-
+            La fotografía no acompaña tu web.
+            <span className="block">
+              Es lo que marca la diferencia entre visitar… o convertir.
+            </span>
           </p>
         </div>
       </section>
@@ -143,28 +186,34 @@ export default function FotografiaContent() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
           <div className="order-2 flex flex-col gap-3">
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Fotografías reales de tu negocio (sin contenido genérico)</p>
+              <p className="text-small">
+                Fotografías reales de tu negocio (sin contenido genérico)
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small"> Iluminación y composición profesional</p>
+              <p className="text-small">
+                Iluminación y composición profesional
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Imágenes adaptadas para web y redes sociales</p>
+              <p className="text-small">
+                Imágenes adaptadas para web y redes sociales
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
               <p className="text-small">
@@ -177,56 +226,14 @@ export default function FotografiaContent() {
             <p className="eyebrow">La solución</p>
 
             <h2 className="section-title max-w-3xl">
-              Fotografía que hace que tu negocio se vea como realmente es…       
-             
+              Fotografía que hace que tu negocio se vea como realmente es…
             </h2>
           </div>
         </div>
       </section>
 
       {/* SECTORES */}
-      <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[minmax(220px,360px)_1fr] lg:items-start lg:gap-14">
-          <header className="flex flex-col gap-4">
-            <p className="eyebrow">Sectores</p>
-
-            <h2 className="section-title max-w-3xl">
-                 Fotografía para negocios donde la imagen vende
-              
-            </h2>
-
-            <p className="text-body max-w-2xl">
-              En muchos negocios, el cliente decide antes de leer.
-              <span className="block">Por eso, una buena imagen no solo muestra… vende.</span>
-            </p>
-          </header>
-
-          <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Hoteles, restaurantes y alojamientos turisticos                       </p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Clinicas, centros de bienestar y consultas privadas  </p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Marca personal o negocios digitales </p>
-            </div>
-
-          
-          </div>
-        </div>
-      </section>
+    
 
       {/* MENSAJE 2 */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
@@ -234,11 +241,9 @@ export default function FotografiaContent() {
           <h2 className="section-title max-w-4xl">
             La fotografía no es solo estética.
             <span className="block">
-              Es lo que hace que un cliente confíe 
+              Es lo que hace que un cliente confíe
             </span>
           </h2>
-
-        
         </div>
       </section>
 
@@ -256,38 +261,46 @@ export default function FotografiaContent() {
 
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
               <p className="text-small">Tu negocio se percibe más profesional</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Generas confianza desde el primer segundo</p>
+              <p className="text-small">
+                Generas confianza desde el primer segundo
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Destacas frente a otros que no cuidan su imagen</p>
+              <p className="text-small">
+                Destacas frente a otros que no cuidan su imagen
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small"> Aumentan las probabilidades de contacto</p>
+              <p className="text-small">
+                Aumentan las probabilidades de contacto
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Tu web y redes empiezan a trabajar a tu favor</p>
+              <p className="text-small">
+                Tu web y redes empiezan a trabajar a tu favor
+              </p>
             </div>
           </div>
         </div>
@@ -298,11 +311,13 @@ export default function FotografiaContent() {
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 text-center">
           <header className="flex flex-col items-center gap-4">
             <h2 className="section-title max-w-4xl">
-              Tus fotos estan  haciendo que pierdas clientes (aunque no lo sepas)
+              Tus fotos están haciendo que pierdas clientes (aunque no lo sepas)
             </h2>
 
             <p className="text-body max-w-2xl">
-              Trabajamos con un número reducido de negocios para construir casos de éxito y asegurar resultados reales, Por eso ahora ofrecemos precios especiales.
+              Trabajamos con un número reducido de negocios para construir casos
+              de éxito y asegurar resultados reales. Por eso ahora ofrecemos
+              precios especiales.
             </p>
           </header>
 
@@ -310,61 +325,71 @@ export default function FotografiaContent() {
             {/* CARD 1 */}
             <article className="flex h-full flex-col rounded-[8px] border border-[#E5E5E5] bg-white p-8 text-left">
               <div className="mb-6 flex flex-col gap-2">
-                <h3 className="card-title">PLAN 1 — PRESENCIA PROFESIONAL
-</h3>
+                <h3 className="card-title">PLAN 1 — PRESENCIA PROFESIONAL</h3>
+
                 <p className="font-['ClashDisplay'] text-4xl font-semibold text-black">
                   Precio: 180€
                 </p>
+
                 <p className="text-small text-[var(--text-muted)]">
-                   Ideal para mejorar tu imagen actual de forma rápida y profesional
+                  Ideal para mejorar tu imagen actual de forma rápida y
+                  profesional
                 </p>
               </div>
 
               <ul className="mb-8 flex flex-col gap-3">
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span>Sesión fotográfica en tu negocio        </span>
+                  <span>Sesión fotográfica en tu negocio</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span>Fotografías pensadas para mejorar tu imagen y presencia online</span>
+                  <span>
+                    Fotografías pensadas para mejorar tu imagen y presencia
+                    online
+                  </span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span> Edición profesional</span>
+                  <span>Edición profesional</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Imágenes optimizadas para web y redes</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Entrega final lista para publicar</span>
                 </li>
               </ul>
 
-              <p className="card-title">
-                Además incluido
-              </p>
+              <p className="card-title">Además incluido</p>
+
               <ul className="mb-8 flex flex-col gap-3">
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Asesoramiento previo para preparar la sesión</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Selección de imágenes optimizada</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Recomendaciones de uso para web y redes</span>
                 </li>
-                
               </ul>
-              <p className="pb-3"> Disponibilidad limitada</p>
+
+              <p className="pb-3">Disponibilidad limitada</p>
 
               <Link href="/contacto" className="btn-black mt-auto text-sm">
-                Quiero mejorar mi imagen 
+                Quiero mejorar mi imagen
               </Link>
             </article>
 
@@ -378,7 +403,7 @@ export default function FotografiaContent() {
                 <h3 className="card-title">Imagen que vende</h3>
 
                 <p className="font-['ClashDisplay'] text-4xl font-semibold text-black">
-                Precio: 450€
+                  Precio: 450€
                 </p>
 
                 <p className="text-small text-[var(--text-muted)]">
@@ -389,74 +414,104 @@ export default function FotografiaContent() {
               <ul className="mb-8 flex flex-col gap-3">
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span>Sesión completa enfocada en mostrar tu negocio como una opción profesional y atractiva </span>
+                  <span>
+                    Sesión completa enfocada en mostrar tu negocio como una
+                    opción profesional y atractiva
+                  </span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>35-45 fotos</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Fotografías más trabajadas y cuidadas</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span>Enfoque estratégico para  booking, Google, web y redes sociales</span>
+                  <span>
+                    Enfoque estratégico para Booking, Google, web y redes
+                    sociales
+                  </span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span>Imágenes pensadas para generar confianza y conversión</span>
+                  <span>
+                    Imágenes pensadas para generar confianza y conversión
+                  </span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Prioridad en selección y edición</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Entrega final lista para publicar sin complicaciones</span>
                 </li>
               </ul>
 
-              <p className="card-title">
-                Diferencial clave
-              </p>
+              <p className="card-title">Diferencial clave</p>
+
               <ul className="mb-8 flex flex-col gap-3">
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span>Dirección de la sesión para sacar el máximo partido a tu negocio </span>
+                  <span>
+                    Dirección de la sesión para sacar el máximo partido a tu
+                    negocio
+                  </span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Enfoque en transmitir calidad, no solo mostrar</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Imágenes pensadas para atraer clientes</span>
                 </li>
               </ul>
 
-              <p className="card-title">
-                Extra incluido
-              </p>
+              <p className="card-title">Extra incluido</p>
+
               <ul className="mb-8 flex flex-col gap-3">
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span> Análisis de tu negocio y tipo de cliente</span>
+                  <span>Análisis de tu negocio y tipo de cliente</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Recomendaciones para mejorar tu imagen online</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span> Ajustes según el uso que vayas a dar (Booking, Google, web, redes, anuncios)</span>
+                  <span>
+                    Ajustes según el uso que vayas a dar (Booking, Google, web,
+                    redes, anuncios)
+                  </span>
                 </li>
               </ul>
 
-              <p className="italic"> No es solo hacer fotos <span className="block"> Es hacer que tu negocio genere confianza desde el primer vistazo</span></p>
+              <p className="italic">
+                No es solo hacer fotos
+                <span className="block">
+                  Es hacer que tu negocio genere confianza desde el primer
+                  vistazo
+                </span>
+              </p>
+
               <p className="text-small">Disponibilidad limitada</p>
+
               <Link href="/contacto" className="btn-black mt-auto text-sm">
-                Quiero mas clientes 
+                Quiero más clientes
               </Link>
             </article>
           </div>
@@ -508,6 +563,6 @@ export default function FotografiaContent() {
           </p>
         </div>
       </section>
-    </>
+    </main>
   );
 }

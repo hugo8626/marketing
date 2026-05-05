@@ -8,7 +8,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import type { PortfolioProject } from "../../data/portfolio";
+
+import type { PortfolioProject } from "@/data/portfolio";
 
 type Props = {
   project: PortfolioProject;
@@ -56,13 +57,14 @@ export default function ProjectDetailTemplate({ project }: Props) {
       {/* CONTEXTO */}
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-4xl flex-col items-center pt-6 text-center">
-         
-
           <h2 className="section-title mb-5">El negocio</h2>
 
           <div className="flex flex-col gap-4">
             <p className="text-body">{project.context}</p>
-            <p className="text-body">{project.pageDescription}</p>
+
+            {project.pageDescription ? (
+              <p className="text-body">{project.pageDescription}</p>
+            ) : null}
           </div>
         </div>
       </section>
@@ -71,8 +73,6 @@ export default function ProjectDetailTemplate({ project }: Props) {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-start">
           <div className="flex flex-col gap-4 pt-6">
-           
-
             <h2 className="section-title">El problema</h2>
 
             <p className="text-body">{project.objective}</p>
@@ -99,8 +99,6 @@ export default function ProjectDetailTemplate({ project }: Props) {
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-start">
           <div className="flex flex-col gap-4 pt-6">
-            
-
             <h2 className="section-title">Qué hicimos</h2>
 
             <p className="text-body">{project.approachText}</p>
@@ -127,8 +125,6 @@ export default function ProjectDetailTemplate({ project }: Props) {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-start">
           <div className="flex flex-col gap-4 pt-6">
-           
-
             <h2 className="section-title">El resultado</h2>
 
             <p className="text-body">{project.resultText}</p>
@@ -152,13 +148,16 @@ export default function ProjectDetailTemplate({ project }: Props) {
 
         {/* IMAGEN PRINCIPAL + GALERÍA */}
         <div className="mx-auto mt-14 max-w-6xl md:mt-16 lg:mt-20">
-          <p className="text-small mb-4 italic">{project.finimg}</p>
+          {project.finimg ? (
+            <p className="text-small mb-4 italic">{project.finimg}</p>
+          ) : null}
 
           <Image
             src={project.featuredImage}
             alt={project.featuredImageAlt}
             width={1200}
             height={900}
+            sizes="100vw"
             className="mb-6 w-full rounded-[8px] object-cover"
             priority
           />
@@ -171,6 +170,7 @@ export default function ProjectDetailTemplate({ project }: Props) {
                 alt={img.alt}
                 width={800}
                 height={600}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="w-full rounded-[8px] object-cover"
               />
             ))}

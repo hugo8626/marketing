@@ -1,26 +1,60 @@
-// FILE: components/servicios/optimizacion-web/OptimizacionWebContent.tsx
+// FILE: app/servicios/optimizacion-web/page.tsx
 //
-// SECTION: OPTIMIZACIÓN WEB CONTENT
+// PAGE: OPTIMIZACIÓN WEB
 //
-// Bloque completo de contenido para la página de servicio
-// de optimización web.
+// Página del servicio de optimización web.
+// Contiene el contenido completo y el SEO de la página.
 
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function OptimizacionWebContent() {
+/* ========================================
+   SEO
+======================================== */
+
+export const metadata: Metadata = {
+  title: "Precio optimización web en Girona | Mejora tu web por 270€",
+  description:
+    "Optimización web en Girona por 270€. Mejoramos claridad, velocidad, SEO y conversión para que tu página transmita confianza y genere más clientes.",
+  alternates: {
+    canonical: "/servicios/optimizacion-web",
+  },
+  openGraph: {
+    title: "Precio optimización web en Girona | Mejora tu web por 270€",
+    description:
+      "Mejoramos tu web por 270€ para que sea más clara, rápida y esté pensada para convertir visitas en clientes.",
+    url: "/servicios/optimizacion-web",
+    siteName: "Fityx Digital",
+    images: [
+      {
+        url: "/optimaweb.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Optimización web en Girona por 270€",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+};
+
+/* ========================================
+   PAGE
+======================================== */
+
+export default function OptimizacionWebPage() {
   return (
-    <>
+    <main>
       {/* HERO */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,420px)] lg:items-center lg:gap-16">
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-5">
-              <p className="eyebrow">Optimización web en Girona </p>
+              <p className="eyebrow">Optimización web en Girona</p>
 
               <h1 className="hero-title max-w-4xl">
-                Mejoramos tu página para que:
-                
+                Mejoramos tu página para que funcione mejor
               </h1>
 
               <p className="text-body max-w-2xl">
@@ -61,6 +95,7 @@ export default function OptimizacionWebContent() {
               alt="Persona revisando métricas y rendimiento de una web"
               width={640}
               height={440}
+              sizes="(max-width: 1024px) 100vw, 420px"
               className="h-auto w-full max-w-[520px] rounded-[12px] bg-black/40 p-1 object-cover shadow-lg"
               priority
             />
@@ -75,39 +110,29 @@ export default function OptimizacionWebContent() {
             <p className="eyebrow">El problema</p>
 
             <h2 className="section-title max-w-3xl">
-               Tener una web no significa que esté funcionando
-             
+              Tener una web no significa que esté funcionando
             </h2>
           </header>
 
           <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small"> No aparece en Google</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">No transmite confianza</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">No guía al usuario</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">Es  lenta</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small"> No convierte visitas en clientes</p>
-            </div>
+            {[
+              "No aparece en Google",
+              "No transmite confianza",
+              "No guía al usuario",
+              "Es lenta",
+              "No convierte visitas en clientes",
+            ].map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4"
+              >
+                <span className="text-sm text-[#999]">✕</span>
+                <p className="text-small">{item}</p>
+              </div>
+            ))}
 
             <p className="text-body pt-2 text-sm italic">
-              Si no está optimizada, no funciona
+              Si no está optimizada, no funciona.
             </p>
           </div>
         </div>
@@ -117,11 +142,15 @@ export default function OptimizacionWebContent() {
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto flex max-w-7xl flex-col gap-6">
           <h2 className="section-title max-w-4xl">
-           El problema no es tener una web. <span className="block">Es que no esté pensada para conseguir clientes.</span>
+            El problema no es tener una web.
+            <span className="block">
+              Es que no esté pensada para conseguir clientes.
+            </span>
           </h2>
 
           <p className="text-body max-w-2xl">
-            Muchas webs están hechas sin estrategia, no guían al usuario y no ayudan a tomar una decisión.  
+            Muchas webs están hechas sin estrategia, no guían al usuario y no
+            ayudan a tomar una decisión.
           </p>
 
           <p className="rounded-[8px] bg-[#F5F5F5] px-5 py-4 text-sm italic">
@@ -134,48 +163,30 @@ export default function OptimizacionWebContent() {
       <section className="section-grey px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
           <div className="order-2 flex flex-col gap-3">
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">La claridad de tu mensaje (que se entienda lo que haces)</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small"> La estructura (que guíe al usuario paso a paso)</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">El diseño (que genere confianza)</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">La velocidad (para no perder oportunidades)</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small"> El SEO (para empezar a aparecer en Google)</p>
-            </div>
+            {[
+              "La claridad de tu mensaje (que se entienda lo que haces)",
+              "La estructura (que guíe al usuario paso a paso)",
+              "El diseño (que genere confianza)",
+              "La velocidad (para no perder oportunidades)",
+              "El SEO (para empezar a aparecer en Google)",
+            ].map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4"
+              >
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
+                  ✓
+                </span>
+                <p className="text-small">{item}</p>
+              </div>
+            ))}
           </div>
 
           <div className="order-1 flex flex-col gap-4">
             <p className="eyebrow">La solución</p>
 
             <h2 className="section-title max-w-3xl">
-              Analizamos qué falla y optimizamos 
-              
+              Analizamos qué falla y optimizamos tu web
             </h2>
           </div>
         </div>
@@ -192,55 +203,33 @@ export default function OptimizacionWebContent() {
 
           <div className="grid gap-6 md:grid-cols-2">
             <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="text-sm text-[#999]">✕</span>
-                <p className="text-small">Confusa</p>
-              </div>
-
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="text-sm text-[#999]">✕</span>
-                <p className="text-small">Lenta</p>
-              </div>
-
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="text-sm text-[#999]">✕</span>
-                <p className="text-small">No transmite confianza</p>
-              </div>
-
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="text-sm text-[#999]">✕</span>
-                <p className="text-small">No genera contactos</p>
-              </div>
+              {["Confusa", "Lenta", "No transmite confianza", "No genera contactos"].map(
+                (item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4"
+                  >
+                    <span className="text-sm text-[#999]">✕</span>
+                    <p className="text-small">{item}</p>
+                  </div>
+                ),
+              )}
             </div>
 
             <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                  ✓
-                </span>
-                <p className="text-small">Clara</p>
-              </div>
-
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                  ✓
-                </span>
-                <p className="text-small">Rápida</p>
-              </div>
-
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                  ✓
-                </span>
-                <p className="text-small">Profesional</p>
-              </div>
-
-              <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                  ✓
-                </span>
-                <p className="text-small">Pensada para convertir</p>
-              </div>
+              {["Clara", "Rápida", "Profesional", "Pensada para convertir"].map(
+                (item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4"
+                  >
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
+                      ✓
+                    </span>
+                    <p className="text-small">{item}</p>
+                  </div>
+                ),
+              )}
             </div>
           </div>
         </div>
@@ -252,10 +241,12 @@ export default function OptimizacionWebContent() {
           <header className="flex max-w-4xl flex-col gap-5">
             <p className="eyebrow">Proceso de optimización</p>
 
-            <h2 className="section-title">Así mejoramos tu web para que genere clientes         </h2>
+            <h2 className="section-title">
+              Así mejoramos tu web para que genere clientes
+            </h2>
           </header>
 
-          <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-5">
+          <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
             <article className="flex flex-col gap-3">
               <span className="font-['ClashDisplay'] text-4xl font-semibold text-[var(--primary)] opacity-30">
                 01
@@ -266,7 +257,8 @@ export default function OptimizacionWebContent() {
               </h3>
 
               <p className="text-body text-sm text-[var(--text-muted)]">
-                Revisamos estructura, mensajes y rendimiento para entender por qué no está generando resultados.
+                Revisamos estructura, mensajes y rendimiento para entender por
+                qué no está generando resultados.
               </p>
             </article>
 
@@ -280,7 +272,8 @@ export default function OptimizacionWebContent() {
               </h3>
 
               <p className="text-body text-sm text-[var(--text-muted)]">
-                Priorizamos los cambios que realmente pueden mejorar la conversión y la captación de clientes.
+                Priorizamos los cambios que realmente pueden mejorar la
+                conversión y la captación de clientes.
               </p>
             </article>
 
@@ -290,20 +283,19 @@ export default function OptimizacionWebContent() {
               </span>
 
               <h3 className="card-title text-left text-base">
-                 Aplicamos y optimizamos para generar resultados
+                Aplicamos y optimizamos para generar resultados
               </h3>
 
               <p className="text-body text-sm text-[var(--text-muted)]">
-                Implementamos mejoras y ajustamos lo necesario para que tu web empiece a funcionar.
+                Implementamos mejoras y ajustamos lo necesario para que tu web
+                empiece a funcionar.
               </p>
             </article>
-
-       
-
           </div>
 
           <p className="text-small text-[var(--text-muted)]">
-            Sin tecnicismos. Sin complicaciones. Solo cambios que generan resultados.
+            Sin tecnicismos. Sin complicaciones. Solo cambios que generan
+            resultados.
           </p>
         </div>
       </section>
@@ -321,40 +313,23 @@ export default function OptimizacionWebContent() {
           </header>
 
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Mejora de la estructura para que el usuario entienda tu web</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Optimización de mensajes para comunicar mejor y generar confianza</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Mejora de velocidad y experiencia de usuario</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small"> Ajustes SEO para mejorar posicionamiento en Google</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Optimización del recorrido y llamadas a la acción para aumentar contactos</p>
-            </div>
+            {[
+              "Mejora de la estructura para que el usuario entienda tu web",
+              "Optimización de mensajes para comunicar mejor y generar confianza",
+              "Mejora de velocidad y experiencia de usuario",
+              "Ajustes SEO para mejorar posicionamiento en Google",
+              "Optimización del recorrido y llamadas a la acción para aumentar contactos",
+            ].map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4"
+              >
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
+                  ✓
+                </span>
+                <p className="text-small">{item}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -372,47 +347,24 @@ export default function OptimizacionWebContent() {
           </header>
 
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Auditoría completa de tu web</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Mejora de estructura</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Optimización de textos</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Ajustes de diseño</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">Optimización de velocidad</p>
-            </div>
-
-            <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
-                ✓
-              </span>
-              <p className="text-small">SEO básico</p>
-            </div>
+            {[
+              "Auditoría completa de tu web",
+              "Mejora de estructura",
+              "Optimización de textos",
+              "Ajustes de diseño",
+              "Optimización de velocidad",
+              "SEO básico",
+            ].map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4"
+              >
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
+                  ✓
+                </span>
+                <p className="text-small">{item}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -429,7 +381,10 @@ export default function OptimizacionWebContent() {
           </p>
 
           <p className="text-body max-w-2xl">
-            No necesitas una web nueva. <span className="block">Necesitas que la que ya tienes funcione.</span>
+            No necesitas una web nueva.
+            <span className="block">
+              Necesitas que la que ya tienes funcione.
+            </span>
           </p>
 
           <Link href="/contacto" className="btn-black text-sm">
@@ -454,6 +409,6 @@ export default function OptimizacionWebContent() {
           </p>
         </div>
       </section>
-    </>
+    </main>
   );
 }

@@ -1,32 +1,66 @@
-// FILE: components/servicios/gestion-contenidos/GestionContenidosContent.tsx
+// FILE: app/servicios/gestion-contenidos/page.tsx
 //
-// SECTION: GESTIÓN DE CONTENIDOS CONTENT
+// PAGE: GESTIÓN DE CONTENIDOS
 //
-// Bloque completo de contenido para la página de servicio
-// de gestión de redes sociales y contenido.
+// Página del servicio de gestión de redes sociales y contenido.
+// Contiene el contenido completo y el SEO de la página.
 
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function GestionContenidosContent() {
+/* ========================================
+   SEO
+======================================== */
+
+export const metadata: Metadata = {
+  title: "Precio landing page en Girona | Landing desde 499€",
+  description:
+    "Diseño de landing pages en Girona desde 499€. Creamos páginas pensadas para convertir visitas en clientes, conseguir contactos y mejorar campañas.",
+  alternates: {
+    canonical: "/servicios/landing-page",
+  },
+  openGraph: {
+    title: "Precio landing page en Girona | Landing desde 499€",
+    description:
+      "Landing pages desde 499€ para negocios que quieren convertir tráfico en contactos, reservas o ventas.",
+    url: "/servicios/landing-page",
+    siteName: "Fityx Digital",
+    images: [
+      {
+        url: "/landing.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Landing page en Girona desde 499€",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+};
+
+/* ========================================
+   PAGE
+======================================== */
+
+export default function GestionContenidosPage() {
   return (
-    <>
+    <main>
       {/* HERO */}
       <section className="px-6 py-16 md:px-10 md:py-24 lg:px-14 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(320px,420px)] lg:items-center lg:gap-16">
           <div className="flex flex-col gap-6">
             <header className="flex flex-col gap-5">
-              <p className="eyebrow">Gestión de redes sociales  en Girona</p>
+              <p className="eyebrow">Gestión de redes sociales en Girona</p>
 
               <h1 className="hero-title max-w-4xl">
                 Haz que tu negocio destaque en
                 <span className="block">redes sin perder</span>
-                
-
               </h1>
 
               <p className="text-body max-w-2xl">
-                Creamos y gestionamos tu contenido para que tengas una presencia profesional, constante y enfocada en atraer clientes.
+                Creamos y gestionamos tu contenido para que tengas una presencia
+                profesional, constante y enfocada en atraer clientes.
               </p>
             </header>
 
@@ -43,13 +77,13 @@ export default function GestionContenidosContent() {
 
               <li className="flex items-center gap-2">
                 <span className="text-[var(--primary)]">✓</span>
-                <span> Más clientes que llegan desde redes   </span>
+                <span>Más clientes que llegan desde redes</span>
               </li>
             </ul>
 
             <div className="flex flex-col items-start gap-3">
               <Link href="/contacto" className="btn-black text-sm">
-                QUIERO MEJORAR MIS REDES 
+                QUIERO MEJORAR MIS REDES
               </Link>
 
               <p className="text-xs">Respuesta en menos de 24h</p>
@@ -62,6 +96,7 @@ export default function GestionContenidosContent() {
               alt="Persona revisando una red social desde el móvil"
               width={640}
               height={440}
+              sizes="(max-width: 1024px) 100vw, 420px"
               className="h-auto w-full max-w-[520px] rounded-[12px] bg-black/40 p-1 object-cover shadow-lg"
               priority
             />
@@ -77,8 +112,9 @@ export default function GestionContenidosContent() {
 
             <h2 className="section-title max-w-3xl">
               La mayoría de negocios no falla por falta de ideas.
-              <span className="block">Falla porque no tiene tiempo ni una estrategia clara.</span>
-              
+              <span className="block">
+                Falla porque no tiene tiempo ni una estrategia clara.
+              </span>
             </h2>
           </header>
 
@@ -95,7 +131,9 @@ export default function GestionContenidosContent() {
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small"> No eres constante porque no tienes tiempo</p>
+              <p className="text-small">
+                No eres constante porque no tienes tiempo
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
@@ -105,7 +143,9 @@ export default function GestionContenidosContent() {
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
               <span className="text-sm text-[#999]">✕</span>
-              <p className="text-small">Tu negocio pasa desapercibido frente a otros</p>
+              <p className="text-small">
+                Tu negocio pasa desapercibido frente a otros
+              </p>
             </div>
 
             <p className="text-body pt-2 text-sm italic">
@@ -120,43 +160,48 @@ export default function GestionContenidosContent() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
           <div className="order-2 flex flex-col gap-3">
             <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Dejas de publicar sin rumbo y empiezas a comunicar con intencion</p>
+              <p className="text-small">
+                Dejas de publicar sin rumbo y empiezas a comunicar con intención
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Tu perfil transmite  profesionalidad y confianza</p>
+              <p className="text-small">
+                Tu perfil transmite profesionalidad y confianza
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Tu negocio  deja de pasar desapercibido </p>
+              <p className="text-small">
+                Tu negocio deja de pasar desapercibido
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] border border-[#E5E5E5] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Empeizas a tener un sistema que te trae oportunidades </p>
+              <p className="text-small">
+                Empiezas a tener un sistema que te trae oportunidades
+              </p>
             </div>
-
-           
           </div>
 
           <div className="order-1 flex flex-col gap-4">
             <p className="eyebrow">Tener redes no es suficiente</p>
 
             <h2 className="section-title max-w-3xl">
-              Cuando estan  bien trabajadas, se convierten en una herramienta
+              Cuando están bien trabajadas, se convierten en una herramienta
               <span className="block">para atraer clientes</span>
-              
             </h2>
           </div>
         </div>
@@ -175,12 +220,14 @@ export default function GestionContenidosContent() {
           <header className="flex flex-col gap-4">
             <p className="eyebrow">Qué incluye la gestión de redes sociales</p>
 
-            <h2 className="section-title">Todo lo necesario para que tus redes empiecen a tener sentido:</h2>
+            <h2 className="section-title">
+              Todo lo necesario para que tus redes empiecen a tener sentido:
+            </h2>
           </header>
 
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
               <p className="text-small">
@@ -189,42 +236,44 @@ export default function GestionContenidosContent() {
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Planificación mensual de publicaciones</p>
+              <p className="text-small">
+                Planificación mensual de publicaciones
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small"> Creación de textos (copywriting)</p>
+              <p className="text-small">Creación de textos (copywriting)</p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">Definición de tipo de contenido (educativo, venta, confianza…)</p>
+              <p className="text-small">
+                Definición de tipo de contenido (educativo, venta, confianza…)
+              </p>
             </div>
 
             <div className="flex items-center gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
               <p className="text-small">Optimización de perfil</p>
             </div>
 
             <div className="flex items-start gap-3 rounded-[8px] bg-white px-5 py-4">
-              <span className="mt-[2px] flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-[var(--primary)] text-xs">
+              <span className="mt-[2px] flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F9F5ED] text-xs text-[var(--primary)]">
                 ✓
               </span>
-              <p className="text-small">
-                Enfoque en crecimiento y conversión
-              </p>
+              <p className="text-small">Enfoque en crecimiento y conversión</p>
             </div>
-          </div>  
+          </div>
         </div>
       </section>
 
@@ -235,8 +284,10 @@ export default function GestionContenidosContent() {
 
           <p className="text-body max-w-2xl">
             No usamos contenido genérico.
-            <span className="block">Mostramos tu negocio tal como es, para transmitir confianza, diferenciarte y atraer clientes de verdad</span>
-
+            <span className="block">
+              Mostramos tu negocio tal como es, para transmitir confianza,
+              diferenciarte y atraer clientes de verdad
+            </span>
           </p>
         </div>
       </section>
@@ -250,8 +301,12 @@ export default function GestionContenidosContent() {
             </h2>
 
             <p className="text-body max-w-2xl">
-              No se trata solo de publicar, sino de transmitir confianza, destacar frente a la competencia y atraer clientes. 
-              <span className="block">Solo trabajamos con un número reducido de negocios para asegurar contenido real, personalizado y de calidad</span> 
+              No se trata solo de publicar, sino de transmitir confianza,
+              destacar frente a la competencia y atraer clientes.
+              <span className="block">
+                Solo trabajamos con un número reducido de negocios para asegurar
+                contenido real, personalizado y de calidad
+              </span>
             </p>
           </header>
 
@@ -260,67 +315,85 @@ export default function GestionContenidosContent() {
             <article className="flex h-full flex-col rounded-[8px] border border-[#E5E5E5] bg-white p-8 text-left">
               <div className="mb-6 flex flex-col gap-2">
                 <h3 className="card-title">PLAN 1 — PRESENCIA</h3>
-                <p className="text-small">Mantén tu negocio activo en redes sin complicarte</p>
+
+                <p className="text-small">
+                  Mantén tu negocio activo en redes sin complicarte
+                </p>
+
                 <p className="font-['ClashDisplay'] text-4xl font-semibold text-black">
-                 Precio:  150€ 
+                  Precio: 150€
                   <span className="text-base font-normal"> / mes</span>
                 </p>
-                <p className="text-small">deal si quieres presencia online sin perder tiempo</p>                
+
+                <p className="text-small">
+                  Ideal si quieres presencia online sin perder tiempo
+                </p>
               </div>
 
               <ul className="mb-8 flex flex-col gap-3">
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span> 6–8 publicaciones al mes</span>
+                  <span>6–8 publicaciones al mes</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Grabación mensual en tu negocio</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Diseño básico de contenido</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Textos claros para tus publicaciones</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Programación y gestión completa</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Perfil activo y actualizado</span>
                 </li>
               </ul>
 
-              <p className="card-title  ">
-                Además incluido
-              </p>
+              <p className="card-title">Además incluido</p>
+
               <ul className="mb-8 flex flex-col gap-3">
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span> Definimos una línea visual coherente para tu marca</span>
-                </li>
-                <li className="flex items-start gap-2 text-small">
-                  <span className="text-[var(--primary)]">✓</span>
-                  <span> Ajustamos tu imagen para transmitir profesionalidad</span>
-                </li>
-                <li className="flex items-start gap-2 text-small">
-                  <span className="text-[var(--primary)]">✓</span>
-                  <span> Recomendaciones básicas de mejora</span>
-                </li>
-                <li className="flex items-start gap-2 text-small">
-                  <span className="text-[var(--primary)]">✓</span>
-                  <span> Soporte durante el primer mes</span>
+                  <span>Definimos una línea visual coherente para tu marca</span>
                 </li>
 
+                <li className="flex items-start gap-2 text-small">
+                  <span className="text-[var(--primary)]">✓</span>
+                  <span>Ajustamos tu imagen para transmitir profesionalidad</span>
+                </li>
+
+                <li className="flex items-start gap-2 text-small">
+                  <span className="text-[var(--primary)]">✓</span>
+                  <span>Recomendaciones básicas de mejora</span>
+                </li>
+
+                <li className="flex items-start gap-2 text-small">
+                  <span className="text-[var(--primary)]">✓</span>
+                  <span>Soporte durante el primer mes</span>
+                </li>
               </ul>
-                    <p className="card-title">
-                      Enfoque
-                    </p>
-                    <p className="text-small pb-8">Mantienes tus redes activas <span className="block">Sin preocuparte por qué publicar</span></p>
+
+              <p className="card-title">Enfoque</p>
+
+              <p className="text-small pb-8">
+                Mantienes tus redes activas
+                <span className="block">
+                  Sin preocuparte por qué publicar
+                </span>
+              </p>
 
               <Link href="/contacto" className="btn-black mt-auto text-sm">
                 QUIERO EMPEZAR
@@ -334,18 +407,22 @@ export default function GestionContenidosContent() {
                   Recomendado
                 </span>
 
-                <h3 className="card-title">PLAN 2— Crecimiento y visibilidad </h3>
+                <h3 className="card-title">
+                  PLAN 2 — Crecimiento y visibilidad
+                </h3>
+
                 <p className="text-small">
                   Convierte tus redes en un canal para atraer clientes
                 </p>
 
                 <p className="font-['ClashDisplay'] text-4xl font-semibold text-black">
-                  Precio:  250€
+                  Precio: 250€
                   <span className="text-base font-normal"> / mes</span>
                 </p>
 
                 <p className="text-small text-[var(--text-muted)]">
-                  Pensado para generar visibilidad, confianza y oportunidades reales
+                  Pensado para generar visibilidad, confianza y oportunidades
+                  reales
                 </p>
               </div>
 
@@ -354,101 +431,108 @@ export default function GestionContenidosContent() {
                   <span className="text-[var(--primary)]">✓</span>
                   <span>12–14 publicaciones al mes</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Creación de contenido dinámico (Reels + posts)</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Grabación mensual en tu negocio</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Edición profesional de vídeo y contenido</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span>Copywriting estratégico (mensajes que conectan y venden)</span>
+                  <span>
+                    Copywriting estratégico (mensajes que conectan y venden)
+                  </span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Estrategia de contenido adaptada a tu negocio</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span>
-                    Programación y gestión completa
-                  </span>
+                  <span>Programación y gestión completa</span>
                 </li>
-
-
-
               </ul>
+
               <p className="card-title">Diferencial clave</p>
-               <ul className="mb-8 flex flex-col gap-3">
+
+              <ul className="mb-8 flex flex-col gap-3">
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Contenido real grabado en tu negocio</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Fotografía y vídeo con cámara profesional</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Nada de contenido genérico o de stock</span>
                 </li>
-                
               </ul>
 
-              <p className="card-title">
-                Además incluido
-              </p>
+              <p className="card-title">Además incluido</p>
 
-
-
-            
-               <ul className="mb-8 flex flex-col gap-3">
+              <ul className="mb-8 flex flex-col gap-3">
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Definimos una línea visual coherente para tu marca</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Ajustamos tu imagen para transmitir profesionalidad</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span>Analizamos tu negocio y el tipo de cliente que quieres atraer</span>
+                  <span>
+                    Analizamos tu negocio y el tipo de cliente que quieres
+                    atraer
+                  </span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
                   <span>Creamos ideas de contenido adaptadas a tu sector</span>
                 </li>
+
                 <li className="flex items-start gap-2 text-small">
                   <span className="text-[var(--primary)]">✓</span>
-                  <span>Ajustamos el contenido según lo que mejor funciona</span>
+                  <span>
+                    Ajustamos el contenido según lo que mejor funciona
+                  </span>
                 </li>
-                
               </ul>
 
-                  <p className="card-title">
-                      Enfoque
-                    </p>
-                    <p className="text-small pb-8">No es solo publicar<span className="block"> Es crear contenido que haga que te vean, confíen y te contacten</span></p>
+              <p className="card-title">Enfoque</p>
 
-
-              
-
-              
+              <p className="text-small pb-8">
+                No es solo publicar
+                <span className="block">
+                  Es crear contenido que haga que te vean, confíen y te
+                  contacten
+                </span>
+              </p>
 
               <Link href="/contacto" className="btn-black mt-auto text-sm">
                 QUIERO MÁS CLIENTES
               </Link>
             </article>
           </div>
-
-       
         </div>
       </section>
 
@@ -466,8 +550,6 @@ export default function GestionContenidosContent() {
             <Link href="/contacto" className="btn-black text-sm">
               QUIERO MEJORAR MIS REDES
             </Link>
-
-       
           </div>
 
           <p className="text-xs text-[var(--text-muted)]">
@@ -475,6 +557,6 @@ export default function GestionContenidosContent() {
           </p>
         </div>
       </section>
-    </>
+    </main>
   );
 }
